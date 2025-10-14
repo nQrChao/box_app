@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_status_bar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@mipmap/ic_actionbar_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:text="福利省钱卡"
+                android:textSize="18sp"
+                android:textColor="@color/color_333333"/>
+
+            <TextView
+                android:id="@+id/tv_instructions_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="11dp"
+                android:background="@drawable/shape_333333_big_radius_line"
+                android:text="省钱卡说明"
+                android:textSize="12sp"
+                android:textColor="@color/color_333333"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_333333"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:indicator_drawable_selected="@drawable/main_banner_indicator_selected"
+                    app:indicator_drawable_unselected="@drawable/main_banner_indicator_unselected" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_user_province_card_bg_new1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_province_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_province_tips1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_99000000_big_radius"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_province_obtain"
+                            android:layout_width="92dp"
+                            android:layout_height="13dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="55dp"
+                            android:src="@mipmap/ic_user_province_top_tips2" />
+
+                        <TextView
+                            android:id="@+id/tv_province_validity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:text="截至2022-07-30到期>"
+                            android:textColor="#9B9B9B"
+                            android:textSize="11sp" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_province_obtain1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@mipmap/ic_user_province_top_tips1" />
+
+                </RelativeLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="185dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:background="@drawable/shape_white_radius_2"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_province_cannot_use_game"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ts_shape_gradient_radius_fff28d_ffcf6c"
+                            android:paddingVertical="5dp"
+                            android:paddingHorizontal="5dp"
+                            android:layout_gravity="right"
+                            android:textStyle="bold"
+                            android:text="此券适用于绝大多数游戏 >"
+                            android:textSize="12sp"
+                            android:textColor="#614EFC"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="13dp"
+                            android:textStyle="bold"
+                            android:text="每天领6元通用券"
+                            android:textSize="18sp"
+                            android:textColor="#614EFC"/>
+
+                        <TextView
+                            android:id="@+id/tv_province_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="13dp"
+                            android:text="已有0人开通"
+                            android:textSize="13sp"
+                            android:textColor="@color/color_999999"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view_province"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="200dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:id="@+id/tv_province_next"
+                                android:layout_width="200dp"
+                                android:layout_height="51dp"
+                                android:gravity="center"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/ts_shape_gradient_radius_ffce00_ff9a00"
+                                android:textStyle="bold"
+                                android:text="立即开通"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"/>
+
+                            <View
+                                android:visibility="gone"
+                                android:id="@+id/view_province_status"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="12dp"
+                                android:background="@drawable/shape_ff4d3a_big_radius"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="25dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_province_tips"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="开通领平台通用券，抵扣现金充值"
+                                android:textSize="13sp"
+                                android:textColor="@color/color_999999"/>
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/tv_province_tips1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="续费 >"
+                                android:textSize="13sp"
+                                android:textColor="#4E76FF"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginLeft="18dp"
+                        android:src="@mipmap/ic_user_province_card"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="185dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:background="@drawable/shape_white_radius_2"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ts_shape_gradient_radius_606060_1d1d1d"
+                            android:paddingVertical="5dp"
+                            android:paddingHorizontal="11dp"
+                            android:textStyle="bold"
+                            android:text="会员独享特权福利"
+                            android:textSize="12sp"
+                            android:textColor="#FFDB70"/>
+
+                        <TextView
+                            android:id="@+id/tv_vip_day_reward"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="13dp"
+                            android:textStyle="bold"
+                            android:text="每天领5元福利币"
+                            android:textSize="18sp"
+                            android:textColor="#614EFC"/>
+
+                        <TextView
+                            android:id="@+id/tv_vip_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="13dp"
+                            android:text="已有0人开通"
+                            android:textSize="13sp"
+                            android:textColor="@color/color_999999"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view_vip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:nestedScrollingEnabled="false"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="20dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="200dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:id="@+id/tv_vip_next"
+                                android:layout_width="200dp"
+                                android:layout_height="51dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/ts_shape_gradient_radius_ffce00_ff9a00"
+                                android:gravity="center"
+                                android:text="立即开通"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:visibility="gone"
+                                android:id="@+id/view_vip_status"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="12dp"
+                                android:background="@drawable/shape_ff4d3a_big_radius"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="25dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_vip_tips"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1币=1元，可充值BT游戏"
+                                android:textSize="13sp"
+                                android:textColor="@color/color_999999"/>
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/tv_vip_tips1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="续费 >"
+                                android:textSize="13sp"
+                                android:textColor="#4E76FF"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginRight="18dp"
+                        android:src="@mipmap/ic_user_province_vip"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="23dp"
+                    android:paddingHorizontal="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/color_333333"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="关于省钱卡"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/tv_instructions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/shape_white_radius_line"
+                            android:paddingHorizontal="7dp"
+                            android:paddingVertical="5dp"
+                            android:text="点击查看省钱卡详细说明 >"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.25"
+                        android:layout_marginTop="20dp"
+                        android:text="为加强您的游戏体验，平台特推出省钱卡系列，为您提供多方面的游戏助力！省钱卡为虚拟产品，一经开通，不可退款，请按需开通哦~详细说明，请点击查看右上方省钱卡说明。最终解释权归平台所有。"
+                        android:textSize="12sp"
+                        android:textColor="@color/color_999999"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_fbe7bb_10_radius"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_task_vip_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:text="成为会员任务额外奖积分"
+            android:textSize="13sp"
+            android:textColor="#91663A"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ts_shape_gradient_ff0044_fd5137"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="11dp"
+            android:layout_marginVertical="13dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="会员专享"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:lineSpacingMultiplier="1.25"
+        android:text="* 每日0点重置任务，请及时领取奖励避免过期\n* 任务状态若未及时变更，请手动下拉刷新更新！"
+        android:textSize="12sp"
+        android:textColor="#9B9B9B"/>
+
+</LinearLayout>

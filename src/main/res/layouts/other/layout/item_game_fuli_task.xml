@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.chaoji.other.blankj.utilcode.util.StringUtils" />
+
+        <variable
+            name="taskArray"
+            type="com.chaoji.im.data.model.AppletsXiaoGameFuLiInfo.PlayInfo.TaskArray" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="@dimen/idp_45"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/idp_5">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{taskArray.time_txt}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/isp_10"
+            tools:text="5分钟" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/idp_30"
+            android:layout_below="@id/time"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/idp_3"
+            android:gravity="center_horizontal"
+            android:src="@drawable/fragment_h5_game_title_hb_bg"
+            tools:src="@drawable/fragment_h5_game_title_hb_bg" />
+
+        <ImageView
+            android:id="@+id/gou"
+            android:layout_width="@dimen/idp_28"
+            android:layout_height="@dimen/idp_28"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:src="@drawable/fragment_h5_game_gou"
+            android:visibility="@{taskArray.isGet()?View.VISIBLE:View.GONE}"
+            tools:src="@drawable/fragment_h5_game_gou"
+            tools:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/guang"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/idp_65"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:src="@drawable/fragment_h5_game_title_hb_guang"
+            android:visibility="@{taskArray.showGuang()?View.VISIBLE:View.GONE}"
+            app:startRotationAnimation="@{taskArray.canGet()}"
+            tools:src="@drawable/fragment_h5_game_title_hb_guang" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@{StringUtils.format(&quot;+%s元&quot;, taskArray.reward)}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/isp_12"
+            android:textStyle="bold"
+            tools:text="+0.5元" />
+
+    </RelativeLayout>
+
+
+</layout>

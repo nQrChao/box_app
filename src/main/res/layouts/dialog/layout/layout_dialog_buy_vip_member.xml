@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_top_radius"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:text="购买VIP月卡"
+        android:textColor="@color/color_232323"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买月卡账号："
+            android:textColor="@color/color_232323"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_vip_member_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dyx155897"
+            android:textColor="@color/color_232323"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/ts_shadow_main_tab"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="6dp"
+            android:src="@mipmap/ic_vip_member_type" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_vip_member_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="购买类型：季卡（90天）"
+            android:textColor="@color/color_232323"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_vip_member_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/ts_shape_radius_ffe1c1"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="额外赠送5天"
+            android:textColor="@color/color_636363"
+            android:textSize="9dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="选择支付方式："
+            android:textColor="@color/color_232323"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_pay_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/ic_vip_member_pay_alipay"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="支付宝支付"
+                android:textColor="@color/color_232323"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_pay_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_vip_member_pay_check" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pay_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/ic_vip_member_pay_wechat"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="微信支付"
+                android:textColor="@color/color_232323"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_pay_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_vip_member_pay_uncheck" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ts_shape_0052fe_big_radius"
+            android:text="确认支付"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

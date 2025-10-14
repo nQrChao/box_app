@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <include
+        android:id="@+id/bar"
+        layout="@layout/layout_status_bar" />
+
+    <FrameLayout
+        android:id="@+id/fl_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <include layout="@layout/item_title_layout" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="12dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fl_layout_title"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_e1e7ff_radius_5"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginVertical="21dp"
+                android:layout_weight="1"
+                android:text="如何登录淘号角色"
+                android:textColor="#5571FE"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="18dp"
+                android:background="@drawable/ts_shape_gradient_55c0fe_5571fe"
+                android:textColor="#fff"
+                android:text="查看" />
+        </LinearLayout>
+
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

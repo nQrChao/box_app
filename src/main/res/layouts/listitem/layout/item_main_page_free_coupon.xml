@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_game_icon"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_placeholder" />
+
+
+        <TextView
+            android:id="@+id/iv_game_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="@color/color_333333"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_fuli"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/ic_main_pager_free_coupon"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

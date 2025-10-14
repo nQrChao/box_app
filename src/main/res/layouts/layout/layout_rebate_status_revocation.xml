@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="32dp"
+    android:paddingTop="26dp">
+
+    <com.allen.library.SuperButton
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:text="返利状态"
+        android:textColor="#818181"
+        android:textSize="12sp"
+        app:sCornersRadius="20dp"
+        app:sSolidColor="#55D2D2D2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="申请已撤回"
+        android:textColor="@color/color_333333"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="可重新提交此笔返利申请哦！"
+        android:textColor="@color/color_777777"
+        android:textSize="12sp" />
+
+</LinearLayout>

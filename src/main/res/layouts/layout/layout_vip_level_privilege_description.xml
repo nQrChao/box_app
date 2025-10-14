@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/concentric_circles_ff7500_ffe1c1_10dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不同VIP等级显示不同的身份标识，彰显您的尊贵身份。"
+        android:textColor="@color/color_9b9b9b"
+        android:textSize="13sp" />
+
+</LinearLayout>

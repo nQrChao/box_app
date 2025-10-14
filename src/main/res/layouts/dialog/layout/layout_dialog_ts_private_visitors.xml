@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_fcfcfe_radius"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="温馨提示"
+            android:textColor="@color/color_232323"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:src="@mipmap/ic_splash_visitors_icon" />
+
+        <TextView
+            android:id="@+id/tv_integral_balance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingMultiplier="1.25"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="如果您不同意《隐私协议政策》，将进入访客模式，访客模式下，我们不会收集可能直接识别您个人身份的信息，但将只能使用浏览游戏的基本功能。\n\n访客模式将无法使用：用户注册/登录、游戏资讯/信息查看/发布评论、个性化推荐和其他优质功能"
+            android:textColor="@color/color_232323"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/ts_shape_0052fe_radius"
+            android:text="查看协议"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/ts_shape_d6d6d6_radius"
+            android:text="进入浏览模式"
+            android:textColor="@color/color_858585"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="退出APP"
+            android:textSize="16sp"
+            android:textColor="#818181"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

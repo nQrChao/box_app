@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_image"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="6dp"
+        android:src="@mipmap/ic_placeholder" />
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@mipmap/img_main_game_ranking_index"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/color_ff0000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:includeFontPadding="false"
+        android:maxWidth="72dp"
+        android:singleLine="true"
+        android:textColor="@color/color_232323"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="72dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:background="@drawable/ts_shape_efecec_small_radius"
+        android:singleLine="true"
+        android:textColor="@color/color_0052ef"
+        android:textSize="13sp" />
+
+</LinearLayout>

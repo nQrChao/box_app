@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:paddingTop="32dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="32dp">
+
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.25"
+            android:text="游戏适合18岁以上的用户使用\n未实名用户请完成实名认证\n未实名与未成年用户会根据国家政策要求进行防沉迷限制\n适度游戏益脑，请您合理控制游戏时间，避免沉溺游戏影响生活。请注意自我保护，防范网络陷阱"
+            android:textColor="#CCCCCC"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="14dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginRight="14dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/card_shape_mid"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/ll_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/shape_gray_radius"
+        android:orientation="horizontal"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp">
+
+        <ImageView
+            android:id="@+id/iv_try_game_icon"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="36dp"
+            android:src="@mipmap/ic_placeholder" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_try_game_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="试玩《少年三国志满V版》"
+                android:textColor="@color/color_292929"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_try_game_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="最高奖励10000积分/每人"
+                android:textStyle="bold"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

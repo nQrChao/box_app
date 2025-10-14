@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_fea552_radius"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="85dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_white_radius_2"
+                android:layout_margin="10dp"
+                android:paddingHorizontal="15dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"
+                    android:text="活动礼包"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_333333"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:text="兑换码来源：平台不定期举办活动获取\n兑换流程\n1.参加活动获取兑换码\n2.进入任务赚金页面\n3.输入兑换码，点击确认"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_333333"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:background="@drawable/shape_b1b1b1_big_radius_line"
+                        android:hint="输入兑换码"
+                        android:textColorHint="@color/color_999999"
+                        android:textSize="16sp"
+                        android:textColor="@color/color_333333"/>
+
+                    <TextView
+                        android:id="@+id/tv_confirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:background="@drawable/ts_shape_gradient_radius_ffcb06_fd8d43"
+                        android:paddingHorizontal="28dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="确认"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/ic_app_pop_close"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_user_mine_cdk_dialog"/>
+</RelativeLayout>

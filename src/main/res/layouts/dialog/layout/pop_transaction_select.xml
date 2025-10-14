@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="9dp"
+    android:background="@drawable/shape_white_radius_10"
+    android:paddingTop="11dp">
+
+    <TextView
+        android:id="@+id/tv_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="最新上架"
+        android:paddingVertical="11dp"
+        android:textColor="@color/color_9b9b9b"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_f2f2f2" />
+
+    <TextView
+        android:id="@+id/tv_item2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="价格升序"
+        android:paddingVertical="11dp"
+        android:textColor="@color/color_9b9b9b"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_f2f2f2" />
+
+    <TextView
+        android:id="@+id/tv_item3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="价格降序"
+        android:textColor="@color/color_9b9b9b"
+        android:paddingVertical="11dp"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view_line_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_f2f2f2" />
+
+    <TextView
+        android:id="@+id/tv_item4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="近期成交"
+        android:paddingVertical="11dp"
+        android:textColor="@color/color_9b9b9b"
+        android:textSize="16sp" />
+
+</LinearLayout>

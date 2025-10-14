@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="27dp"
+    android:paddingBottom="30dp"
+    android:background="@drawable/shape_white_radius_5_top"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_232323"
+        android:text="游戏充值金额说明"/>
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_marginTop="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:lineSpacingMultiplier="1.2"
+        android:textSize="14sp"
+        android:textColor="@color/color_232323"
+        android:text="1、游戏充值金额为当前小号在游戏全区全服的折扣前总充值金额（含卡券等优惠）；\n2、游戏实付金额为当前小号在游戏全区全服的折扣后总充值金额（不含卡券等优惠）；\n3、购买前请仔细检查角色信息，核对截图内容"/>
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_marginTop="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="75dp"
+        android:background="@drawable/ts_shape_gradient_55c0fe_5571fe"
+        android:textColor="@color/white"
+        android:text="我知道了"/>
+
+
+
+</LinearLayout>

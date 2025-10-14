@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_kefu"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/ic_kefu_item_1" />
+
+            <TextView
+                android:id="@+id/tv_graded"
+                android:layout_width="32dp"
+                android:layout_height="16dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="45dp"
+                android:background="@color/color_ff8f19"
+                android:gravity="center"
+                android:text="已评"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_kefu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="客服一一"
+            android:textSize="12sp"
+            android:textColor="@color/color_1b1b1b" />
+
+    </LinearLayout>
+
+</LinearLayout>

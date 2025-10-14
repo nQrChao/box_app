@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_ffffff_15_radius"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_img_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.zqhy.app.widget.imageview.ClipRoundImageView
+                android:id="@+id/iv_transaction_home_list_image"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_placeholder"
+                app:roundImageViewBorderRadius="5dp" />
+
+            <com.zqhy.app.widget.imageview.ClipRoundImageView
+                android:id="@+id/iv_transaction_home_list_image1"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_placeholder"
+                app:roundImageViewBorderRadius="5dp" />
+
+            <com.zqhy.app.widget.imageview.ClipRoundImageView
+                android:id="@+id/iv_transaction_home_list_image2"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_placeholder"
+                app:roundImageViewBorderRadius="5dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_price_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_img_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="¥"
+                android:textColor="@color/color_FF2D3F"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_transaction_home_list_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/color_FF2D3F"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_transaction_home_list_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ll_price_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ll_price_layout"
+            tools:text="累计消费（元）5202.00" />
+
+        <com.zqhy.app.widget.imageview.ClipRoundImageView
+            android:id="@+id/iv_title_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_placeholder"
+            app:roundImageViewBorderRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_price_layout" />
+
+
+        <TextView
+            android:id="@+id/tv_transaction_home_list_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/color_232323"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_title_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_title_icon"
+            tools:text="拥堵的城市" />
+
+        <TextView
+            android:id="@+id/tv_transaction_home_list_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_ffffff_stroke_4e76ff"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:textColor="@color/color_4e76ff"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_transaction_home_list_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_transaction_home_list_name"
+            tools:text="天天送6480" />
+
+        <TextView
+            android:id="@+id/tv_transaction_home_list_server_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_transaction_home_list_label"
+            app:layout_constraintTop_toTopOf="@+id/tv_transaction_home_list_label"
+            tools:text="服区：二区，天天" />
+
+
+        <TextView
+            android:id="@+id/tv_transaction_home_list_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:textColor="@color/color_202020"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/iv_title_icon"
+            app:layout_constraintTop_toBottomOf="@+id/iv_title_icon"
+            tools:text="老区闲置号，洪荒套，装机甲都有" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

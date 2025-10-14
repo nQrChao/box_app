@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.chaoji.other.blankj.utilcode.util.StringUtils" />
+
+        <variable
+            name="position"
+            type="int" />
+
+        <variable
+            name="demoInfo"
+            type="com.chaoji.im.data.model.AppletsXiaoGameFuLiInfo.DemoInfo" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/titlePic1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="@dimen/idp_7"
+                android:layout_marginVertical="@dimen/idp_5"
+                android:scaleType="fitCenter"
+                app:layout_constraintDimensionRatio="120:65"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:loadRound11Image="@{demoInfo.bg_pic}"
+                tools:src="@mipmap/ic_audit_transaction_one_1" />
+
+            <TextView
+                android:id="@+id/shiwanLingQu"
+                android:layout_width="@dimen/idp_90"
+                android:layout_height="@dimen/idp_28"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/idp_8"
+                android:paddingBottom="@dimen/idp_3_5"
+                android:text="@{demoInfo.titleText()}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/isp_11"
+                android:textStyle="bold"
+                android:visibility="@{demoInfo.titleShow()?View.VISIBLE:View.GONE}"
+                app:dynamicBackground="@{position}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@drawable/a_xiao_game_list_item_shiwan1_pic"
+                tools:text="首玩+0.5元" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/idp_5"
+            android:paddingVertical="@dimen/idp_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/idp_7"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@{demoInfo.gamename}"
+                android:textColor="@color/text_default_color"
+                android:textSize="@dimen/isp_13"
+                android:textStyle="bold"
+                app:drawableHeight="@dimen/idp_16"
+                app:drawableTint="@color/black80"
+                app:drawableWidth="@dimen/idp_16"
+                tools:text="游戏名称" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="@{demoInfo.genre_str}"
+                android:textColor="@color/hint_text"
+                android:textSize="@dimen/isp_11"
+                android:textStyle="bold"
+                tools:text="休闲" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
+

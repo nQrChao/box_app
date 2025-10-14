@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_radius_2"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="22dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="未领用过该代金券的游戏小号可直接使用"
+            android:textSize="14sp"
+            android:textColor="#232323"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="关于小号：平台账号在进入游戏时，需要选择小号方可进入；每个游戏中可创建10个小号（第一个在首次登录时自动创建）。"
+            android:textSize="12sp"
+            android:textColor="#9B9B9B"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_55c0fe_5571fe_big_radius"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="我知道了"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>

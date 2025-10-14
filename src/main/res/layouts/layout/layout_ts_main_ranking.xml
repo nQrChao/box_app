@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_main_game_ranking" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="20dp"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="1.2"
+            android:text="展示当下玩家人气最高的手游，了解你身边人都在玩什么，关注人气榜就能掌握热门手游市场"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/fl_tab_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_tab_bt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="BT榜"
+                android:textColor="@color/color_7d7d7d"
+                android:textSize="17sp" />
+
+
+            <View
+                android:id="@+id/tv_tab_bt_dot"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_below="@id/tv_tab_bt_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/drawable_dot_232323"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fl_tab_discount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_tab_discount_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="折扣榜"
+                android:textColor="@color/color_7d7d7d"
+                android:textSize="17sp" />
+
+
+            <View
+                android:id="@+id/tv_tab_discount_dot"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_below="@id/tv_tab_discount_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/drawable_dot_232323"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fl_tab_h5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_tab_h5_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="H5榜"
+                android:textColor="@color/color_7d7d7d"
+                android:textSize="17sp" />
+
+
+            <View
+                android:id="@+id/tv_tab_h5_dot"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_below="@id/tv_tab_h5_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/drawable_dot_232323"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

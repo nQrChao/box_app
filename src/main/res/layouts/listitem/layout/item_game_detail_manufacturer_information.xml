@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="55dp"
+            android:text="供应商：厦门欢游互娱文化传播有限公司"
+            android:textSize="12sp"
+            android:textColor="#232323" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_information"
+            android:layout_marginTop="10dp"
+            android:text="软件版本：5.31.1"
+            android:textSize="12sp"
+            android:textColor="#232323" />
+
+        <TextView
+            android:id="@+id/tv_filing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_version"
+            android:layout_marginTop="10dp"
+            android:text="备案号："
+            android:textSize="12sp"
+            android:textColor="#232323" />
+
+        <LinearLayout
+            android:id="@+id/ll_authority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_filing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_authority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="隐私权限：权限信息"
+                android:textSize="12sp"
+                android:textColor="#232323"/>
+
+            <TextView
+                android:id="@+id/tv_authority_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="查看"
+                android:textSize="12sp"
+                android:textColor="#4E76FF"/>
+
+            <TextView
+                android:id="@+id/tv_privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="隐私政策"
+                android:textSize="12sp"
+                android:textColor="#232323"/>
+
+            <TextView
+                android:id="@+id/tv_privacy_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看"
+                android:textSize="12sp"
+                android:textColor="#4E76FF"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_fold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center_vertical"
+            android:drawableRight="@mipmap/ic_game_detail_rebate_arrow_up"
+            android:drawablePadding="5dp"
+            android:text="收起"
+            android:textSize="13sp"
+            android:textColor="#4E76FF"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

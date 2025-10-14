@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_try_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gray_radius"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingTop="14dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="14dp">
+
+        <TextView
+            android:id="@+id/tv_try_game_reward_tag"
+            android:layout_width="62dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="试玩游戏"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_try_game_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:singleLine="true"
+            android:text="玩游戏，最高奖励0积分/每人 "
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_arrow_right" />
+    </LinearLayout>
+
+</LinearLayout>

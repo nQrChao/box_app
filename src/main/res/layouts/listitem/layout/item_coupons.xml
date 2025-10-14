@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f5f5f5"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="6dp">
+
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_white_radius">
+
+
+        <yyydjk.com.library.CouponView
+            android:id="@+id/couponViewLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_999999"
+            android:orientation="vertical"
+            app:cv_is_dash_line_left="false"
+            app:cv_is_dash_line_right="false"
+            app:cv_is_semicircle_bottom="false"
+            app:cv_is_semicircle_left="false"
+            app:cv_is_semicircle_right="true"
+            app:cv_is_semicircle_top="false"
+            app:cv_semicircle_gap="1.5dp"
+            app:cv_semicircle_radius="3dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="5.90"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_price_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_price"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:text="折扣区通用"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+        </yyydjk.com.library.CouponView>
+
+        <yyydjk.com.library.CouponView
+            android:id="@+id/couponViewRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.3"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:cv_is_dash_line_left="false"
+            app:cv_is_dash_line_right="false"
+            app:cv_is_semicircle_bottom="false"
+            app:cv_is_semicircle_left="true"
+            app:cv_is_semicircle_right="false"
+            app:cv_is_semicircle_top="false"
+            app:cv_semicircle_gap="1.5dp"
+            app:cv_semicircle_radius="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_coupon_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="42dp"
+                    android:singleLine="true"
+                    android:text="折扣区通用首充优惠券" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view_dot_1"
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:background="@drawable/drawable_dot_999999" />
+
+                    <TextView
+                        android:id="@+id/tv_validity_period"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="有效期："
+                        android:textColor="@color/color_999999"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_validity_period_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="2017-07-02过期"
+                        android:textColor="@color/color_999999"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view_dot_2"
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:background="@drawable/drawable_dot_999999" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_des"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:text="全折扣区通用"
+                        android:textColor="@color/color_999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_usage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="12dp"
+                        android:text="使用方法>"
+                        android:textColor="@color/color_28b9fe"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_funny_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+
+            <ImageView
+                android:id="@+id/iv_funny_coupon_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="24dp"
+                android:visibility="gone" />
+
+        </yyydjk.com.library.CouponView>
+
+    </LinearLayout>
+
+</LinearLayout>

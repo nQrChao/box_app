@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:lineSpacingMultiplier="1.25"
+        android:text="活动期间，前10名达到100级的玩家，可额外获得冲级赛奖励，领取任务奖励时自动获得。"
+        android:textColor="@color/color_333333"
+        android:textSize="11sp" />
+
+    <include layout="@layout/layout_top_tab"/>
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+        <import type="com.chaoji.other.blankj.utilcode.util.StringUtils" />
+        <variable
+            name="xiaoGameBean"
+            type="com.chaoji.im.data.model.AppletsXiaoGameBean" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a_rounded_xiao_game_list_item"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/titlePic1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                android:visibility="@{xiaoGameBean.shouldShowView() ? View.VISIBLE : View.GONE}"
+                app:layout_constraintDimensionRatio="750:370"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:loadRoundSizeImageTopRounded="@{xiaoGameBean.pic}" />
+
+            <ImageView
+                android:id="@+id/titlePic"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                android:visibility="@{xiaoGameBean.first?View.VISIBLE:View.GONE}"
+                app:layout_constraintDimensionRatio="750:370"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:loadRoundSizeImageTopRounded="@{xiaoGameBean.pic}" />
+
+            <TextView
+                android:layout_width="@dimen/idp_70"
+                android:layout_height="@dimen/idp_32"
+                android:background="@drawable/a_xiao_game_list_item_ganggang"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/idp_10"
+                android:paddingVertical="@dimen/idp_2"
+                android:text="刚刚在玩"
+                android:textColor="@color/white"
+                android:textSize="@dimen/isp_11"
+                android:textStyle="bold"
+                android:visibility="@{xiaoGameBean.first?View.VISIBLE:View.GONE}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="刚刚在玩" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/a_rounded_xiao_game_list_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/idp_10"
+            android:paddingVertical="@dimen/idp_12">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/idp_60"
+                android:layout_height="@dimen/idp_60"
+                android:layout_gravity="center_vertical"
+                app:loadRoundSizeImage="@{xiaoGameBean.gameIcon}"
+                tools:src="@mipmap/mod_icon" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/idp_10"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="@{xiaoGameBean.gameName}"
+                    android:textColor="@color/text_default_color"
+                    android:textSize="@dimen/isp_15"
+                    android:textStyle="bold"
+                    tools:text="游戏名称" />
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/idp_5"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="@{xiaoGameBean.app_title}"
+                    android:textColor="#B2B2B2"
+                    android:textSize="@dimen/isp_12"
+                    tools:text="单机｜套上音乐盒子，一起动次动次！" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/idp_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tip1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_xiao_game_desc_1"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingHorizontal="@dimen/idp_5"
+                        android:paddingVertical="@dimen/idp_2"
+                        android:text="@{xiaoGameBean.app_title2}"
+                        android:textColor="#FF915D"
+                        android:textSize="@dimen/isp_10"
+                        tools:text="12.5W人在玩" />
+
+                    <TextView
+                        android:id="@+id/tip2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/idp_2"
+                        android:background="@drawable/bg_xiao_game_desc_2"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingHorizontal="@dimen/idp_5"
+                        android:paddingVertical="@dimen/idp_2"
+                        android:text="@{xiaoGameBean.app_title3}"
+                        android:textColor="#6E8BF2"
+                        android:textSize="@dimen/isp_10"
+                        tools:text="无广告" />
+
+                    <TextView
+                        android:id="@+id/tip3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/idp_2"
+                        android:background="@drawable/bg_xiao_game_desc_2"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingHorizontal="@dimen/idp_5"
+                        android:paddingVertical="@dimen/idp_2"
+                        android:text="@{xiaoGameBean.app_title4}"
+                        android:textColor="#6E8BF2"
+                        android:textSize="@dimen/isp_10"
+                        tools:text="无限道具" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="@dimen/idp_70"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/idp_10"
+                android:background="@drawable/button_xiao_game_around_selector"
+                android:text="@{StringUtils.isEmpty(xiaoGameBean.btnName)?&quot;秒玩&quot;:xiaoGameBean.btnName}"
+                android:textColor="@color/white"
+                tools:text="秒玩" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
+

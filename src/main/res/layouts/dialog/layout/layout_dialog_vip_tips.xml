@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@mipmap/ic_super_province_card_dialog_bg"
+    android:layout_marginHorizontal="37dp"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="开通会员立享"
+        android:textSize="18sp"
+        android:textColor="#FA2E2E"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_super_province_card_tips_image"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="专属特权福利"
+        android:textSize="18sp"
+        android:textColor="#FFFC00"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="60dp"
+        android:lineSpacingMultiplier="1.3"
+        android:text="【福利券】每月30元回本礼\n【超值兑】会员每日专属礼\n【周福利】神券好礼每周购\n【更多赠】权益/福利畅享~"
+        android:textSize="12sp"
+        android:textColor="#744908"/>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ts_shape_gradient_radius_ffce00_ff9a00"
+        android:textStyle="bold"
+        android:paddingHorizontal="62dp"
+        android:paddingVertical="13dp"
+        android:layout_marginTop="38dp"
+        android:text="开通会员"
+        android:textSize="17sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="11dp"
+        android:layout_marginBottom="2dp"
+        android:textStyle="bold"
+        android:text="稍后再说"
+        android:textSize="13sp"
+        android:textColor="#FFF3C5"/>
+</LinearLayout>
+</RelativeLayout>

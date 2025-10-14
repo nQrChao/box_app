@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_radius_2"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <com.zqhy.app.widget.TitleTextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            app:tt_isTextBold="true"
+            app:tt_lineEndColor="#0D9EFF"
+            app:tt_lineStartColor="#0079FB"
+            app:tt_textColor="@color/color_232323"
+            app:tt_textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/ic_choice_main_page_more"
+            android:padding="12dp"
+            android:textColor="@color/color_7a7a7a"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/iv_action"
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="14dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_app_pop_close" />
+
+    </FrameLayout>
+
+
+    <com.zqhy.app.widget.WarpHeightViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginRight="48dp"
+        android:clipChildren="false" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/indicator_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+
+</LinearLayout>

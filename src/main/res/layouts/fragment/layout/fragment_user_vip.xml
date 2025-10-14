@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ll_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bg_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/img_vip_background" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@id/bg_image"
+                android:background="@color/color_f9f9f9" />
+
+            <include
+                android:id="@+id/layout_title"
+                layout="@layout/layout_common_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_vip_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_title"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/img_vip_user_info_main"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_user_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="@string/app_name"
+                        android:textColor="@color/color_664630"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_vip_count_qa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@mipmap/ic_vip_count_qa"
+                        android:drawablePadding="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="成长值0"
+                        android:textColor="@color/color_bf6804"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_user_vip_level_current"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="V0"
+                        android:textColor="@color/color_664630"
+                        android:textSize="16sp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar_vip_count"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progress="0" />
+
+                    <include layout="@layout/layout_user_vip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_to_next_vip_level_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="升级V1 还需要0成长值"
+                        android:textColor="@color/color_664630"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_vip_user_info_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ll_vip_user_info"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/img_vip_user_info_main_2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="成为VIP，立享"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="11"
+                            android:textColor="#FFF700"
+                            android:textSize="28sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="大特权"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/ts_shape_003cc9_big_radius"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="18dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="3dp"
+                        android:text="快速升级VIP >"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ll_vip_user_info"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="2dp"
+                android:src="@mipmap/img_vip_user_info_main_3" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_vip_user_info"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/shape_white_radius"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="18dp"
+                            android:drawableLeft="@mipmap/ic_center_title_label"
+                            android:drawablePadding="8dp"
+                            android:gravity="center"
+                            android:text="福利特权"
+                            android:textColor="@color/color_232323"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:id="@+id/flex_box_layout_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:flexWrap="wrap"
+                            app:justifyContent="space_between">
+                            <!--<View
+                                android:layout_width="64dp"
+                                android:layout_height="72dp"
+                                android:background="@color/color_9b9b9b"/>
+
+                            <View
+                                android:layout_width="64dp"
+                                android:layout_height="72dp"
+                                android:background="@color/color_9b9b9b"/>
+
+                            <View
+                                android:layout_width="64dp"
+                                android:layout_height="72dp"
+                                android:background="@color/color_9b9b9b"/>
+
+                            <View
+                                android:layout_width="64dp"
+                                android:layout_height="72dp"
+                                android:background="@color/color_9b9b9b"/>
+
+                            <View
+                                android:layout_width="64dp"
+                                android:layout_height="72dp"
+                                android:background="@color/color_9b9b9b"/>
+
+                            <View
+                                android:layout_width="64dp"
+                                android:layout_height="72dp"
+                                android:background="@color/color_9b9b9b"/>
+
+                            <View
+                                android:layout_width="64dp"
+                                android:layout_height="72dp"
+                                android:background="@color/color_9b9b9b"/>
+
+                            <View
+                                android:layout_width="64dp"
+                                android:layout_height="72dp"
+                                android:background="@color/color_9b9b9b"/>-->
+                        </com.google.android.flexbox.FlexboxLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/img_vip_user_label" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/shape_white_radius"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="18dp"
+                            android:drawableLeft="@mipmap/ic_center_title_label"
+                            android:drawablePadding="8dp"
+                            android:gravity="center"
+                            android:text="服务特权"
+                            android:textColor="@color/color_232323"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:id="@+id/flex_box_layout_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:justifyContent="space_between" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/img_vip_user_label" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:text="更多特权敬请期待..."
+                    android:textColor="@color/color_232323"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_kefu_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="64dp"
+                    android:background="@drawable/ts_shape_0052fe_big_radius"
+                    android:drawableLeft="@mipmap/ic_vip_kefu"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="联系客服"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

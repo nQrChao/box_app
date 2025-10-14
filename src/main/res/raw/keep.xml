@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="
+
+    @drawable/nt_1,
+    @drawable/nt_2,
+    @drawable/nt_3,
+    @drawable/nt_4,
+    @drawable/nt_5,
+    @drawable/nt_6,
+    @drawable/nt_7,
+
+
+    @mipmap/ic_new_kefu_1,
+    @mipmap/ic_new_kefu_2,
+    @mipmap/ic_new_kefu_3,
+    @mipmap/ic_new_kefu_4
+    " />

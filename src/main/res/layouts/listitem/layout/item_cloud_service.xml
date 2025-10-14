@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="50dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_55c0fe_5571fe_big_radius"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="联系客服"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

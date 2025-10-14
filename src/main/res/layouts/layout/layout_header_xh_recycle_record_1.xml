@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:src="@mipmap/ic_recycler_more_question"/>
+
+    <TextView
+        android:id="@+id/xh_recycled_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="为您显示近半年内登陆或充值过的游戏；其中回收24小时内可以申请赎回，同时需退回所得，若使用则无法赎回！"
+        android:textColor="@color/color_232323"
+        android:textSize="14sp" />
+
+</LinearLayout>

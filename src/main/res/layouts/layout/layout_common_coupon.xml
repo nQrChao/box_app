@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_rootView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.zqhy.app.widget.LhhCouponView
+        android:id="@+id/couponView"
+        android:layout_width="146dp"
+        android:layout_height="58dp"
+        android:background="@color/color_ff0000"
+        android:orientation="vertical"
+        app:dash_line_gap="2dp"
+        app:dash_line_height="4dp"
+        app:dash_line_width="1dp"
+        app:semicircle_radius="5dp"
+        app:semicircle_color="@color/white"
+        app:x_point="86dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_coupon_txt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="折扣游戏"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0.5dp"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:text="通 用 券"
+                        android:textColor="@color/white"
+                        android:textSize="8sp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="0.5dp"
+                        android:background="@color/white" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="乐嗨嗨专享"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+                <com.allen.library.SuperButton
+                    android:id="@+id/btn_coupon_1"
+                    android:layout_width="48dp"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="3dp"
+                    android:text="立即换购"
+                    android:textColor="@color/color_ff0000"
+                    android:textSize="9sp"
+                    app:sCornersRadius="14dp"
+                    app:sSolidColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.zqhy.app.widget.LhhCouponView>
+
+</FrameLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_status_bar" />
+
+        <RadioGroup
+            android:id="@+id/rg_tab_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp">
+
+
+            <RadioButton
+                android:id="@+id/rb_tab_1"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="BT手游"
+                android:button="@null"
+                android:textColor="@color/color_8d8d8d"
+                android:textSize="@dimen/micro_text"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_tab_2"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="折扣手游"
+                android:button="@null"
+                android:textColor="@color/color_8d8d8d"
+                android:textSize="@dimen/micro_text"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_tab_3"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="6dp"
+                android:button="@null"
+                android:text="H5游戏"
+                android:textColor="@color/color_8d8d8d"
+                android:textSize="@dimen/micro_text"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

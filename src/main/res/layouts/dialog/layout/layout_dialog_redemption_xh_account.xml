@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_radius">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="14dp"
+            android:text="小号赎回"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="14dp"
+            android:src="@mipmap/ic_login_close" />
+
+
+        <RelativeLayout
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_closed"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="14dp"
+            android:background="#ECF3FF"
+            android:padding="14dp">
+
+
+            <ImageView
+                android:id="@+id/game_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/ic_placeholder" />
+
+            <TextView
+                android:id="@+id/tv_game_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/game_icon"
+                android:includeFontPadding="false"
+                android:text="小号赎回"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_xh_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_game_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/game_icon"
+                android:includeFontPadding="false"
+                android:text="小号1"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="22dp"
+            android:text="确认赎回当前小号吗？"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="赎回小号将收回已获得代金券"
+            android:textColor="#FB560A"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_redemption_xh_account"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/tv_2"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/ts_shape_0052fe_radius"
+            android:text="立刻赎回"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

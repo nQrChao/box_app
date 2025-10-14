@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.zqhy.app.core.view.AppSplashModel" />
+
+        <variable
+            name="click"
+            type="com.zqhy.app.core.view.AppSplashActivity.ProxyClick" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/idp_100"
+            android:layout_height="@dimen/idp_100"
+            android:layout_marginBottom="@dimen/idp_50"
+            android:scaleType="centerInside"
+            android:src="@mipmap/mod_icon" />
+    </LinearLayout>
+</layout>

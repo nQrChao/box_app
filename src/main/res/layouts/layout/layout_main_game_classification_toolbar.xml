@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_game_center_first_tab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="0dp">
+
+        <FrameLayout
+            android:id="@+id/fl_game_center_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:minWidth="36dp">
+
+            <TextView
+                android:id="@+id/tv_game_center_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="9dp"
+                android:text="BT版"
+                android:textColor="@color/color_232323"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/line_game_center_bt"
+                android:layout_width="28dp"
+                android:layout_height="8dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/ts_shape_3478f6_big_radius" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_game_center_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:minWidth="36dp">
+
+            <TextView
+                android:id="@+id/tv_game_center_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="9dp"
+                android:text="折扣"
+                android:textColor="@color/color_232323"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/line_game_center_discount"
+                android:layout_width="28dp"
+                android:layout_height="8dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/ts_shape_3478f6_big_radius"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_game_center_h5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:minWidth="36dp">
+
+            <TextView
+                android:id="@+id/tv_game_center_h5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="9dp"
+                android:text="H5"
+                android:textColor="@color/color_232323"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/line_game_center_h5"
+                android:layout_width="28dp"
+                android:layout_height="8dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/ts_shape_3478f6_big_radius"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_game_center_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:minWidth="36dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_game_center_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="9dp"
+                android:text="单机"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/line_game_center_single"
+                android:layout_width="28dp"
+                android:layout_height="8dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/ts_shape_3478f6_big_radius"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_game_classification"
+                android:layout_width="84dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/ts_shadow_circular_0052fe"
+                android:drawableLeft="@mipmap/ic_main_page_game_classification"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="6dp"
+                android:text="筛选更多"
+                android:textColor="@color/color_232323"
+                android:textSize="12sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_game_center_second_tab"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.shizhefei.view.indicator.ScrollIndicatorView
+            android:id="@+id/tab_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="false" />
+
+    </LinearLayout>
+</LinearLayout>

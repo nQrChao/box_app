@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_discount_tag"
+    android:layout_width="42dp"
+    android:layout_height="24dp"
+    android:background="@mipmap/ic_discount_tag"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingRight="4dp"
+    android:paddingTop="2dp"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_game_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.0"
+        android:textColor="@color/white"
+        android:includeFontPadding="false"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="折"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:textSize="8sp" />
+
+</LinearLayout>

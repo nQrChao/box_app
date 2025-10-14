@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+    <!--
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_f2f2f2" />
+
+
+
+        </FrameLayout>
+
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_item_vip_privilege_detail_6" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/ts_shape_round_9d9d9d" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/ts_shape_round_9d9d9d" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/ts_shape_round_9d9d9d" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/ts_shape_round_9d9d9d" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/ts_shape_round_9d9d9d" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/ts_shape_round_9d9d9d" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ts_shape_ebebeb_big_radius">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ts_shape_gradient_1c1201_494133"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="VIP 2"
+                android:textColor="#EBD3A4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_vip_level_2_reward"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:text="？代金券"
+                android:textColor="@color/color_6a6a6a"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ts_shape_ebebeb_big_radius">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ts_shape_gradient_1c1201_494133"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="VIP 3"
+                android:textColor="#EBD3A4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_vip_level_3_reward"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:text="？代金券"
+                android:textColor="@color/color_6a6a6a"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ts_shape_ebebeb_big_radius">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ts_shape_gradient_1c1201_494133"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="VIP 4"
+                android:textColor="#EBD3A4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_vip_level_4_reward"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:text="？代金券"
+                android:textColor="@color/color_6a6a6a"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ts_shape_ebebeb_big_radius">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ts_shape_gradient_1c1201_494133"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="VIP 5"
+                android:textColor="#EBD3A4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_vip_level_5_reward"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:text="？代金券"
+                android:textColor="@color/color_6a6a6a"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ts_shape_ebebeb_big_radius">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ts_shape_gradient_1c1201_494133"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="VIP 6"
+                android:textColor="#EBD3A4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_vip_level_6_reward"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:text="？代金券"
+                android:textColor="@color/color_6a6a6a"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ts_shape_ebebeb_big_radius">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ts_shape_gradient_1c1201_494133"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="VIP 7"
+                android:textColor="#EBD3A4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_vip_level_7_reward"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:text="？代金券"
+                android:textColor="@color/color_6a6a6a"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

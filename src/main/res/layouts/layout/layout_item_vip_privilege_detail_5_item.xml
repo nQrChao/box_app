@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_item_vip_privilege_detail_6"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="180dp"
+        android:layout_height="24dp"
+        android:background="@drawable/ts_shape_ebebeb_big_radius"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_vip"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ts_shape_gradient_1c1201_494133"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="VIP 1"
+            android:textColor="#EBD3A4"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_vip_reward"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:singleLine="true"
+            android:text="？代金券"
+            android:textColor="@color/color_6a6a6a"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

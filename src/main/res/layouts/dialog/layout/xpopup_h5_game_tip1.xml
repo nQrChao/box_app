@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/a_xiao_game_tip_bg"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/idp_15">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/idp_15"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/idp_20"
+                android:layout_centerVertical="true"
+                android:src="@drawable/h5game_xpop_title_img_bg" />
+
+            <ImageView
+                android:id="@+id/titleTextImg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/idp_25"
+                android:layout_centerVertical="true"
+                android:src="@drawable/h5game_xpop_title_img_1" />
+
+        </RelativeLayout>
+
+        <View style="@style/HorizontalLineStyle" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/idp_20"
+            android:paddingVertical="@dimen/idp_5"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/idp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="· 首玩送福利币"
+                    android:textColor="@color/black90"
+                    android:textSize="@dimen/isp_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/idp_10"
+                    android:text="·  该玩法仅限“试玩有奖”内单款小游戏的首次试玩。\n满10分钟后即可领取奖励；"
+                    android:textColor="#636363"
+                    android:textSize="@dimen/isp_13" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/idp_20"
+                    android:text="· 游玩时长送福利币"
+                    android:textColor="@color/black90"
+                    android:textSize="@dimen/isp_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/idp_10"
+                    android:text="·  平台内任意小游戏（含多款）累计体验时长均计入奖励，需手动领取；\n·  当前该活动仅可参与一次，周期玩法开发中敬请期待"
+                    android:textColor="#636363"
+                    android:textSize="@dimen/isp_13" />
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/idp_10"
+            android:paddingVertical="@dimen/idp_10"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/idp_45"
+                android:layout_marginHorizontal="@dimen/idp_90"
+                android:background="@drawable/h5_game_tip_button_selector"
+                android:gravity="center"
+                android:text="我知道了"
+                android:textColor="@color/white"
+                android:textSize="@dimen/isp_15" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

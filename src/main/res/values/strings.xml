@@ -1,0 +1,169 @@
+<resources>
+    <!--<string name="app_name">懂游戏</string>-->
+
+
+    <string-array name="coin_list">
+        <item>10@1</item>
+        <item>50@2</item>
+        <item>100@3</item>
+        <item>500@4</item>
+        <item>1000@5</item>
+        <item>3000@6</item>
+    </string-array>
+
+
+    <string name="share_circle">朋友圈</string>
+    <string name="share_copy_url">复制链接</string>
+    <string name="share_qq">QQ好友</string>
+    <string name="share_qzone">QQ空间</string>
+    <string name="share_wechat">微信好友</string>
+    <string name="save_mine_pic">保存图片</string>
+
+    <string name="save_pic">保存二维码</string>
+    <string name="cancel">取消</string>
+
+
+    <string name="tab_main_1">首页</string>
+    <string name="tab_main_2">游戏</string>
+    <string name="tab_main_3">交易</string>
+    <string name="tab_main_4">我的</string>
+    <string name="tab_main_5">福利</string>
+    <string name="tab_main_center">我的</string>
+
+
+    <string name="string_app_opinion">感谢%1$s位提出宝贵建议的用户</string>
+
+    <string name="string_phone_number_tips">请输入正确的11位手机号码</string>
+    <string name="string_verification_code_tips">请输入验证码</string>
+    <string name="string_verification_code_sent">验证码已发送</string>
+
+    <string name="string_certification_tip">根据相关法律要求，需要核实您的真实身份。该信息仅为认证您的身份，请您放心进行填写。</string>
+    <string name="string_certification_tip_2">根据《网络游戏管理暂行办法》，请登记本人实名信息。未完成将无法进行付款，其中未满18周岁禁止支付。</string>
+
+    <string name="string_exchange_coupon_by_code">兑换成功</string>
+    <string name="string_reward_tips">温馨提示：达到活动要求后，请尽快申请您的奖励，避免逾期无法申请哦！如有问题请通过下方联系客服。</string>
+
+    <string name="string_empty_bt_rebate">1、请确保APP登录账号与游戏充值账号一致；\n2、请查看您的充值金额是否满足游戏返利所需要求；\n3、部分游戏的返利仅限充值后48小时内申请，逾期无法申请，请联系客服。\n4、已提交过申请，但申请失败了，请在申请记录中查看详情并重新发起申请。\n5、部分游戏返利为游戏内自动到账，无需申请！</string>
+    <string name="string_transfer_count_tips">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;为了给玩家提供更好的服务体验，特推出游戏停运转游服务，如果您玩过的某游戏停运了，即可按照充值金额1:1自动获得转游点数，消耗转游点数可在指定游戏内获得奖励。</string>
+    <string name="string_transfer_notice">&lt;font color="#FF0000"&gt;1.转游奖励与游戏内折扣、返利、活动不冲突，可叠加&lt;/font&gt;\n2.提交申请后，转游点数将无法退还！\n3.先创建游戏角色，再来提交转游信息，请确保角色信息完全正确（获得奖励前请勿修改角色名）。</string>
+    <string name="string_no_xh_account">您还未创建游戏角色。</string>
+
+
+    <string name="string_game_favorite_success">收藏成功！可在我的页面[我的游戏]处查看</string>
+    <string name="string_game_cancel_favorite_success">已取消收藏</string>
+
+    <string name="string_un_limit_game_tips">通用首充券为%1$s推出的福利优惠券，可在游戏内充值时进行抵扣。由于部分游戏商暂不支持此券，因此通用首充券的使用，以游戏内实际情况为准！</string>
+    <string name="wifi_download_tips">当前非WIFI网络，继续下载将消耗您的流量，是否继续？</string>
+    <string name="string_download_game_fail">网络不稳定，下载任务已暂停</string>
+    <string name="wifi_play_video_tips">非wifi环境下，播放将产生流量，是否继续？</string>
+
+    <string name="invite_friends_rule">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;邀请好友在本APP体验游戏，好友充值，你可获得充值金额5%的积分奖励。单个好友10000积分封顶，邀请人数不限。</string>
+
+    <string name="string_switch_user">App当前登录的账号（&lt;font color="#FF9F29"&gt;%1$s&lt;/font&gt;）与游戏内账号（&lt;font color="#FF9F29"&gt;%2$s&lt;/font&gt;）不一致，是否切换为游戏内登录账号？</string>
+
+
+    <string-array name="color_list">
+        <item>#eed776</item>
+        <item>#f2a96b</item>
+        <item>#7fda54</item>
+        <item>#aaaae1</item>
+        <item>#d785de</item>
+        <item>#a8a8e2</item>
+        <item>#91d56c</item>
+        <item>#d4ac65</item>
+        <item>#7ac7c6</item>
+        <item>#f09292</item>
+        <item>#83b4e4</item>
+        <item>#d7d87e</item>
+    </string-array>
+
+    <string name="string_comment_tips_2">围绕游戏的画面、玩法、操作、氪金等方面发表你对该游戏的真实看法和体验！</string>
+    <string name="string_comment_tips">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;围绕游戏的画面、玩法、操作、氪金等方面发表你对该游戏的真实看法和体验！其中优质的点评将随机获得30-100积分奖励哦！&lt;font color="#FF8F19"&gt;每日最多发布5条点评，遵守点评规范，更容易获得优质哦~&lt;/font&gt;</string>
+    <string name="string_question_answer_tips">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;想对新接触的游戏有更多的了解？游戏问答----让萌新有地方问，让大神来为您解答。</string>
+
+    <string name="string_ask_question">向 &lt;font color="#FF8F19"&gt;%1$s&lt;/font&gt; 位玩过该游戏的人请教</string>
+    <string name="string_game_played_count">有%1$s人玩过该游戏</string>
+    <string name="string_game_question_and_answer">共%1$s条问题，收到%2$s个回答</string>
+    <string name="string_game_solved_count">共&lt;font color="#FF6371"&gt;%1$s&lt;/font&gt;条问题，收到&lt;font color="#FF6371"&gt;%2$s&lt;/font&gt;个回答，去逛逛吧！</string>
+    <string name="string_game_question_all_answer">查看全部&lt;font color="#FF5400"&gt;&lt;b&gt;%1$s&lt;/b&gt;&lt;/font&gt;个回答</string>
+    <string name="string_game_question_info_answer_count">共&lt;font color="#FF5400"&gt;%1$s&lt;/font&gt;位大神回答了此问题</string>
+
+
+    <string name="string_sample"> 关于你。就是因为我的害怕，我亲眼看你走向她。我喜欢你是事实，你有女朋友也是事实。我以为我不说出口就会保持这样的朋友关系，却还是她赶了个巧，那应该是个寒假，你有女朋友了，我还是听说，我那么爱，却还是无果。</string>
+    <string name="string_commit_tips">修改成功</string>
+
+    <string-array name="sort_list_transaction">
+        <item>最新出售@normal</item>
+        <item>最新成交@trends</item>
+    </string-array>
+
+    <string name="string_transaction_pay_tips">
+        1.角色信息已通过%1$s官方审验；&lt;br&gt;2.购买后，登录游戏，选择【购买到的小号】进入游戏查验角色；&lt;br&gt;3.交易过程仅限小号转移，不存在游戏账号交易或换绑行为，无需担心角色找回；&lt;br&gt;4.购买后&lt;font color="#FF8F19"&gt;不支持退货&lt;/font&gt;。
+    </string>
+
+    <string name="string_transaction_pay_success_tips">
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在游戏中登录购买时所用的账号，“小号管理”点击购买的小号，进入所在的区服，即可获得角色。
+    </string>
+
+    <string name="string_transaction_choose_xh_tips">注意事项：提交出售后，该小号将会冻结，无法登陆。小号卖出后，该小号其他区服的角色将一并售出。</string>
+
+    <string name="string_transfer_confirm_tip_1">提交出售申请后，审核人员会冻结待售小号，无法登陆；</string>
+    <string name="string_transfer_confirm_tip_2">若审核不通过，或者您选择下架商品，可重新登录游戏获得小号；</string>
+    <string name="string_transfer_confirm_tip_3">若小号出售成功，则该小号在游戏中所有区服的角色将会一同售出；</string>
+    <string name="string_transfer_confirm_tip_4">出售成功将收取5%手续费（最低5钱包），剩余收益以钱包形式发送至您的账号内；&lt;font color="#FF0000"&gt;&lt;b&gt;钱包不可提现，仅能用于游戏充值;&lt;/b&gt;&lt;/font&gt;</string>
+    <string name="string_transfer_confirm_tip_5">交易完成后，不支持找回。</string>
+
+    <string name="string_xh_recharge_count">累充%1$s元</string>
+
+
+    <string name="string_sign_in_detail">已连续签到&lt;font color="#FF0000"&gt;%1$s&lt;/font&gt;天，累计签到&lt;font color="#FF0000"&gt;%2$s&lt;/font&gt;天</string>
+
+    <string name="string_sign_in_rule">签到领积分，连签翻倍，最高10积分/每日！断签则重新开始哦～</string>
+    <string name="string_description_task_info_new">通过新手任务，快速玩转%1$sAPP</string>
+    <string name="string_description_task_info_daily">①每日任务将在00:00重置任务进度\n②完成任务后需要点击领取获得奖励哦~</string>
+
+    <string name="string_game_question_info_count">查看全部&lt;font color="#FF8F19"&gt;%1$s&lt;/font&gt;个问题></string>
+    <string name="string_game_answer_info_count">查看全部&lt;font color="#FF0000"&gt;%1$s&lt;/font&gt;个回答</string>
+    <string name="string_user_question_answer_count">发起问题&lt;font color="#FF8F19"&gt;%1$s&lt;/font&gt;次      回复他人&lt;font color="#FF8F19"&gt;%2$s&lt;/font&gt;次</string>
+
+    <string name="string_user_praise_count">累计被赞%1$s次</string>
+    <string name="string_user_comments_count">共发表%1$s条游戏点评</string>
+
+
+    <string name="string_try_game_shuffling">&lt;font color="#FF4949"&gt;%1$s&lt;/font&gt;领取了试玩奖励&lt;font color="#FF4949"&gt;%2$s积分&lt;/font&gt;！</string>
+    <string name="string_xh_recycle_process">1、小号回收可获得实际充值3%的收益。\n2、回收获得的收益仅可用于游戏充值或赎回小号。\n3、回收后72小时内可赎回，逾期不可赎回。\n4、交易中心出售，收益更高。</string>
+    <string name="string_try_game_rule_text">1、同一个任务，每个用户仅能参加一次；\n2、活动结束后3天内可继续领取奖励，逾期无法领取；\n3、禁止采用任何形式的作弊手段，一经发现，%1$s有权取消奖励并封禁账号。</string>
+
+    <string name="string_qa_rule_1">发布提问后，系统将自动邀请资深玩家，为你作答；&lt;font color="#FF5400"&gt;受邀回答单日最高奖100积分！&lt;/font&gt;</string>
+    <string name="string_qa_rule_2">* &lt;font color="#9B9B9B"&gt;提问/回答请在&lt;/font&gt;[我的问答]&lt;font color="#9B9B9B"&gt;中查看哦~&lt;/font&gt;</string>
+
+    <string name="string_comment_rule_1">发布游戏点评，优质有奖。每日最高可获得&lt;font color="#FF5400"&gt;500积分&lt;/font&gt;奖励（价值5.0元）~！</string>
+
+    <string name="string_game_anti_addiction">游戏适合18岁以上的用户使用。\n未实名用户请实名认证。\n适度游戏益脑，请您合理控制游戏时间，避免沉溺游戏影响生活。注意自我保护，防范网络陷阱。</string>
+    <string name="string_kefu_tips">&lt;font color="#FF7200"&gt;防骗提示:&lt;/font&gt;在线客服QQ（3529307342），直接点击“联系我”，复制号码到QQ搜索发起会话即可。</string>
+
+
+    <string name="tab_sub_main_1">首页</string>
+    <string name="tab_sub_main_2">论坛</string>
+    <string name="tab_sub_main_3">社区</string>
+    <string name="tab_sub_main_4">我的</string>
+
+
+    <string name="string_dyx_private">欢迎使用%1$sAPP！\n\n我们特别提示您在使用%2$sAPP前，认真阅读《用户协议》和《隐私政策》，以了解我们在收集和使用您相关个人信息时的处理规则。我们将严格按照政策内容使用和保护您的个人信息，为您提供更好的服务，感谢您的信任！\n</string>
+    <string name="string_dyx_permissions">“%1$s”需要获取该权限才可正常使用</string>
+    <string name="string_dyx_integral">积分是%1$sAPP的重要道具，可兑换首充券，代金券等其他福利，积分仅可在每日任务，点评等APP任务中获得，不支持充值。</string>
+    <string name="string_dyx_splash">变态福利手游，尽在%1$s！</string>
+    <string name="string_dyx_club">%1$s VIP </string>
+    <string name="string_dyx_vip">%1$s·省钱卡</string>
+    <string name="string_dyx_month_card">开通%1$s省钱卡 6元券天天拿</string>
+    <string name="string_dyx_vip_liability">温馨提示：%1$s省钱卡属虚拟产品，售出不予退款，最终解释权归%1$s平台所有</string>
+    <string name="string_dyx_business">%1$s商务合作</string>
+    <string name="string_dyx_introduce">%1$s有众多高消费户，并能给予合作方持续、稳定、高额的成果回报。我们热忱欢迎与业界同行深度合作。</string>
+    <string name="string_dyx_kefu">%1$s，懂生活，更懂你</string>
+
+    <string name="string_dialog_voucher_tips">恭喜您成功领取了新人见面礼的%1$s张通用优惠券，已放入您的钱包。</string>
+
+    <string name="string_cancellation_agreement_tips">请先同意用户协议</string>
+    <string name="string_binding_phone_tips">请先绑定手机号码</string>
+    <string name="string_ling">0</string>
+</resources>

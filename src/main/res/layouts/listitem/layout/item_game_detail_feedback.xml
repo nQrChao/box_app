@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/shape_ffffff_4_radius_white_line_999999"
+        android:gravity="center"
+        android:textColor="#232323"
+        android:textSize="14sp"
+        tools:text="无法安装" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_user_vip_level"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_user_vip_level"
+        android:layout_width="48dp"
+        android:layout_height="14dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/ts_shape_gradient_ff9900_ff4e00"
+        android:gravity="center"
+        android:paddingLeft="6dp"
+        android:text="VIP1"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/iv_user_vip_level"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:src="@mipmap/ic_vip_unopen_new" />
+
+
+</FrameLayout>

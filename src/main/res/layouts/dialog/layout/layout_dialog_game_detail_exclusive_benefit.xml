@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:background="@drawable/shape_white_radius_15_top"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="领取专属福利"
+                android:textSize="24sp"
+                android:textColor="#232323"/>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="20dp"
+                android:src="@mipmap/ic_game_detail_exclusive_benefit_close"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="【发放方式】:次日系统自动已邮件形式发送\n单日累计充值100元，返利【1000】%\n单日累计充值500元，返利【1000】%\n单日累计充值1000元，返利【1000】%\n单日累计充值3000元，返利【1000】%\n单日累计充值5000元，返利【1000】%\n单日累计充值8000元，返利【1000】%\n单日累计充值10000元，返利【1000】%\n返利货币为：元宝\n返利发放方式：自动返利(邮件)\n返利申请是否需要角色id:否\n月卡是否算VIP经验:否\n是否算首充:否\n充值[月卡、终身卡、礼包、基金]是否计入返利:是"
+                android:textSize="14sp"
+                android:textColor="#232323"/>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_55c0fe_5571fe_big_radius"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="前往领取"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/tv_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:text="直接下载"
+            android:textSize="14sp"
+            android:textColor="#818181"/>
+
+    </LinearLayout>
+
+</LinearLayout>

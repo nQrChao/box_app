@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/layout_status_bar" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/item_title_layout" />
+
+                <TextView
+                    android:id="@+id/tv_instruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:padding="14dp"
+                    android:text="使用说明"
+                    android:textColor="#232323"
+                    android:textSize="14sp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_game_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_game_coupon_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="游戏券"
+                    android:textSize="18sp"
+                    android:textColor="#5571FE"/>
+
+                <TextView
+                    android:id="@+id/tv_game_coupon_tips"
+                    android:layout_width="70dp"
+                    android:layout_height="17dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_1a5571fe_big_radius"
+                    android:text="0张"
+                    android:textSize="10sp"
+                    android:textColor="#5571FE"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mall_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_mall_coupon_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="平台券"
+                    android:textSize="18sp"
+                    android:textColor="#232323"/>
+
+                <TextView
+                    android:id="@+id/tv_mall_coupon_tips"
+                    android:layout_width="70dp"
+                    android:layout_height="17dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_e2e2e2_big_radius"
+                    android:text="0张"
+                    android:textSize="10sp"
+                    android:textColor="#9B9B9B"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_history_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_history_coupon_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="历史券"
+                    android:textSize="18sp"
+                    android:textColor="#232323"/>
+
+                <TextView
+                    android:id="@+id/tv_history_coupon_tips"
+                    android:layout_width="70dp"
+                    android:layout_height="17dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_e2e2e2_big_radius"
+                    android:text="明细"
+                    android:textSize="10sp"
+                    android:textColor="#9B9B9B"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginBottom="30dp"
+            android:text="·游戏内支付时选择“优惠券”，选择对应的代金券抵扣"
+            android:textSize="12sp"
+            android:textColor="#9B9B9B"/>
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

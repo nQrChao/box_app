@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_coupon_item"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/ts_shape_ffefea_radius"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+
+
+                android:textColor="@color/color_ff0000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_coupon_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/color_ff0000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_coupon_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:includeFontPadding="false"
+            android:text="无门槛券"
+            android:textColor="@color/color_413f3e"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:includeFontPadding="false"
+            android:text="(限量抢购 数量有限)"
+            android:textColor="@color/color_adabaa"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="20dp"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:background="@drawable/shape_ts_semicircle_bottom" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/img_game_coupon_line" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_ts_semicircle_top" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="27"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <com.zqhy.app.widget.CircularProgressView
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:backColor="#FFCABA"
+                app:backWidth="6dp"
+                app:progressColor="#FF2300"
+                app:progressWidth="6dp" />
+
+            <TextView
+                android:id="@+id/tv_coupon_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:includeFontPadding="false"
+                android:text="已抢\n80%"
+                android:textColor="@color/color_ff5723"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_coupon_action"
+            android:layout_width="68dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="立即领取"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_coupon_remain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="5天后结束"
+            android:textColor="@color/color_ff0000"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

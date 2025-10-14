@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/shape_333333_big_radius"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_time_over"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        tools:text="试玩时间:10:50:25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_fragment_cloud_vegame_5"
+            android:paddingHorizontal="5dp"
+            android:text="退出"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/network_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:drawableTop="@mipmap/ic_fragment_cloud_vegame_2"
+            android:drawablePadding="4dp"
+            android:paddingHorizontal="5dp"
+            android:text="5ms"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:drawableTop="@mipmap/ic_fragment_cloud_vegame_6"
+            android:drawablePadding="2dp"
+            android:paddingHorizontal="5dp"
+            android:text="标清"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/kefu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:drawableTop="@mipmap/ic_fragment_cloud_vegame_3"
+            android:drawablePadding="2dp"
+            android:paddingHorizontal="5dp"
+            android:text="客服"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

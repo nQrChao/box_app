@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/shape_white_radius"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_card_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:includeFontPadding="false"
+        android:paddingLeft="6dp"
+        android:paddingTop="4dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="4dp"
+        android:text="累计充值满100元可领"
+        android:textColor="#EE0303"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/color_232323"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_card_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余："
+                android:textColor="#868686"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_game_card_left"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:text="131"
+                android:textColor="#868686"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_card_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_gift_arrow"
+                android:drawablePadding="6dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="使用说明"
+                android:textColor="@color/color_ff8f19"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/card_count_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar_color_game_card" />
+
+            <TextView
+                android:id="@+id/tv_card_count_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="0%"
+                android:textColor="@color/color_ff0000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_receive"
+                android:layout_width="64dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ts_shape_d6d6d6_radius"
+                android:gravity="center"
+                android:text="领取"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_card_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="礼包码："
+                android:textColor="#868686"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_card_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="VIP9999WCFI870"
+                android:textColor="@color/color_ff0000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_copy"
+                android:layout_width="64dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ts_shape_d6d6d6_radius"
+                android:gravity="center"
+                android:text="复制"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_card_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/app_name"
+            android:textColor="@color/color_7a7a7a"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

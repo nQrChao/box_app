@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_common_title" />
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f2f2f2"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@mipmap/ic_xh_recycle_rule_tag"
+                    android:drawablePadding="2dp"
+                    android:gravity="center"
+                    android:text="回收规则"
+                    android:textColor="@color/color_232323"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shape_white_radius"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/shape_type_1"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:lineSpacingMultiplier="1.25"
+                            android:text="回收仅计算2021年1月1日以后的充值金额（免费平台币不计算在内）"
+                            android:textColor="@color/color_999999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/shape_type_1"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:lineSpacingMultiplier="1.25"
+                            android:text="根据小号实际付费计算回收得到的代金券金额，回收代金券使用范围为全平台游戏可用。（少数游戏不可用）回收比例：1000以下的部分充值为10%，1000～3000的部分5%，超出3000的部分为3%；"
+                            android:textColor="@color/color_999999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/shape_type_1"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="3"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:lineSpacingMultiplier="1.25"
+                            android:text="根据计算得到的代金券金额获得种类有：满6减5、满30减20、满100减40、满300减100、满600减170，回收可得最低代价券面额为5元；"
+                            android:textColor="@color/color_999999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/shape_type_1"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:lineSpacingMultiplier="1.25"
+                            android:text="单次回收最高可获得总金额1000元的代金券；"
+                            android:textColor="@color/color_999999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/shape_type_1"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="5"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:lineSpacingMultiplier="1.25"
+                            android:text="小号实际充值满10元，即可回收获得满6减5元代金券一张；"
+                            android:textColor="@color/color_999999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/shape_type_1"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="6"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:lineSpacingMultiplier="1.25"
+                            android:text="回收完成的账号不可赎回。"
+                            android:textColor="@color/color_999999"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:includeFontPadding="false"
+                        android:lineSpacingMultiplier="1.25"
+                        android:text="例：\n用户实际充值860元，可获得代金券金额=860*10%=86，可以得到两张40，一张5元代金券。\n例：\n用户实际充值1700元，可获得代金券金额=1000*10%+700*5%=135可以得到一张100，一张20，三张5元代金券。\n\n\n提示：高价值小号建议在交易中心出售收益更高哦～"
+                        android:textColor="@color/color_999999"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</LinearLayout>

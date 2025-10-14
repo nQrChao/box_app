@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_title" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f2f2f2">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/img_user_growth_value_background" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/ic_user_growth_value"
+                            android:drawablePadding="6dp"
+                            android:gravity="center"
+                            android:text="我的成长值  "
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_user_growth_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="0"
+                            android:textColor="#FFCD64"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+
+                        <TextView
+                            android:id="@+id/tv_user_growth_value_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="成长值明细 >"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:id="@id/flex_box_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:alignItems="flex_end"
+                        app:justifyContent="space_between">
+
+
+                    </com.google.android.flexbox.FlexboxLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_white_radius"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="18dp"
+                                android:layout_marginBottom="18dp"
+                                android:drawableLeft="@mipmap/ic_center_title_label"
+                                android:drawableRight="@mipmap/ic_center_title_label"
+                                android:drawablePadding="8dp"
+                                android:gravity="center"
+                                android:text="什么是成长值？"
+                                android:textColor="@color/color_232323"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:lineSpacingMultiplier="1.25"
+                                android:text="成长值是指您注册账号后在平台活跃、消费所获得的，达到不同等级所需的成长值，即可解锁对应等级专属特权。"
+                                android:textColor="@color/color_6a6a6a"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:src="@mipmap/img_vip_user_label" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_white_radius"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="18dp"
+                                android:layout_marginBottom="8dp"
+                                android:drawableLeft="@mipmap/ic_center_title_label"
+                                android:drawableRight="@mipmap/ic_center_title_label"
+                                android:drawablePadding="8dp"
+                                android:gravity="center"
+                                android:text="如何获得成长值？"
+                                android:textColor="@color/color_232323"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:layout_width="60dp"
+                                        android:layout_height="6dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@drawable/ts_shape_big_radius_fec283" />
+
+                                    <TextView
+                                        android:id="@+id/tv_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="2dp"
+                                        android:text="消费成长"
+                                        android:textColor="@color/color_242424"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_toRightOf="@id/tv_2"
+                                        android:text="(通过平台充值功能消费)"
+                                        android:textColor="@color/color_828282"
+                                        android:textSize="12sp" />
+
+
+                                </RelativeLayout>
+
+                                <com.google.android.flexbox.FlexboxLayout
+                                    android:id="@+id/flex_box_layout_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:flexDirection="column"
+                                    app:flexWrap="wrap" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:layout_width="60dp"
+                                        android:layout_height="6dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@drawable/ts_shape_big_radius_fec283" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="2dp"
+                                        android:text="活跃成长"
+                                        android:textColor="@color/color_242424"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+
+                                </RelativeLayout>
+
+                                <com.google.android.flexbox.FlexboxLayout
+                                    android:id="@+id/flex_box_layout_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:flexDirection="column"
+                                    app:flexWrap="wrap" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:layout_width="88dp"
+                                        android:layout_height="6dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@drawable/ts_shape_big_radius_fec283" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="2dp"
+                                        android:text="账号安全成长"
+                                        android:textColor="@color/color_242424"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+
+                                </RelativeLayout>
+
+                                <com.google.android.flexbox.FlexboxLayout
+                                    android:id="@+id/flex_box_layout_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:flexDirection="column"
+                                    app:flexWrap="wrap" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:src="@mipmap/img_vip_user_label" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_white_radius"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="18dp"
+                                android:layout_marginBottom="18dp"
+                                android:drawableLeft="@mipmap/ic_center_title_label"
+                                android:drawableRight="@mipmap/ic_center_title_label"
+                                android:drawablePadding="8dp"
+                                android:gravity="center"
+                                android:text="成长值有效期是多久？"
+                                android:textColor="@color/color_232323"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginRight="6dp"
+                                        android:background="@drawable/concentric_circles_ff7500_ffe1c1_10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="账号安全成长获取得的成长值永久有效"
+                                        android:textColor="@color/color_6a6a6a"
+                                        android:textSize="13sp" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginRight="6dp"
+                                        android:background="@drawable/concentric_circles_ff7500_ffe1c1_10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="连续15天没有以下行为将衰退成长值"
+                                        android:textColor="@color/color_6a6a6a"
+                                        android:textSize="13sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginTop="6dp"
+                                    android:orientation="vertical">
+
+                                    <TableLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TableRow>
+
+                                            <TextView
+                                                android:layout_width="18dp"
+                                                android:layout_height="18dp"
+                                                android:layout_marginRight="4dp"
+                                                android:background="@drawable/ts_shape_round_ff8a24"
+                                                android:gravity="center"
+                                                android:text="1"
+                                                android:textColor="@color/white"
+                                                android:textSize="11sp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="登录app；"
+                                                android:textColor="@color/color_6a6a6a"
+                                                android:textSize="13sp" />
+                                        </TableRow>
+
+                                        <TableRow android:layout_marginTop="6dp">
+
+                                            <TextView
+                                                android:layout_width="18dp"
+                                                android:layout_height="18dp"
+                                                android:layout_marginRight="4dp"
+                                                android:background="@drawable/ts_shape_round_ff8a24"
+                                                android:gravity="center"
+                                                android:text="2"
+                                                android:textColor="@color/white"
+                                                android:textSize="11sp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="登录运营中游戏；"
+                                                android:textColor="@color/color_6a6a6a"
+                                                android:textSize="13sp" />
+                                        </TableRow>
+                                    </TableLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginRight="6dp"
+                                        android:background="@drawable/concentric_circles_ff7500_ffe1c1_10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="每次衰减成长值30，衰减后重新计算周期天数"
+                                        android:textColor="@color/color_6a6a6a"
+                                        android:textSize="13sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_marginRight="6dp"
+                                        android:background="@drawable/concentric_circles_ff7500_ffe1c1_10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="因充值行为增加的成长值，如有退款，相应的 成长值会进行扣减。"
+                                        android:textColor="@color/color_6a6a6a"
+                                        android:textSize="13sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:src="@mipmap/img_vip_user_label" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

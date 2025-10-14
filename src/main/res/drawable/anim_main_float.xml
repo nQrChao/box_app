@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/xhl0001"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0002"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0003"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0004"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0005"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0006"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0007"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0008"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0009"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0010"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0011"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0012"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0013"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0014"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0015"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0016"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0017"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0018"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0019"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0020"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0021"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0022"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0023"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0024"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0025"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0026"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0027"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0028"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0029"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0030"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0031"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0032"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0033"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0034"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0035"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0036"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0037"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0038"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0039"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0040"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0041"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0042"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0043"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0044"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0045"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0046"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0047"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0048"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0049"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0050"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0051"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0052"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0053"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0054"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0055"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0056"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0057"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0058"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0059"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0060"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0061"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0062"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0063"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0064"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0065"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0066"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0067"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0068"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0069"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0070"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0071"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0072"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0073"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0074"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0075"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/xhl0076"
+        android:duration="2000" />
+</animation-list>

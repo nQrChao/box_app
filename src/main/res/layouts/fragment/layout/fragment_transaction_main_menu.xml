@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/ll_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_audit_transaction_main_menu_1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_jszy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="70dp"
+                android:text="角色转移"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lin_jyxz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/shape_2d86ff_12_radius"
+                android:gravity="center_vertical"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                android:paddingStart="8dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="4dp"
+                app:layout_constraintLeft_toRightOf="@id/tv_jszy"
+                app:layout_constraintTop_toTopOf="@id/tv_jszy">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="7px"
+                    android:src="@mipmap/ic_audit_transaction_main_menu_8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="须知"
+                    android:textColor="#ffffff"
+                    android:textSize="44px" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:text="未成年用户无法参与\n角色转移不涉及账号买卖"
+                android:textColor="#010101"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_jszy" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_1"
+                app:layout_constraintVertical_weight="1">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/con_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_7"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_2_2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:text="购买"
+                            android:textColor="#fff"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toRightOf="@+id/image2"
+                            app:layout_constraintTop_toTopOf="@+id/image2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginBottom="6dp"
+                            android:text="小号迁移，无需换绑"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/image2"
+                            app:layout_constraintLeft_toRightOf="@+id/image2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/con_3"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_7"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_3_3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:text="回收"
+                            android:textColor="#fff"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toRightOf="@+id/image3"
+                            app:layout_constraintTop_toTopOf="@+id/image3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginBottom="6dp"
+                            android:text="官方回收，立享收益"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/image3"
+                            app:layout_constraintLeft_toRightOf="@+id/image3" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/con_4"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_4"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_7"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/image4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_4_4"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:text="捡漏"
+                            android:textColor="#fff"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toRightOf="@+id/image4"
+                            app:layout_constraintTop_toTopOf="@+id/image4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginBottom="6dp"
+                            android:text="低价捡漏淘号区"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/image4"
+                            app:layout_constraintLeft_toRightOf="@+id/image4" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/con_5"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_5"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_7"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/image5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_5_5"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:text="出售"
+                            android:textColor="#fff"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toRightOf="@+id/image5"
+                            app:layout_constraintTop_toTopOf="@+id/image5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginBottom="6dp"
+                            android:text="闲置小号，出售得币"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/image5"
+                            app:layout_constraintLeft_toRightOf="@+id/image5" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/con_6"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_7"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/image6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@mipmap/ic_audit_transaction_main_menu_6_6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:text="明细"
+                            android:textColor="#fff"
+                            android:textSize="19sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toRightOf="@+id/image6"
+                            app:layout_constraintTop_toTopOf="@+id/image6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginBottom="6dp"
+                            android:text="查看交易明细记录"
+                            android:textColor="#fff"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/image6"
+                            app:layout_constraintLeft_toRightOf="@+id/image6" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</LinearLayout>

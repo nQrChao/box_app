@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_white_radius"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="专区"
+                        android:textColor="@color/color_333333"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@mipmap/img_game_classification" />
+                </RelativeLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/rg_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_tab_bt"
+                        android:layout_width="58dp"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="12dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="BT版"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tab_discount"
+                        android:layout_width="58dp"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="12dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="折扣"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tab_h5"
+                        android:layout_width="58dp"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="12dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="H5"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tab_single"
+                        android:layout_width="58dp"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="12dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="单机"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="筛选"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/flexbox_layout_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:alignContent="flex_start"
+                    app:alignItems="center"
+                    app:flexDirection="row"
+                    app:flexWrap="wrap"
+                    app:justifyContent="flex_start"
+                    app:showDivider="beginning|middle">
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="游戏玩法"
+                            android:textColor="@color/color_333333"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:id="@+id/flexbox_layout_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            app:alignContent="flex_start"
+                            app:alignItems="center"
+                            app:flexDirection="row"
+                            app:flexWrap="wrap"
+                            app:justifyContent="flex_start"
+                            app:showDivider="beginning|middle">
+
+                        </com.google.android.flexbox.FlexboxLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="类型&amp;题材"
+                            android:textColor="@color/color_333333"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:id="@+id/flexbox_layout_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            app:alignContent="flex_start"
+                            app:alignItems="center"
+                            app:flexDirection="row"
+                            app:flexWrap="wrap"
+                            app:justifyContent="flex_start"
+                            app:showDivider="beginning|middle">
+
+                        </com.google.android.flexbox.FlexboxLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:src="@mipmap/ic_game_classification_arrow_down" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_vip_member_type"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ts_shape_vip_member_item_normal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_vip_member_free_days"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:background="@drawable/ts_shape_vip_member_angle_selected"
+        android:gravity="center"
+        android:minWidth="62dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="超值福利"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_vip_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月卡"
+            android:textColor="@color/color_36322e"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_vip_member_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(30张)"
+            android:textColor="@color/color_664630"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="@color/color_36322e"
+            android:textSize="12sp"
+            android:textStyle="bold"  />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_vip_member_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_36322e"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_vip_member_total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:text="价值180元"
+        android:textColor="@color/color_fa2f2a"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible"
+        android:src="@mipmap/ic_vip_member_arrow" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_vip_member_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.25"
+        android:text="30张代金券\n省130元"
+        android:textColor="@color/color_745130"
+        android:textSize="10sp"
+        android:visibility="gone" />
+</LinearLayout>

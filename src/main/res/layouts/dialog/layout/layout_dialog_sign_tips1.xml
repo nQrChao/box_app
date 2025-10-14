@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/shape_fffaf4_25_radius"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:textStyle="bold"
+            android:text="签到成功"
+            android:textSize="30sp"
+            android:textColor="#E46A00"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获得"
+                android:textSize="14sp"
+                android:textColor="#89543B"/>
+
+            <TextView
+                android:id="@+id/tv_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20积分"
+                android:textSize="14sp"
+                android:textColor="#E46A00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="。还有更多积分等你领取"
+                android:textSize="14sp"
+                android:textColor="#89543B"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_vip"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/shape_ffecd9_5_radius_stroke_ffedb8"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="会员签到"
+                    android:textSize="16sp"
+                    android:textColor="#814C46"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="专享双重签到"
+                        android:textSize="12sp"
+                        android:textColor="#89543B"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="直接领平台币"
+                        android:textSize="12sp"
+                        android:textColor="#FF2D3F"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_task_tips_dialog_tip_1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_task"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/shape_ffecd9_5_radius_stroke_ffedb8"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="每日任务领1100积分"
+                    android:textSize="16sp"
+                    android:textColor="#814C46"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="会员"
+                        android:textSize="12sp"
+                        android:textColor="#89543B"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="额外再送300积分"
+                        android:textSize="12sp"
+                        android:textColor="#FF2D3F"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_task_tips_dialog_tip_2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_try"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/shape_ffecd9_5_radius_stroke_ffedb8"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="试玩奖励海量积分"
+                    android:textSize="16sp"
+                    android:textColor="#814C46"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="边玩边赚，积分获得"
+                        android:textSize="12sp"
+                        android:textColor="#89543B"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="无上限"
+                        android:textSize="12sp"
+                        android:textColor="#FF2D3F"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_task_tips_dialog_tip_3"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:src="@mipmap/ic_task_tips_dialog_know"/>
+
+    </LinearLayout>
+
+</LinearLayout>

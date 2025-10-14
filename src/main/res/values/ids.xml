@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rotation_animator_tag" type="id" />
+
+    <item name="tag_main_menu_1" type="id"></item>
+    <item name="tag_main_menu_2" type="id"></item>
+    <item name="tag_main_menu_3" type="id"></item>
+    <item name="tag_main_menu_4" type="id"></item>
+
+
+    <item name="tag_main_menu_try_game" type="id"></item>
+    <item name="tag_main_menu_xh_recycle" type="id"></item>
+    <item name="tag_main_menu_user_games" type="id"></item>
+    <item name="tag_main_menu_rewards" type="id"></item>
+    <item name="tag_main_menu_welfare" type="id"></item>
+    <item name="tag_main_menu_server" type="id"></item>
+    <item name="tag_main_menu_activity" type="id"></item>
+    <item name="tag_main_menu_web_game" type="id"></item>
+    <item name="tag_main_menu_more" type="id"></item>
+    <item name="tag_main_menu_game_classification" type="id"></item>
+
+
+    <item name="main_page_id_login" type="id" />
+    <item name="main_page_id_user" type="id" />
+
+    <item name="main_page_id_gold" type="id" />
+    <item name="main_page_id_integral" type="id" />
+
+    <item name="main_page_id_bottom_button_1" type="id" />
+    <item name="main_page_id_bottom_button_2" type="id" />
+
+    <item name="tag_fragment" type="id" />
+    <item name="tag_sub_fragment" type="id" />
+    <item name="tag_first" type="id" />
+    <item name="tag_second" type="id" />
+
+
+    <item name="item_setting_download" type="id" />
+    <item name="item_setting_wechat_pay_plugin" type="id" />
+    <item name="item_setting_business_cooperation" type="id" />
+    <item name="item_setting_network_line_switching" type="id" />
+    <item name="item_setting_clear_cache" type="id" />
+    <item name="item_setting_check_update" type="id" />
+    <item name="item_setting_check_test" type="id" />
+
+
+    <item name="item_user_mine_menu_user_game" type="id" />
+    <item name="item_user_mine_menu_vouchers" type="id" />
+    <item name="item_user_mine_menu_rebate" type="id" />
+    <item name="item_user_mine_menu_kefu_feedback" type="id" />
+
+    <item name="item_user_mine_more_real_name_authentication" type="id" />
+    <item name="item_user_mine_more_activity" type="id" />
+    <item name="item_user_mine_more_zhuanyou" type="id" />
+    <item name="item_user_mine_more_strategy" type="id" />
+    <item name="item_user_mine_more_invite" type="id" />
+    <item name="item_user_mine_xh_new_recycle" type="id" />
+    <item name="item_user_mine_more_cooperation" type="id" />
+    <item name="item_user_mine_more_open_platform" type="id" />
+
+    <item name="fuli_style_id_big_round" type="id" />
+    <item name="fuli_style_id_middle_round" type="id" />
+    <item name="fuli_style_id_image" type="id" />
+
+
+    <item name="tuijian_style_a_id_1" type="id" />
+    <item name="tuijian_style_b_id_1" type="id" />
+    <item name="tuijian_style_b_id_2" type="id" />
+    <item name="tuijian_style_c_id_1" type="id" />
+
+
+</resources>

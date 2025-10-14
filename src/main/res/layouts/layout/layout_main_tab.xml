@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/transparent"
+    android:minHeight="60dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom"
+        android:background="@color/color_f7f7f7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <CheckedTextView
+                android:id="@+id/tab_main_page_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="@string/tab_main_1"
+                android:textSize="12sp" />
+
+            <CheckedTextView
+                android:id="@+id/tab_main_page_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="@string/tab_main_2"
+                android:textSize="12sp" />
+
+            <CheckedTextView
+                android:id="@+id/tab_main_page_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="福利中心"
+                android:textSize="12sp" />
+
+            <CheckedTextView
+                android:id="@+id/tab_main_page_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:clickable="false"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="交易"
+                android:textSize="12sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <CheckedTextView
+                    android:id="@+id/tab_main_page_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/tab_main_4"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="4dp"
+                    android:includeFontPadding="false"
+                    android:background="@drawable/shape_ff1414_big_radius"
+                    android:paddingHorizontal="4dp"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_tab_main_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_center_button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_main_center_button_new" />
+
+        <RadioButton
+            android:id="@+id/ctv_tab_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="@string/tab_main_center"
+            android:textSize="@dimen/text_size_nano"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</FrameLayout>

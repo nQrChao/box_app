@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/talkingleft0002"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0003"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0004"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0005"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0006"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0007"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0008"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0009"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0010"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0011"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0012"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0013"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0014"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0015"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0016"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0017"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0018"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0019"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0020"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0021"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0022"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0023"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0024"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0025"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0026"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0027"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0028"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0029"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0030"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0031"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0032"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0033"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0034"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0035"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0036"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0037"
+        android:duration="1500" />
+    <item
+        android:drawable="@drawable/talkingleft0039"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0040"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0041"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0042"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/talkingleft0043"
+        android:duration="@integer/duration_main_float" />
+    <item
+        android:drawable="@drawable/shape_transparent"
+        android:duration="2000" />
+
+</animation-list>

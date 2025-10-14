@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/ic_new_vip_birthday_bg"
+        android:layout_marginHorizontal="32dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="225dp"
+            android:layout_marginHorizontal="15dp"
+            android:lineSpacingMultiplier="1.25"
+            android:text="新的一年，新的一岁生辰。我们为你准备了一份小礼物，祝愿你永远快乐，幸福，健康。"
+            android:textSize="14sp"
+            android:textColor="#FFF8D1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="15dp"
+            android:background="@mipmap/ic_new_vip_birthday_content_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥ "
+                    android:textSize="15sp"
+                    android:textColor="#C06E15"/>
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    tools:text="50"
+                    android:textSize="48sp"
+                    android:textColor="#C06E15"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通用代金券"
+                    android:textSize="18sp"
+                    android:textColor="#C06E15"/>
+
+                <TextView
+                    android:id="@+id/tv_cdt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    tools:text="满128元可用"
+                    android:textSize="14sp"
+                    android:textColor="#C06E15"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="30天内有效，请及时使用哦！"
+            android:textSize="14sp"
+            android:textColor="#FFF8D1"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="22dp"
+            android:gravity="center"
+            android:background="@mipmap/ic_new_vip_birthday_buttom_bg"
+            android:textStyle="bold"
+            android:text="收下了"
+            android:textSize="18sp"
+            android:textColor="#C06E15"/>
+
+    </LinearLayout>
+</RelativeLayout>

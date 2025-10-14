@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_indicator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <com.kcrason.dynamicpagerindicatorlibrary.DynamicPagerIndicator
+        android:id="@+id/dynamic_pager_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="12dp"
+        app:indicatorLineEndColor="#0079FB"
+        app:indicatorLineHeight="6dp"
+        app:indicatorLineMarginBottom="0dp"
+        app:indicatorLineMarginTop="8dp"
+        app:indicatorLineRadius="6dp"
+        app:indicatorLineScrollMode="dynamic"
+        app:indicatorLineStartColor="#0D9EFF"
+        app:indicatorLineWidth="30dp"
+        app:pagerIndicatorMode="scrollable"
+        app:tabNormalTextColor="@color/color_9b9b9b"
+        app:tabNormalTextSize="17sp"
+        app:tabSelectedBold="true"
+        app:tabSelectedTextColor="@color/color_232323"
+        app:tabSelectedTextSize="17sp" />
+</FrameLayout>

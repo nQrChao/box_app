@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@android:color/white" />
+
+    <item
+        android:bottom="@dimen/idp_300"
+        android:gravity="center"
+        android:left="@dimen/idp_130"
+        android:right="@dimen/idp_130"
+        android:top="@dimen/idp_300">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/mod_icon" />
+    </item>
+
+</layer-list>

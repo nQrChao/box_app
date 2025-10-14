@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zqhy.app.newproject">
+
+    <uses-permission android:name="android.permission.CAMERA" tools:node="remove" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" tools:node="remove" />
+    <!--允许程序访问网络-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序访问摄像头进行拍照-->
+<!--    <uses-permission android:name="android.permission.CAMERA" />-->
+    <!--允许程序安装应用-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!--允许程序改变WiFi状态-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 允许程序访问日历 -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <!--存储卡权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <!--允许应用将任务移动到前台和后台-->
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <!--    <uses-permission android:name="android.permission.RESTART_PACKAGES" />-->
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION"
+        tools:node="remove" />
+    <!-- 系统悬浮窗 -->
+    <!--    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
+
+    <!--    <uses-permission android:name="android.permission.GET_TASKS" />-->
+    <!--    &lt;!&ndash; 多媒体相关 &ndash;&gt;-->
+    <!--    &lt;!&ndash; Android11：V8.6.1 及之后的版本不需要。其他：V4.4.0 及之后的版本不需要。 &ndash;&gt;-->
+    <!--    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+
+    <!--    &lt;!&ndash; 控制呼吸灯，振动器等，用于新消息提醒 &ndash;&gt;-->
+    <!--    <uses-permission android:name="android.permission.FLASHLIGHT" />-->
+    <!--    <uses-permission android:name="android.permission.VIBRATE" />-->
+
+    <!--    &lt;!&ndash; 8.0+系统需要&ndash;&gt;-->
+    <!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />-->
+
+    <!--    &lt;!&ndash; 下面的 uses-permission 一起加入到您的 AndroidManifest 文件中。&ndash;&gt;-->
+    <!--    <permission-->
+    <!--        android:name="${applicationId}.permission.RECEIVE_MSG"-->
+    <!--        android:protectionLevel="signature"/>-->
+    <!--    <uses-feature-->
+    <!--        android:name="android.hardware.camera"-->
+    <!--        android:required="false" />-->
+    <!--    <uses-permission android:name="${applicationId}.permission.RECEIVE_MSG"/>-->
+
+
+    <application
+        android:name="com.zqhy.app.App"
+        android:allowBackup="false"
+        android:allowNativeHeapPointerTagging="false"
+        android:exported="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/mod_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label,android:allowBackup,android:icon,android:theme"
+        tools:targetApi="r">
+
+        <meta-data
+            android:name="ScopedStorage"
+            android:value="true" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.zqhy.app.core.view.AppSplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zqhy.app.core.view.main.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustResize"></activity>
+
+        <activity
+            android:name="com.zqhy.app.core.view.splash.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Fullscreen"></activity>
+
+        <activity
+            android:name="com.zqhy.app.core.view.transaction.PreviewActivity1"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name="com.zqhy.app.core.view.FragmentHolderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.zqhy.app.core.view.game.GameDetailInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zqhy.app.core.view.video.VideoPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.zqhy.app.core.view.browser.BrowserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.zqhy.app.core.view.browser.BrowserGameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.zqhy.app.core.view.browser.BrowserCloudActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.zqhy.app.core.view.browser.BrowserCloudPayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.zqhy.app.core.view.browser.BrowserActivity1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.zqhy.app.core.view.login.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+
+        <activity
+            android:name="com.zqhy.app.core.view.message.MessageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zqhy.app.core.view.cloud_vegame.CloudVeGameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor"
+            android:theme="@style/FullscreenTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.zqhy.app.core.view.cloud_vegame.CloudVeGameDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor"
+            android:theme="@style/FullscreenTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.zqhy.app.core.view.cloud_vegame.CloudVeGameHangupActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor"
+            android:theme="@style/FullscreenTheme"
+            tools:ignore="Instantiatable" />
+
+        <activity
+            android:name="com.zqhy.app.core.view.ReportTouTiaoDataActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zqhy.app.core.view.login.SDKAuthLoginActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.zqhy.app.core.view.chat.ChatListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+
+        <activity
+            android:name="com.zqhy.app.core.view.chat.ChatActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.zqhy.app.core.view.chat.ChatSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.zqhy.app.core.view.community.user.CommunityUserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="${tencentScheme}" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.zqhy.app.glide.GlideModuleConfig"
+            android:value="GlideModule" />
+
+        <!--<receiver
+            android:name="com.zqhy.app.utils.AppInstallReceiver"
+            android:exported="false"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>-->
+
+        <!--     <receiver android:name="com.zqhy.app.network.simple.download.SimpleDownloadReceiver">
+                 <intent-filter>
+                     <action android:name="android.intent.action.DOWNLOAD_SERVICE"/>
+                 </intent-filter>
+             </receiver>-->
+
+
+        <!-- 适配全面屏 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+
+        <!-- 配置第三方Receiver -->
+        <!-- 此处com.getui.demo.PushDemoReceiver，需要替换成开发者自己的BroadcastReceiver文件全名 -->
+        <service
+            android:name="com.zqhy.app.push.DemoPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <service android:name="com.zqhy.app.push.PushIntentService" />
+
+
+        <!-- Talking Data-->
+        <service
+            android:name="com.talkingdata.sdk.TDAntiCheatingService"
+            android:exported="true"
+            android:process="com.talkingdata.sdk.TDAntiCheatingService">
+            <!--用户质量评估Service可以配置在主进程或者单独进程-->
+            <intent-filter>
+                <action android:name="com.talkingdata.sdk.TDAntiCheatingService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
+            android:label="dexopt"
+            android:process=":dexopt" />
+
+        <!--联通电信授权页-->
+        <!--如果不需要使用窗口模式，不要使用authsdk_activity_dialog主题，会出现异常动画-->
+        <!--如果需要使用authsdk_activity_dialog主题，则screenOrientation一定不能指定明确的方向，
+               比如portrait、sensorPortrait，在8.0的系统上不允许窗口模式指定orientation，会发生crash，需要指定为behind，
+               然后在授权页的前一个页面指定具体的orientation-->
+        <activity
+            android:name="com.mobile.auth.gatewayauth.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/authsdk_activity_dialog" />
+        <!--协议页面webview-->
+        <activity
+            android:name="com.mobile.auth.gatewayauth.activity.AuthWebVeiwActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind" />
+
+        <receiver
+            android:name="com.igexin.sdk.PushReceiver"
+            tools:node="remove"></receiver>
+
+        <!-- 第三方配置 End -->
+
+        <!-- 云游id-->
+        <!--<meta-data
+            android:name="VOLC_ACCOUNT_ID"
+            android:value="" />
+
+
+        &lt;!&ndash; 网易云信后台服务，请使用独立进程。&ndash;&gt;
+        <service
+            android:name="com.netease.nimlib.service.NimService"
+            android:process=":core"/>
+
+        &lt;!&ndash; 网易云信后台辅助服务 &ndash;&gt;
+        <service
+            android:name="com.netease.nimlib.job.NIMJobService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":core"/>
+
+        &lt;!&ndash; 网易云信监视系统启动和网络变化的广播接收器，保持和 NimService 同一进程 &ndash;&gt;
+        <receiver android:name="com.netease.nimlib.service.NimReceiver"
+            tools:node="remove"
+            android:process=":core"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        &lt;!&ndash; 网易云信进程间通信 Receiver &ndash;&gt;
+        <receiver android:name="com.netease.nimlib.service.ResponseReceiver"/>
+
+        &lt;!&ndash; 网易云信进程间通信 service &ndash;&gt;
+        <service android:name="com.netease.nimlib.service.ResponseService"/>
+
+        &lt;!&ndash; 网易云信进程间通信 provider &ndash;&gt;
+        <provider
+            android:name="com.netease.nimlib.ipc.NIMContentProvider"
+            android:authorities="${applicationId}.ipc.provider"
+            android:exported="false"
+            android:process=":core" />
+        &lt;!&ndash; 网易云信内部使用的进程间通信 provider &ndash;&gt;
+        &lt;!&ndash; SDK 启动时会强制检测该组件的声明是否配置正确，如果检测到该声明不正确，SDK 会主动抛出异常引发崩溃 &ndash;&gt;
+        <provider
+            android:name="com.netease.nimlib.ipc.cp.provider.PreferenceContentProvider"
+            android:authorities="${applicationId}.ipc.provider.preference"
+            android:exported="false" />-->
+
+    </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+</manifest>

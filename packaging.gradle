@@ -1,0 +1,112 @@
+import groovy.transform.Field
+
+afterEvaluate {
+    def taskNameSet = new HashSet<String>()
+//    def apk = android.applicationVariants.collect { "assemble${it.name.toString()}".toUpperCase() }
+//    def bundle = android.applicationVariants.collect { "bundle${it.name.toString()}".toUpperCase() }
+//    taskNameSet.addAll(apk)
+//    taskNameSet.addAll(bundle)
+    taskNameSet.add("assembleAlphaDebug")
+    taskNameSet.add("assembleBetaBetaSign")
+    taskNameSet.add("assembleCentalineRelease")
+
+    taskNameSet.add("bundleAlphaDebug")
+    taskNameSet.add("bundleBetaBetaSign")
+    taskNameSet.add("bundleCentalineRelease")
+
+    taskNameSet = taskNameSet.collect { it.toUpperCase() }
+
+    project.tasks.matching {
+        def name = it.name.toString().toUpperCase()
+        taskNameSet.contains(name)
+    }.configureEach { task ->
+        task.group = 'packaging'
+        println "Set task '${task.name}' group to 'packaging'"
+    }
+}
+
+
+private def openFolderOrUrl(String folderPath) {
+    def os = System.getProperty("os.name").toLowerCase()
+    String[] command
+    if (os.contains("win")) {
+        command = new String[]{"powershell", "explorer", folderPath}
+    } else if (os.contains("mac")) {
+        command = new String[]{"open"}
+    } else if (os.contains("nix") || os.contains("nux") || os.contains("aix")) {
+        command = new String[]{"xdg-open"}
+    }
+    if (null != command && command.length > 0) {
+        exec {
+            commandLine(command)
+        }
+    }
+
+}
+
+tasks.register('test_openFolder') {
+    group("packaging")
+    doLast {
+        String test_folder = buildFile.parent
+        openFolderOrUrl(test_folder)
+    }
+}
+
+private String getTaskRequestName() {
+    try {
+        // 自定义操作
+        def taskRequests = gradle.getStartParameter().getTaskRequests()
+        if (taskRequests.isEmpty()) return ""
+        def args = taskRequests.get(0).getArgs()
+        if (args.isEmpty()) return ""
+        String taskRequestName = args.get(0).toString()
+        return taskRequestName ?: ""
+    } catch (Exception e) {
+        e.printStackTrace()
+        return ""
+    }
+
+}
+
+@Field def pathToBeOpened = ""
+
+private def onBuildFinishedToOpenApkDirectory(def variant, def output) {
+    String taskRequestName = getTaskRequestName()
+    String variantName = variant.name
+    if (!taskRequestName.equalsIgnoreCase("assemble${variantName}")) return
+    File outputFile = output.getOutputFile()
+    def storageApkPath = outputFile.getParentFile().path
+    // pathToBeOpened != storageApkPath 此判断可以防止遍历变体时，多次记录相同的文件夹
+    if (pathToBeOpened != storageApkPath) {
+        pathToBeOpened = storageApkPath
+        println "Gradle执行指令：$taskRequestName    变体名称:${variantName}"
+        println "got the directory of that will be open:$storageApkPath"
+        gradle.buildFinished {
+            if (outputFile.exists()) {
+                openFolderOrUrl(storageApkPath)
+            }
+        }
+    }
+}
+
+
+//打包命名
+android.applicationVariants.configureEach { variant ->
+    variant.outputs.configureEach { output ->
+        def variantName = variant.name
+                .replace('Release', '')
+                .replace('BetaSign', '')
+                .replace('Debug', '')
+        String abi = ""
+        if (output.getFilters() != null && output.getFilters().size() > 0)
+            abi = output.getFilters().get(0).getIdentifier()
+                    .replace('armeabi-v7a', '32')
+                    .replace('arm64-v8a', '64')
+        if (abi.isEmpty())
+            outputFileName = "app-universal-${variantName}.apk"
+        else
+            outputFileName = "app-${abi}-${variantName}.apk"
+        onBuildFinishedToOpenApkDirectory(variant, output)
+    }
+}
+

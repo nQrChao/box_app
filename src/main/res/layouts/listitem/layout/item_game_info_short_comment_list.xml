@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_radius_2"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:paddingVertical="10dp"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:autoStart="true"
+        android:flipInterval="2500"
+        android:inAnimation="@anim/vf_anim_in"
+        android:outAnimation="@anim/vf_anim_out" />
+
+</RelativeLayout>

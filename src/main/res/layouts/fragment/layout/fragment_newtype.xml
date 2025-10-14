@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zqhy.app.widget.VerticalSwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+
+            <com.zqhy.app.widget.recycleview.RecyclerScrollView
+                android:id="@+id/main_content_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/main_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_f2f2f2"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp" />
+            </com.zqhy.app.widget.recycleview.RecyclerScrollView>
+        </com.zqhy.app.widget.VerticalSwipeRefreshLayout>
+    </LinearLayout>
+
+</LinearLayout>
