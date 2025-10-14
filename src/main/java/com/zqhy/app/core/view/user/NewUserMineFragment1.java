@@ -31,9 +31,9 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.blankj.utilcode.util.GsonUtils;
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.glide.GlideApp;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;

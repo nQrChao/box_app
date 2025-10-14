@@ -2,7 +2,7 @@ package com.zqhy.app.utils;
 
 import android.app.Activity;
 
-import com.chaoji.other.blankj.utilcode.util.ActivityUtils;
+import com.box.other.blankj.utilcode.util.ActivityUtils;
 
 import java.util.Iterator;
 import java.util.Stack;

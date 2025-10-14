@@ -18,7 +18,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.google.android.flexbox.FlexboxLayout;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.base.holder.AbsHolder;

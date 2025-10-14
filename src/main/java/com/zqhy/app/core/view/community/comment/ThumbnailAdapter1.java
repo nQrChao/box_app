@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.donkingliang.imageselector.PreviewActivity;
 import com.donkingliang.imageselector.entry.Image;
 import com.donkingliang.imageselector.utils.ImageSelectorUtils;

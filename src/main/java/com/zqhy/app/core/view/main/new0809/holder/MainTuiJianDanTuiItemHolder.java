@@ -2,7 +2,6 @@ package com.zqhy.app.core.view.main.new0809.holder;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
 import android.graphics.Color;
 
 import androidx.annotation.NonNull;
@@ -23,7 +22,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.google.android.flexbox.FlexboxLayout;
 import com.zqhy.app.Setting;
 import com.zqhy.app.base.holder.AbsHolder;
@@ -37,7 +36,6 @@ import com.zqhy.app.newproject.BuildConfig;
 import com.zqhy.app.newproject.R;
 import com.zqhy.app.utils.CommonUtils;
 
-import java.util.HashMap;
 import java.util.List;
 
 /**

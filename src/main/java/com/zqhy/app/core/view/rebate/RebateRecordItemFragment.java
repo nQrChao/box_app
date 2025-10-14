@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import androidx.core.content.ContextCompat;

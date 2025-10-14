@@ -39,10 +39,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.blankj.utilcode.constant.PermissionConstants;
-import com.chaoji.other.blankj.utilcode.util.AppUtils;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
-import com.chaoji.other.immersionbar.ImmersionBar;
+import com.box.other.blankj.utilcode.util.AppUtils;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
+import com.box.other.immersionbar.ImmersionBar;
 import com.donkingliang.imageselector.PreviewActivity;
 import com.donkingliang.imageselector.entry.Image;
 import com.mvvm.base.AbsLifecycleFragment;

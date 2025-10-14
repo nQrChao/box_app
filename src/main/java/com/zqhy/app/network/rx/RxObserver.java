@@ -2,7 +2,7 @@ package com.zqhy.app.network.rx;
 
 import android.content.Intent;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.google.gson.Gson;
 import com.google.gson.JsonParseException;
 import com.mvvm.http.rx.RxSchedulers;

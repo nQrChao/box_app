@@ -20,8 +20,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.newproject.BuildConfig;
 
 import androidx.annotation.NonNull;

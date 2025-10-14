@@ -13,13 +13,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.zqhy.app.base.holder.AbsHolder;
 import com.zqhy.app.base.holder.BaseItemHolder;
 import com.zqhy.app.core.data.model.mainpage.figurepush.GameFigurePushVo;

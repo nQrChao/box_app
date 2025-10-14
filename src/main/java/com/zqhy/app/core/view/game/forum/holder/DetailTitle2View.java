@@ -16,10 +16,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.donkingliang.imageselector.PreviewActivity;
 import com.donkingliang.imageselector.entry.Image;
-import com.google.android.exoplayer2.C;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.youth.banner2.Banner;
 import com.youth.banner2.adapter.BannerImageAdapter;
@@ -31,7 +30,6 @@ import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.core.data.model.forum.ForumDetailTitleVo;
 import com.zqhy.app.core.data.model.forum.ForumDetailVo;
 import com.zqhy.app.core.tool.ScreenUtil;
-import com.zqhy.app.core.view.game.forum.SpannedStyleParser;
 import com.zqhy.app.core.view.game.forum.tool.ClickableTextView;
 import com.zqhy.app.core.view.game.forum.tool.GlideImageGetter;
 import com.zqhy.app.core.view.transaction.util.CustomPopWindow;
@@ -39,7 +37,6 @@ import com.zqhy.app.model.UserInfoModel;
 import com.zqhy.app.newproject.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;

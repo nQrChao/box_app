@@ -1,6 +1,6 @@
 package com.zqhy.app.core.view.login.gamelogin;
 
-import static com.chaoji.mod.game.ModManager.LOGIN_OK;
+import static com.box.mod.game.ModManager.LOGIN_OK;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -33,10 +33,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.chaoji.im.data.model.AppUserInfo;
-import com.chaoji.im.sdk.ImSDK;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.data.model.AppUserInfo;
+import com.box.common.sdk.ImSDK;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.kunminx.architecture.ui.callback.UnPeekLiveData;
 import com.mobile.auth.gatewayauth.model.TokenRet;
 import com.zqhy.app.base.BaseFragment;

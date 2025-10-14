@@ -6,7 +6,7 @@ import android.os.Build;
 import android.os.Environment;
 import androidx.core.content.ContextCompat;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.zqhy.app.App;
 
 import java.io.File;

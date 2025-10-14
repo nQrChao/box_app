@@ -15,7 +15,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.adapter.abs.AbsAdapter;
 import com.zqhy.app.adapter.abs.EmptyAdapter1;
 import com.zqhy.app.base.BaseFragment;

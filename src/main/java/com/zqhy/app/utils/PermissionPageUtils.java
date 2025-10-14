@@ -10,9 +10,8 @@ import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
-import android.util.Log;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.zqhy.app.newproject.BuildConfig;
 
 import java.io.BufferedReader;

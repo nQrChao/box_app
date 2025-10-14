@@ -28,7 +28,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.content.ContextCompat;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.core.data.model.BaseVo;
 import com.zqhy.app.core.data.model.transaction.TradeSellConfigVo;

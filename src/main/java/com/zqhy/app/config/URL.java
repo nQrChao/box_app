@@ -2,7 +2,7 @@ package com.zqhy.app.config;
 
 import android.text.TextUtils;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.zqhy.app.newproject.BuildConfig;
 
 import java.util.Map;

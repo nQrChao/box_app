@@ -10,14 +10,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
-import com.chaoji.base.base.action.ClickAction
-import com.chaoji.base.base.action.KeyboardAction
-import com.chaoji.im.appContext
-import com.chaoji.im.data.model.AppletsInfo
-import com.chaoji.im.ui.activity.CommonActivityBrowser
-import com.chaoji.mod.game.ModManager
-import com.chaoji.other.xpopup.core.CenterPopupView
-import com.zqhy.app.core.view.browser.BrowserActivity
+import com.box.base.base.action.ClickAction
+import com.box.base.base.action.KeyboardAction
+import com.box.other.xpopup.core.CenterPopupView
 import com.zqhy.app.newproject.R
 
 @SuppressLint("ViewConstructor")

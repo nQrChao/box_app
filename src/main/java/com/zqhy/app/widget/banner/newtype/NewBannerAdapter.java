@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.google.android.flexbox.FlexboxLayout;
 import com.zqhy.app.App;
 import com.zqhy.app.core.tool.ScreenUtil;

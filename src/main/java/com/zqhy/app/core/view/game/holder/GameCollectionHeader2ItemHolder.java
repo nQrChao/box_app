@@ -19,7 +19,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.zqhy.app.base.holder.AbsHolder;
 import com.zqhy.app.base.holder.AbsItemHolder;
 import com.zqhy.app.core.data.model.game.GameCollectionHeader2Vo;

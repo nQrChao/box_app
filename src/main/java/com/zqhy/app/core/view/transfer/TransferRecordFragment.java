@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.allen.library.SuperButton;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.config.Constants;
 import com.zqhy.app.core.data.model.transfer.TransferRecordVo;

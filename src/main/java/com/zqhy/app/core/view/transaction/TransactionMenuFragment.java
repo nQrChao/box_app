@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.core.data.model.BaseVo;
 import com.zqhy.app.core.inner.OnBaseCallback;

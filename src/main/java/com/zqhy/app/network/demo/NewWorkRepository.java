@@ -2,7 +2,7 @@ package com.zqhy.app.network.demo;
 
 import android.text.TextUtils;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.mvvm.http.rx.RxSchedulers;
 import com.zqhy.app.config.Constants;
 import com.zqhy.app.core.data.BaseRepository;

@@ -9,26 +9,26 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.viewholder.BaseDataBindingHolder
-import com.chaoji.base.base.action.StatusAction
-import com.chaoji.base.base.fragment.BaseTitleBarFragment
-import com.chaoji.base.ext.parseModStateWithMsg
-import com.chaoji.base.network.NetState
-import com.chaoji.common.BR
-import com.chaoji.im.appContext
-import com.chaoji.im.data.model.AppletsXiaoGameFuLiInfo
-import com.chaoji.im.data.model.ModGameHallList
-import com.chaoji.im.ui.adapter.HorizontalSpaceItemDecoration
-import com.chaoji.im.ui.adapter.SpacingItemDecorator
-import com.chaoji.im.ui.layout.StatusLayout
-import com.chaoji.mod.game.ModManager
-import com.chaoji.other.blankj.utilcode.util.ActivityUtils
-import com.chaoji.other.blankj.utilcode.util.ColorUtils
-import com.chaoji.other.blankj.utilcode.util.GsonUtils
-import com.chaoji.other.blankj.utilcode.util.Logs
-import com.chaoji.other.hjq.toast.Toaster
-import com.chaoji.other.immersionbar.immersionBar
-import com.chaoji.other.xpopup.XPopup
-import com.chaoji.other.xpopup.core.BasePopupView
+import com.box.base.base.action.StatusAction
+import com.box.base.base.fragment.BaseTitleBarFragment
+import com.box.base.ext.parseModStateWithMsg
+import com.box.base.network.NetState
+import com.box.common.BR
+import com.box.im.appContext
+import com.box.im.data.model.AppletsXiaoGameFuLiInfo
+import com.box.im.data.model.ModGameHallList
+import com.box.im.ui.adapter.HorizontalSpaceItemDecoration
+import com.box.im.ui.adapter.SpacingItemDecorator
+import com.box.im.ui.layout.StatusLayout
+import com.box.mod.game.ModManager
+import com.box.other.blankj.utilcode.util.ActivityUtils
+import com.box.other.blankj.utilcode.util.ColorUtils
+import com.box.other.blankj.utilcode.util.GsonUtils
+import com.box.other.blankj.utilcode.util.Logs
+import com.box.other.hjq.toast.Toaster
+import com.box.other.immersionbar.immersionBar
+import com.box.other.xpopup.XPopup
+import com.box.other.xpopup.core.BasePopupView
 import com.zqhy.app.core.view.browser.BrowserActivity
 import com.zqhy.app.newproject.R
 import com.zqhy.app.newproject.databinding.ItemGameHotBinding
@@ -351,7 +351,7 @@ class FragmentXiaoGame : BaseTitleBarFragment<NavigationXiaoGameModel, FragmentX
                 .dismissOnTouchOutside(false)
                 .dismissOnBackPressed(false)
                 .isDestroyOnDismiss(true)
-                .navigationBarColor(ColorUtils.getColor(com.chaoji.common.R.color.xpop_shadow_color))
+                .navigationBarColor(ColorUtils.getColor(com.box.common.R.color.xpop_shadow_color))
                 .asCustom(
                     ModXPopupH5GameTip3(ActivityUtils.getTopActivity()) {
                         mViewModel.postLingJiangNewFuLi()
@@ -386,7 +386,7 @@ class FragmentXiaoGame : BaseTitleBarFragment<NavigationXiaoGameModel, FragmentX
                 .isDestroyOnDismiss(true)
                 .dismissOnBackPressed(false)
                 .dismissOnTouchOutside(false)
-                .navigationBarColor(ColorUtils.getColor(com.chaoji.common.R.color.xpop_shadow_color))
+                .navigationBarColor(ColorUtils.getColor(com.box.common.R.color.xpop_shadow_color))
                 .asCustom(
                     ModXPopupH5GameTip2(ActivityUtils.getTopActivity(), {
                     }) {
@@ -406,7 +406,7 @@ class FragmentXiaoGame : BaseTitleBarFragment<NavigationXiaoGameModel, FragmentX
                 .isDestroyOnDismiss(true)
                 .dismissOnBackPressed(false)
                 .dismissOnTouchOutside(false)
-                .navigationBarColor(ColorUtils.getColor(com.chaoji.common.R.color.xpop_shadow_color))
+                .navigationBarColor(ColorUtils.getColor(com.box.common.R.color.xpop_shadow_color))
                 .asCustom(
                     ModXPopupH5GameTip1(ActivityUtils.getTopActivity()) {
                     })
@@ -476,8 +476,8 @@ class FragmentXiaoGame : BaseTitleBarFragment<NavigationXiaoGameModel, FragmentX
             R.layout.item_game_shiwan, list
         ) {
         override fun convert(holder: BaseDataBindingHolder<ItemGameShiwanBinding>, item: AppletsXiaoGameFuLiInfo.DemoInfo) {
-            holder.dataBinding?.setVariable(com.chaoji.mod.BR.demoInfo, item)
-            holder.dataBinding?.setVariable(com.chaoji.mod.BR.position, holder.bindingAdapterPosition)
+            holder.dataBinding?.setVariable(com.box.mod.BR.demoInfo, item)
+            holder.dataBinding?.setVariable(com.box.mod.BR.position, holder.bindingAdapterPosition)
         }
     }
 
@@ -486,7 +486,7 @@ class FragmentXiaoGame : BaseTitleBarFragment<NavigationXiaoGameModel, FragmentX
         R.layout.item_game_hot, list
     ) {
         override fun convert(holder: BaseDataBindingHolder<ItemGameHotBinding>, item: ModGameHallList) {
-            holder.dataBinding?.setVariable(com.chaoji.mod.BR.gameHallListBean, item)
+            holder.dataBinding?.setVariable(com.box.mod.BR.gameHallListBean, item)
         }
     }
 
@@ -494,7 +494,7 @@ class FragmentXiaoGame : BaseTitleBarFragment<NavigationXiaoGameModel, FragmentX
         R.layout.item_game_more, list
     ) {
         override fun convert(holder: BaseDataBindingHolder<ItemGameMoreBinding>, item: ModGameHallList) {
-            holder.dataBinding?.setVariable(com.chaoji.mod.BR.gameHallListBean, item)
+            holder.dataBinding?.setVariable(com.box.mod.BR.gameHallListBean, item)
         }
     }
 

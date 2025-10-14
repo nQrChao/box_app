@@ -19,7 +19,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.donkingliang.imageselector.PreviewActivity;
 import com.donkingliang.imageselector.entry.Image;
 import com.google.android.material.imageview.ShapeableImageView;

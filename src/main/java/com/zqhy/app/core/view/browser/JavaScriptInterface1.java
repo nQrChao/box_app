@@ -5,8 +5,8 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.webkit.JavascriptInterface;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.tencent.smtt.sdk.WebView;

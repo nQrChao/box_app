@@ -3,11 +3,10 @@ package com.zqhy.mod.xpop
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
-import com.chaoji.base.base.action.ClickAction
-import com.chaoji.base.base.action.KeyboardAction
-import com.chaoji.other.xpopup.core.CenterPopupView
+import com.box.base.base.action.ClickAction
+import com.box.base.base.action.KeyboardAction
+import com.box.other.xpopup.core.CenterPopupView
 import com.zqhy.app.newproject.R
 
 @SuppressLint("ViewConstructor")

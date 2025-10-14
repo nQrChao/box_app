@@ -17,8 +17,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.glide.GlideApp;
+import com.box.other.hjq.toast.Toaster;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.zqhy.app.base.BaseFragment;

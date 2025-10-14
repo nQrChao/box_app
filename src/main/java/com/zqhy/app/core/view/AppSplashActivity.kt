@@ -12,29 +12,29 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
-import com.chaoji.base.base.activity.BaseVmDbActivity
-import com.chaoji.base.ext.parseModState
-import com.chaoji.base.ext.parseState
-import com.chaoji.base.network.NetState
-import com.chaoji.im.checkInstallInHoursDifference
-import com.chaoji.im.data.model.MarketInit
-import com.chaoji.im.sdk.ImSDK
-import com.chaoji.im.sdk.ImSDK.Companion.eventViewModelInstance
-import com.chaoji.im.sdk.appViewModel
-import com.chaoji.im.utils.MMKVUtil
-import com.chaoji.mod.ui.activity.ModActivityMain
-import com.chaoji.mod.ui.activity.ModActivityPreview
-import com.chaoji.mod.ui.activity.game.ModActivityGameBrowser
-import com.chaoji.mod.ui.activity.game.ModActivityLocalGameBrowser
-import com.chaoji.mod.ui.xpop.ModXPopupCenterProtocol
-import com.chaoji.mod.ui.xpop.ModXPopupCenterTip
-import com.chaoji.other.blankj.utilcode.util.ActivityUtils
-import com.chaoji.other.blankj.utilcode.util.ColorUtils
-import com.chaoji.other.blankj.utilcode.util.GsonUtils
-import com.chaoji.other.blankj.utilcode.util.Logs
-import com.chaoji.other.blankj.utilcode.util.StringUtils
-import com.chaoji.other.hjq.toast.Toaster
-import com.chaoji.other.xpopup.XPopup
+import com.box.base.base.activity.BaseVmDbActivity
+import com.box.base.ext.parseModState
+import com.box.base.ext.parseState
+import com.box.base.network.NetState
+import com.box.im.checkInstallInHoursDifference
+import com.box.im.data.model.MarketInit
+import com.box.im.sdk.ImSDK
+import com.box.im.sdk.ImSDK.Companion.eventViewModelInstance
+import com.box.im.sdk.appViewModel
+import com.box.im.utils.MMKVUtil
+import com.box.mod.ui.activity.ModActivityMain
+import com.box.mod.ui.activity.ModActivityPreview
+import com.box.mod.ui.activity.game.ModActivityGameBrowser
+import com.box.mod.ui.activity.game.ModActivityLocalGameBrowser
+import com.box.mod.ui.xpop.ModXPopupCenterProtocol
+import com.box.mod.ui.xpop.ModXPopupCenterTip
+import com.box.other.blankj.utilcode.util.ActivityUtils
+import com.box.other.blankj.utilcode.util.ColorUtils
+import com.box.other.blankj.utilcode.util.GsonUtils
+import com.box.other.blankj.utilcode.util.Logs
+import com.box.other.blankj.utilcode.util.StringUtils
+import com.box.other.hjq.toast.Toaster
+import com.box.other.xpopup.XPopup
 import com.google.gson.Gson
 import com.mvvm.event.LiveBus
 import com.umeng.analytics.MobclickAgent
@@ -66,7 +66,7 @@ import com.zqhy.mod.game.GameLauncher
 import com.zqhy.sdk.db.SdkManager
 import org.greenrobot.eventbus.EventBus
 import kotlin.system.exitProcess
-import com.chaoji.common.R as RC
+import com.box.common.R as RC
 
 @SuppressLint("CustomSplashScreen")
 class AppSplashActivity : BaseVmDbActivity<AppSplashModel, AppActivitySplashBinding>() {

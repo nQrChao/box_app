@@ -1,10 +1,9 @@
 package com.zqhy.app.report;
 
 import android.content.Context;
-import android.util.Log;
 
-import com.chaoji.im.sdk.ImSDK;
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.common.sdk.ImSDK;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.google.gson.Gson;
 import com.zqhy.app.App;
 import com.zqhy.app.Setting;

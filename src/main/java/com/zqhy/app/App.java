@@ -4,9 +4,6 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.ComponentCallbacks2;
 import android.content.Context;
-import android.content.res.Configuration;
-import android.content.res.Resources;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -15,10 +12,10 @@ import androidx.multidex.BuildConfig;
 
 import com.blankj.utilcode.util.ProcessUtils;
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
-import com.chaoji.im.sdk.ApkUtils;
-import com.chaoji.im.sdk.ImSDK;
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.common.glide.GlideApp;
+import com.box.common.sdk.ApkUtils;
+import com.box.common.sdk.ImSDK;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.danikula.videocache.HttpProxyCacheServer;
 import com.lzy.okserver.OkDownload;
 import com.mvvm.http.HttpHelper;
@@ -41,24 +38,19 @@ import com.zqhy.app.core.view.main.MainActivity;
 import com.zqhy.app.crash.CrashHandler;
 import com.zqhy.app.db.AppDatabase;
 import com.zqhy.app.network.utils.AppUtils;
-import com.zqhy.app.report.AllDataReportAgency;
-import com.zqhy.app.report.ReportLog;
 import com.zqhy.app.utils.AppManager;
 import com.zqhy.app.utils.sdcard.SdCardManager;
 import com.zqhy.app.widget.state.EmptyState;
 
 import org.litepal.LitePal;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import com.chaoji.mod.game.ModManager;
+import com.box.mod.game.ModManager;
 import com.zqhy.mod.ModProviderImpl;
-import com.chaoji.mod.ui.activity.game.ChannelSdkImpl;
-import com.chaoji.mod.game.sdk.ModSdkManager;
+import com.box.mod.ui.activity.game.ChannelSdkImpl;
+import com.box.mod.game.sdk.ModSdkManager;
 /**
  * @author：tqzhang on 18/4/19 17:57
  */

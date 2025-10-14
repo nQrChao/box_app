@@ -4,11 +4,10 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import androidx.activity.result.ActivityResultLauncher
-import com.chaoji.im.data.model.ModUserInfoBean
-import com.chaoji.im.utils.MMKVUtil
-import com.chaoji.mod.game.ModProvider
-import com.chaoji.mod.ui.activity.ModActivityMain.Companion.activity
-import com.chaoji.other.blankj.utilcode.util.ActivityUtils
+import com.box.im.data.model.ModUserInfoBean
+import com.box.im.utils.MMKVUtil
+import com.box.mod.game.ModProvider
+import com.box.other.blankj.utilcode.util.ActivityUtils
 import com.zqhy.app.App
 import com.zqhy.app.config.InviteConfig
 import com.zqhy.app.core.data.model.user.UserInfoVo
@@ -20,7 +19,6 @@ import com.zqhy.app.core.view.login.event.AuthLoginEvent
 import com.zqhy.app.core.view.main.MainActivity
 import com.zqhy.app.core.view.user.BindPhoneFragment
 import com.zqhy.app.core.view.user.CancellationOneFragment
-import com.zqhy.app.core.view.user.UserInfoFragment
 import com.zqhy.app.model.UserInfoModel
 
 class ModProviderImpl : ModProvider {

@@ -6,8 +6,8 @@ import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.google.gson.Gson;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.config.Constants;

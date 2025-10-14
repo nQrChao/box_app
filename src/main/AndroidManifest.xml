@@ -7,8 +7,6 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" tools:node="remove" />
     <!--允许程序访问网络-->
     <uses-permission android:name="android.permission.INTERNET" />
-    <!--允许程序访问摄像头进行拍照-->
-<!--    <uses-permission android:name="android.permission.CAMERA" />-->
     <!--允许程序安装应用-->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <!--允许程序改变WiFi状态-->
@@ -22,7 +20,6 @@
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
     <!--允许应用将任务移动到前台和后台-->
     <uses-permission android:name="android.permission.REORDER_TASKS" />
-    <!--    <uses-permission android:name="android.permission.RESTART_PACKAGES" />-->
 
     <uses-permission
         android:name="android.permission.ACCESS_FINE_LOCATION"
@@ -33,33 +30,9 @@
     <uses-permission
         android:name="android.permission.ACCESS_BACKGROUND_LOCATION"
         tools:node="remove" />
-    <!-- 系统悬浮窗 -->
-    <!--    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
-
-    <!--    <uses-permission android:name="android.permission.GET_TASKS" />-->
-    <!--    &lt;!&ndash; 多媒体相关 &ndash;&gt;-->
-    <!--    &lt;!&ndash; Android11：V8.6.1 及之后的版本不需要。其他：V4.4.0 及之后的版本不需要。 &ndash;&gt;-->
-    <!--    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
-
-    <!--    &lt;!&ndash; 控制呼吸灯，振动器等，用于新消息提醒 &ndash;&gt;-->
-    <!--    <uses-permission android:name="android.permission.FLASHLIGHT" />-->
-    <!--    <uses-permission android:name="android.permission.VIBRATE" />-->
-
-    <!--    &lt;!&ndash; 8.0+系统需要&ndash;&gt;-->
-    <!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />-->
-
-    <!--    &lt;!&ndash; 下面的 uses-permission 一起加入到您的 AndroidManifest 文件中。&ndash;&gt;-->
-    <!--    <permission-->
-    <!--        android:name="${applicationId}.permission.RECEIVE_MSG"-->
-    <!--        android:protectionLevel="signature"/>-->
-    <!--    <uses-feature-->
-    <!--        android:name="android.hardware.camera"-->
-    <!--        android:required="false" />-->
-    <!--    <uses-permission android:name="${applicationId}.permission.RECEIVE_MSG"/>-->
-
 
     <application
-        android:name="com.zqhy.app.App"
+        android:name="com.box.main.App"
         android:allowBackup="false"
         android:allowNativeHeapPointerTagging="false"
         android:exported="true"
@@ -70,7 +43,7 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/Theme.BOX"
         android:usesCleartextTraffic="true"
         tools:replace="android:label,android:allowBackup,android:icon,android:theme"
         tools:targetApi="r">

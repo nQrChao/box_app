@@ -15,8 +15,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.glide.GlideApp;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.holder.AbsHolder;
 import com.zqhy.app.base.holder.AbsItemHolder;
 import com.zqhy.app.core.AppJumpAction;

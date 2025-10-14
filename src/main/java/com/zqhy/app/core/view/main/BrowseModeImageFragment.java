@@ -26,7 +26,7 @@ import androidx.annotation.Nullable;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.config.AppConfig;
 import com.zqhy.app.config.Constants;

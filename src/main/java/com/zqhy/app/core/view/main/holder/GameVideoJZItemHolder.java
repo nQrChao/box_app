@@ -10,8 +10,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.common.glide.GlideApp;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.danikula.videocache.HttpProxyCacheServer;
 import com.zqhy.app.App;
 import com.zqhy.app.base.holder.AbsHolder;

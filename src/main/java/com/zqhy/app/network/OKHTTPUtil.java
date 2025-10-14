@@ -5,9 +5,9 @@ import androidx.annotation.NonNull;
 import android.os.Build;
 import android.text.TextUtils;
 
-import com.chaoji.im.sdk.ImSDK;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.cnoaid.oaid.DeviceIdentifier;
+import com.box.common.sdk.ImSDK;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.cnoaid.oaid.DeviceIdentifier;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -26,7 +26,6 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URLEncoder;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
@@ -519,7 +518,7 @@ public class OKHTTPUtil {
             params.put("client_id", client_id);
         }
 
-        params.put("android_infos", DeviceUtils.getModel() + "|" + Build.BRAND + "|" + Build.VERSION.RELEASE + "|" + Build.VERSION.SDK_INT + "|" + com.chaoji.other.blankj.utilcode.util.AppUtils.getAppName() + "|" + Build.SUPPORTED_ABIS[0] + "|" + com.chaoji.other.blankj.utilcode.util.AppUtils.getAppSignaturesSHA1().get(0));
+        params.put("android_infos", DeviceUtils.getModel() + "|" + Build.BRAND + "|" + Build.VERSION.RELEASE + "|" + Build.VERSION.SDK_INT + "|" + com.box.other.blankj.utilcode.util.AppUtils.getAppName() + "|" + Build.SUPPORTED_ABIS[0] + "|" + com.box.other.blankj.utilcode.util.AppUtils.getAppSignaturesSHA1().get(0));
 
         //sign签名
         params.put("sign", AppUtils.getSignKey(params));

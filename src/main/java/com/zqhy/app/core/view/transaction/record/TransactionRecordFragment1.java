@@ -16,7 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.core.data.model.BaseVo;
 import com.zqhy.app.core.data.model.transaction.TradeGoodsWaitPayInfoVo;

@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.WindowManager;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.google.gson.Gson;
 import com.zqhy.app.model.PostAdData;
 import com.zqhy.app.core.vm.MainListRequest;

@@ -10,7 +10,6 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.TextUtils;
 import android.text.style.ForegroundColorSpan;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +24,7 @@ import androidx.annotation.Nullable;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.zqhy.app.base.holder.AbsHolder;
 import com.zqhy.app.base.holder.BaseItemHolder;
 import com.zqhy.app.core.data.model.game.GameInfoVo;
@@ -33,8 +32,6 @@ import com.zqhy.app.core.data.model.game.new0809.item.CommonStyle1DataBeanVo;
 import com.zqhy.app.core.tool.ScreenUtil;
 import com.zqhy.app.glide.GlideUtils;
 import com.zqhy.app.newproject.R;
-
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author Administrator

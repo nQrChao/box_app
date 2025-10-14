@@ -3,8 +3,8 @@ package com.zqhy.app.core.view.video;
 import android.os.Bundle;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.common.glide.GlideApp;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.newproject.R;
 import com.zqhy.app.widget.video.CustomMediaPlayer.JZExoPlayer;

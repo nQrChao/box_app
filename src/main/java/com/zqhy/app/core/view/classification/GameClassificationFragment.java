@@ -13,8 +13,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.zqhy.app.adapter.AdapterPool;
 import com.zqhy.app.base.BaseFragment;

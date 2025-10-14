@@ -25,7 +25,7 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.adapter.abs.AbsAdapter;
 import com.zqhy.app.adapter.abs.AbsMultiChooseAdapter;
 import com.zqhy.app.base.BaseFragment;

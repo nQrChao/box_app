@@ -1,14 +1,13 @@
 package com.zqhy.app.report;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.bytedance.ads.convert.BDConvert;
 import com.bytedance.applog.AppLog;
 import com.bytedance.applog.InitConfig;
 import com.bytedance.applog.game.GameReportHelper;
 import com.bytedance.applog.util.UriConstants;
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.zqhy.app.config.AppConfig;
 import com.zqhy.app.config.OnPayConfig;
 import com.zqhy.app.core.pay.PayResultVo;

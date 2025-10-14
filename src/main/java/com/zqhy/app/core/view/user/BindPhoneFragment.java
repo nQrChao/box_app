@@ -1,6 +1,6 @@
 package com.zqhy.app.core.view.user;
 
-import static com.chaoji.mod.game.ModManager.BIND_PHONE_OK;
+import static com.box.mod.game.ModManager.BIND_PHONE_OK;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.config.Constants;
 import com.zqhy.app.core.data.model.BaseResponseVo;

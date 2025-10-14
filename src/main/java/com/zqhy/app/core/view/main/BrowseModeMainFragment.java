@@ -34,7 +34,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.shizhefei.view.indicator.IndicatorViewPager;

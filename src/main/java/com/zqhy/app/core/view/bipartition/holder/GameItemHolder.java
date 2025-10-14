@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.lzf.easyfloat.EasyFloat;
 import com.lzy.okgo.db.DownloadManager;
 import com.lzy.okgo.model.Progress;

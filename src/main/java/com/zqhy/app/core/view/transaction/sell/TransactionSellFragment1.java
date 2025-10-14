@@ -27,8 +27,8 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.donkingliang.imageselector.PreviewActivity;
 import com.donkingliang.imageselector.entry.Image;
 import com.donkingliang.imageselector.event.PhotoEvent;

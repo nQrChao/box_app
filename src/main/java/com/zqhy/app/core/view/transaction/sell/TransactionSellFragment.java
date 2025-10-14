@@ -21,7 +21,7 @@ import android.widget.TextView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.base.BaseRecyclerAdapter;

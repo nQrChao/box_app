@@ -2,7 +2,7 @@ package com.zqhy.app.core.vm;
 
 import android.text.TextUtils;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.google.gson.reflect.TypeToken;
 import com.zqhy.app.model.PostAdData;
 import com.zqhy.app.config.URL;

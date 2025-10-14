@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.zqhy.app.adapter.MessageAdapter;
 import com.zqhy.app.adapter.OnItemClickListener;

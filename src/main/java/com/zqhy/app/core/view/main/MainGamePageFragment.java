@@ -3,7 +3,7 @@ package com.zqhy.app.core.view.main;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.zqhy.app.config.EventConfig;

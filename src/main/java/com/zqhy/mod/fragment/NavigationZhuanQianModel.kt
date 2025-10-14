@@ -1,13 +1,13 @@
 package com.zqhy.mod.fragment
 
 import androidx.lifecycle.MutableLiveData
-import com.chaoji.base.base.viewmodel.BaseViewModel
-import com.chaoji.base.ext.modRequest
-import com.chaoji.base.state.ModResultState
-import com.chaoji.im.data.model.AppletsXiaoGame
-import com.chaoji.im.network.NetworkApi
-import com.chaoji.im.network.apiService
-import com.chaoji.mod.game.ModManager
+import com.box.base.base.viewmodel.BaseViewModel
+import com.box.base.ext.modRequest
+import com.box.base.state.ModResultState
+import com.box.im.data.model.AppletsXiaoGame
+import com.box.im.network.NetworkApi
+import com.box.im.network.apiService
+import com.box.mod.game.ModManager
 
 
 class NavigationZhuanQianModel : BaseViewModel() {

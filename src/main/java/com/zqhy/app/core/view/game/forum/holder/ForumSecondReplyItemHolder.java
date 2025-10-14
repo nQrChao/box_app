@@ -9,20 +9,15 @@ import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.TextPaint;
 import android.text.style.ClickableSpan;
-import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 
-import com.chaoji.other.hjq.toast.Toaster;
-import com.zqhy.app.App;
-import com.zqhy.app.base.BaseRecyclerAdapter;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.holder.AbsHolder;
 import com.zqhy.app.base.holder.AbsItemHolder;
 import com.zqhy.app.core.data.model.forum.ForumReplyTopExplicitVo;
-import com.zqhy.app.core.data.model.forum.ForumReplyTopVo;
 import com.zqhy.app.core.view.community.user.CommunityUserFragment;
 import com.zqhy.app.core.view.game.forum.tool.GlideImageGetter;
 import com.zqhy.app.newproject.R;

@@ -2,10 +2,8 @@ package com.zqhy.app.core.view.main.new0809.holder;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
 import android.graphics.Color;
 import androidx.annotation.NonNull;
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
@@ -23,22 +21,12 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.request.target.SimpleTarget;
-import com.chaoji.im.glide.GlideApp;
-import com.youth.banner.Banner;
-import com.youth.banner.BannerConfig;
-import com.youth.banner.Transformer;
-import com.youth.banner.listener.OnBannerListener;
-import com.youth.banner.loader.ImageLoader;
+import com.box.common.glide.GlideApp;
 import com.zqhy.app.base.holder.AbsHolder;
 import com.zqhy.app.base.holder.BaseItemHolder;
-import com.zqhy.app.core.data.model.banner.BannerVo;
 import com.zqhy.app.core.data.model.game.new0809.CommonDataBeanVo;
 import com.zqhy.app.core.data.model.game.new0809.MainJingXuanDataVo;
-import com.zqhy.app.core.data.model.jump.AppJumpInfoBean;
 import com.zqhy.app.core.tool.ScreenUtil;
-import com.zqhy.app.glide.GlideRoundTransform;
-import com.zqhy.app.glide.GlideRoundTransformNew;
-import com.zqhy.app.glide.GlideUtils;
 import com.zqhy.app.newproject.R;
 
 import java.util.List;

@@ -35,13 +35,13 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.chaoji.im.IMUtilsKt;
-import com.chaoji.im.sdk.ImSDK;
-import com.chaoji.im.utils.floattoast.XToast;
-import com.chaoji.other.blankj.utilcode.util.ActivityUtils;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.blankj.utilcode.util.StringUtils;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.IMUtilsKt;
+import com.box.common.sdk.ImSDK;
+import com.box.common.utils.floattoast.XToast;
+import com.box.other.blankj.utilcode.util.ActivityUtils;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.StringUtils;
+import com.box.other.hjq.toast.Toaster;
 import com.gism.sdk.GismSDK;
 import com.google.android.flexbox.FlexboxLayout;
 import com.google.gson.Gson;
@@ -145,7 +145,7 @@ import com.zqhy.app.utils.sdcard.SdCardManager;
 import com.zqhy.app.utils.sp.SPUtils;
 import com.zqhy.app.widget.marqueeview.XMarqueeView;
 import com.zqhy.app.widget.marqueeview.XMarqueeViewAdapter;
-import com.chaoji.mod.view.FloatViewHelper;
+import com.box.mod.view.FloatViewHelper;
 import com.zqhy.mod.game.GameLauncher;
 
 import org.greenrobot.eventbus.EventBus;
@@ -486,7 +486,7 @@ public class MainActivity extends BaseActivity<MainViewModel> implements View.On
 
     private void showGameFloat() {
         if (mLocalGameFloat == null)
-            mLocalGameFloat = FloatViewHelper.INSTANCE.createModFloatView(this, com.chaoji.other.blankj.utilcode.util.AppUtils.getAppIcon(), new Function0<Unit>() {
+            mLocalGameFloat = FloatViewHelper.INSTANCE.createModFloatView(this, com.box.other.blankj.utilcode.util.AppUtils.getAppIcon(), new Function0<Unit>() {
                 @Override
                 public Unit invoke() {
                     GameLauncher.INSTANCE.startLocalGame(MainActivity.this, GameLauncher.GAME_URL);

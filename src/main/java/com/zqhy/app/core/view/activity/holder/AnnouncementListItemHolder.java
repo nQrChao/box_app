@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.zqhy.app.base.holder.AbsHolder;
 import com.zqhy.app.base.holder.AbsItemHolder;
 import com.zqhy.app.core.data.model.activity.ActivityInfoListVo;

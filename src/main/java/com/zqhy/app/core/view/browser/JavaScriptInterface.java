@@ -2,22 +2,19 @@ package com.zqhy.app.core.view.browser;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Build;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.WindowManager;
 import android.webkit.JavascriptInterface;
 
 
-import com.chaoji.im.IMUtilsKt;
-import com.chaoji.im.sdk.ImSDK;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.cnoaid.oaid.DeviceIdentifier;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.IMUtilsKt;
+import com.box.common.sdk.ImSDK;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.cnoaid.oaid.DeviceIdentifier;
+import com.box.other.hjq.toast.Toaster;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.tencent.smtt.sdk.WebView;
@@ -51,9 +48,6 @@ import org.json.JSONObject;
 import java.lang.reflect.Type;
 import java.util.Map;
 import java.util.TreeMap;
-
-import kotlin.Unit;
-import kotlin.jvm.functions.Function1;
 
 /**
  * @author Administrator

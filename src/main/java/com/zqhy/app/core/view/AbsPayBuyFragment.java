@@ -2,8 +2,8 @@ package com.zqhy.app.core.view;
 
 import android.os.Bundle;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.mvvm.base.AbsViewModel;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.config.OnPayConfig;

@@ -14,8 +14,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.glide.GlideApp;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.BaseListFragment;
 import com.zqhy.app.base.BaseRecyclerAdapter;
 import com.zqhy.app.config.Constants;

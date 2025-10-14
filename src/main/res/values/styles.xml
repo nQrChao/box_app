@@ -1,4 +1,10 @@
 <resources>
+    <style name="Theme.BOX" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
 
     <!-- Fullscreen theme -->
     <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -8,193 +14,17 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
-    <!--Base Theme-->
-    <!--Theme.AppCompat.Light-->
-    <style name="AppTheme.Base" parent="XUITheme.Phone">
-        <!--no actionbar and title-->
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowNoTitle">true</item>
-        <!--action bar color-->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <!--status bar color-->
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <!--window background-->
-        <item name="android:windowBackground">@color/white</item>
-        <!--actionbar text color-->
-        <item name="android:textColorPrimary">@color/color_1b1b1b</item>
-        <item name="android:textColor">@color/color_1b1b1b</item>
-        <item name="android:textSize">@dimen/text_size_small</item>
-    </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="AppTheme.Fullscreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
         <item name="android:windowFullscreen">true</item>
-        <item name="colorPrimary">@color/white</item>
-        <item name="colorPrimaryDark">@color/white</item>
-        <item name="android:windowBackground">@drawable/bg_splash</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="AppTheme.Base">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="actionBarStyle">@style/ActionBarStyle</item>
-        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowStyle</item>
-        <item name="android:windowAnimationStyle">@style/anim_fade</item>
-        <item name="myCustomAttribute">#FFFFFFFF</item>
-    </style>
-
-    <!-- 设置标题栏样式 -->
-    <style name="ActionBarStyle" parent="Widget.AppCompat.Light.ActionBar">
-        <item name="titleTextStyle">@style/ActionBarTitleStyle</item>
-    </style>
-
-    <style name="AppTheme.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
-        <!--是否开启导航图标的旋转效果-->
-        <item name="spinBars">false</item>
-        <item name="color">@android:color/white</item>
-    </style>
-
-    <!-- 标题栏文字样式 -->
-    <style name="ActionBarTitleStyle" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textSize">16sp</item>
-    </style>
-
-    <style name="common_dialog" parent="@style/sheetdialog">
-        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
-    </style>
-
-    <style name="common_dialog_right_to_left" parent="@style/sheetdialog">
-        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimationRightToLeft
-        </item>
-    </style>
-
-    <style name="common_dialog_right_to_left_300" parent="@style/sheetdialog">
-        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimationRightToLeft_300
-        </item>
+        <item name="android:windowActionBar">false</item>
+        <!-- Customize your theme here. -->
     </style>
 
 
-    <style name="loadingDialog" parent="@android:style/Theme.Dialog">
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
-    </style>
-
-    <!-- ActionSheet进出动画 bottom to top-->
-    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
-        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
-        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
-    </style>
-
-    <!-- ActionSheet进出动画 right to left-->
-    <style name="ActionSheetDialogAnimationRightToLeft" parent="@android:style/Animation.Dialog">
-        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in_x</item>
-        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out_x</item>
-    </style>
-
-    <style name="ActionSheetDialogAnimationRightToLeft_300" parent="@android:style/Animation.Dialog">
-        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in_x_300</item>
-        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out_x_300</item>
-    </style>
-
-    <style name="rb_style_tab_game_comment">
-        <item name="android:textColor">@drawable/selector_rb_tab_game_comment_text_color</item>
-        <item name="android:background">@drawable/selector_rb_tab_game_comment_background_color</item>
-        <item name="android:button">@null</item>
-    </style>
-
-    <style name="rb_style_tab_game_comment_type_2">
-        <item name="android:textColor">@drawable/selector_rb_tab_game_comment_text_color</item>
-        <item name="android:background">@drawable/selector_rb_tab_game_comment_background_color_type_2</item>
-        <item name="android:button">@null</item>
-    </style>
-
-    <!-- popwidnow 显示消失动画-->
-
-    <style name="mypopwindow_anim_style">
-
-        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>        <!-- 指定显示的动画xml  -->
-
-        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>       <!-- 指定消失的动画xml  -->
-
-    </style>
-
-    <!--ShapeableImageView 圆角-->
-    <style name="RoundedStyle15">
-
-        <item name="cornerFamily">rounded</item>
-
-        <item name="cornerSize">15dp</item>
-
-    </style>
-    <style name="RoundedStyle10">
-
-        <item name="cornerFamily">rounded</item>
-
-        <item name="cornerSize">10dp</item>
-
-    </style>
-    <style name="RoundedStyle5">
-
-        <item name="cornerFamily">rounded</item>
-
-        <item name="cornerSize">5dp</item>
-
-    </style>
-    <style name="RoundedStyle20Top">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSizeTopLeft">20dp</item>
-        <item name="cornerSizeTopRight">20dp</item>
-        <item name="cornerSizeBottomLeft">0dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
-
-    </style>
-
-    <style name="RoundedImage">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">20%</item>
-    </style>
-
-    <style name="circleImageStyle">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">50%</item>
-    </style>
-    <!--ShapeableImageView 圆角-->
-
-    <style name="anim_fade" parent="@android:style/Animation.Activity">
-        <item name="android:activityOpenEnterAnimation">@anim/anim_fade_in</item>
-        <item name="android:activityOpenExitAnimation">@anim/anim_fade_out</item>
-        <item name="android:activityCloseEnterAnimation">@anim/anim_fade_in</item>
-        <item name="android:activityCloseExitAnimation">@anim/anim_fade_out</item>
-    </style>
-
-    <style name="Theme_App_Dialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorAccent">@color/colorPrimary</item>
-        <item name="colorPrimaryVariant">@color/colorPrimary</item>
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-    </style>
-    <style name="CustomEditTextStyle">
-        <!-- 确保这里没有设置 gravity 属性 -->
-        <item name="android:gravity">center</item>
-    </style>
-
-    <declare-styleable name="MyCustomStyleable">
-        <attr name="myCustomAttribute" format="reference|color" />
-    </declare-styleable>
 
 </resources>

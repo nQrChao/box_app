@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.BaseListFragment;
 import com.zqhy.app.base.BaseRecyclerAdapter;
 import com.zqhy.app.core.data.model.nodata.EmptyDataVo;

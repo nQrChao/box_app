@@ -23,8 +23,8 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.viewpager.widget.ViewPager;
 
-import com.chaoji.im.utils.floattoast.XToast;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.utils.floattoast.XToast;
+import com.box.other.hjq.toast.Toaster;
 import com.google.android.material.appbar.AppBarLayout;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.zqhy.app.base.BaseFragment;

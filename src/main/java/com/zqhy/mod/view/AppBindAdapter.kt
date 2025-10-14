@@ -4,9 +4,7 @@ import android.animation.ObjectAnimator
 import android.view.View
 import android.view.animation.LinearInterpolator
 import androidx.databinding.BindingAdapter
-import com.chaoji.im.glide.GlideApp
 import com.zqhy.app.newproject.R
-import com.chaoji.common.R as RC
 
 
 object AppBindAdapter {

@@ -2,7 +2,7 @@ package com.zqhy.app.config;
 
 import android.text.TextUtils;
 
-import com.chaoji.im.data.model.AppletsData;
+import com.box.common.data.model.AppletsData;
 import com.zqhy.app.App;
 import com.zqhy.app.network.utils.AppUtils;
 import com.zqhy.app.newproject.BuildConfig;

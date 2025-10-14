@@ -1,6 +1,6 @@
 package com.zqhy.app.network;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.convert.StringConvert;
 import com.lzy.okrx2.adapter.FlowableBody;

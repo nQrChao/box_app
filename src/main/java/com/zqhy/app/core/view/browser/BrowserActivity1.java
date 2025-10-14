@@ -29,7 +29,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.lzy.okgo.https.HttpsUtils;
 import com.zqhy.app.base.BaseActivity;
 import com.zqhy.app.config.Constants;

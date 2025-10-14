@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.chaoji.other.hjq.titlebar.TitleBar
+    <com.box.other.hjq.titlebar.TitleBar
         android:id="@+id/titleBar_Layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/idp_50"

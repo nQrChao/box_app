@@ -17,7 +17,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.chaoji.other.immersionbar.ImmersionBar;
+import com.box.other.immersionbar.ImmersionBar;
 import com.zqhy.app.App;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.base.BaseRecyclerAdapter;

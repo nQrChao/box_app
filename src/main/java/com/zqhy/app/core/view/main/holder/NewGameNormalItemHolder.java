@@ -14,7 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.chaoji.im.ui.adapter.HorizontalSpaceItemDecoration;
+import com.box.common.ui.adapter.HorizontalSpaceItemDecoration;
 import com.zqhy.app.Setting;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.base.holder.AbsHolder;

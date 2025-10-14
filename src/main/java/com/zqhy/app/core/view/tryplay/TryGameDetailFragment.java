@@ -22,7 +22,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.adapter.abs.AbsAdapter;
 import com.zqhy.app.base.collapsing.BaseCollapsingViewPagerFragment;
 import com.zqhy.app.core.data.model.game.GameInfoVo;

@@ -2,11 +2,11 @@ package com.zqhy.mod.game
 
 import android.content.Context
 import android.content.Intent
-import com.chaoji.im.parseWithSplitToList
-import com.chaoji.mod.game.ModManager
-import com.chaoji.mod.ui.activity.game.ModActivityGameBrowser
-import com.chaoji.mod.ui.activity.game.ModActivityLocalGameBrowser
-import com.chaoji.other.blankj.utilcode.util.ActivityUtils
+import com.box.im.parseWithSplitToList
+import com.box.mod.game.ModManager
+import com.box.mod.ui.activity.game.ModActivityGameBrowser
+import com.box.mod.ui.activity.game.ModActivityLocalGameBrowser
+import com.box.other.blankj.utilcode.util.ActivityUtils
 import com.zqhy.app.core.view.FragmentHolderActivity
 import com.zqhy.app.core.view.game.GameDetailInfoFragment
 import com.zqhy.app.core.view.main.MainActivity

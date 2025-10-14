@@ -1,6 +1,6 @@
 package com.zqhy.app.core.data.model.splash;
 
-import com.chaoji.im.data.model.AppletsData;
+import com.box.common.data.model.AppletsData;
 import com.kunminx.architecture.ui.callback.UnPeekLiveData;
 import com.zqhy.app.core.data.model.BaseVo;
 

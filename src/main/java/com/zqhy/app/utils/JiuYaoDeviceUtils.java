@@ -9,9 +9,8 @@ import android.provider.Settings;
 import androidx.core.app.ActivityCompat;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import android.util.Log;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.zqhy.app.App;
 import com.zqhy.app.DeviceBean;
 import com.zqhy.app.core.tool.utilcode.DeviceUtils;

@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.IBinder;
 import androidx.annotation.Nullable;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.zqhy.app.config.OnPayConfig;
 import com.zqhy.app.core.pay.PayResultVo;
 import com.zqhy.app.report.AllDataReportAgency;

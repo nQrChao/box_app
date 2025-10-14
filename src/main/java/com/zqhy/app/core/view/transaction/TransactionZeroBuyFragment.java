@@ -24,7 +24,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.google.android.material.appbar.AppBarLayout;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.zqhy.app.base.BaseFragment;

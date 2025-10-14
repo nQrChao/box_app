@@ -8,7 +8,7 @@
 
         <import type="android.text.Html" />
 
-        <import type="com.chaoji.other.blankj.utilcode.util.StringUtils" />
+        <import type="com.box.other.blankj.utilcode.util.StringUtils" />
 
         <variable
             name="vm"
@@ -158,7 +158,7 @@
 
         </LinearLayout>
 
-        <com.chaoji.other.scwang.smartrefresh.layout.SmartRefreshLayout
+        <com.box.other.scwang.smartrefresh.layout.SmartRefreshLayout
             android:id="@+id/refreshLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -170,7 +170,7 @@
             app:srlEnableRefresh="false"
             app:tab_draw_divider="true">
 
-            <com.chaoji.other.scwang.smart.refresh.header.MaterialHeader
+            <com.box.other.scwang.smart.refresh.header.MaterialHeader
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -184,11 +184,11 @@
                 bind:itemCount="2"
                 tools:listitem="@layout/item_xiao_game" />
 
-            <com.chaoji.other.scwang.smart.refresh.footer.ClassicsFooter
+            <com.box.other.scwang.smart.refresh.footer.ClassicsFooter
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-        </com.chaoji.other.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </com.box.other.scwang.smartrefresh.layout.SmartRefreshLayout>
 
     </LinearLayout>
 </layout>

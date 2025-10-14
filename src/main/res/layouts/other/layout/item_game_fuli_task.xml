@@ -7,11 +7,11 @@
 
         <import type="android.view.View" />
 
-        <import type="com.chaoji.other.blankj.utilcode.util.StringUtils" />
+        <import type="com.box.other.blankj.utilcode.util.StringUtils" />
 
         <variable
             name="taskArray"
-            type="com.chaoji.im.data.model.AppletsXiaoGameFuLiInfo.PlayInfo.TaskArray" />
+            type="com.box.common.data.model.AppletsXiaoGameFuLiInfo.PlayInfo.TaskArray" />
 
     </data>
 

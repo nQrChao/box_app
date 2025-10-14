@@ -4,7 +4,7 @@ import android.annotation.SuppressLint;
 import android.os.Build;
 import android.text.TextUtils;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.mvvm.http.rx.RxSchedulers;
@@ -24,7 +24,6 @@ import com.zqhy.app.core.data.model.user.UserInfoVo;
 import com.zqhy.app.core.inner.OnNetWorkListener;
 import com.zqhy.app.core.ui.eventbus.EventCenter;
 import com.zqhy.app.model.UserInfoModel;
-import com.zqhy.app.network.IApiService;
 import com.zqhy.app.network.rx.RxObserver;
 import com.zqhy.app.network.rx.RxSubscriber;
 import com.zqhy.app.utils.sp.SPUtils;

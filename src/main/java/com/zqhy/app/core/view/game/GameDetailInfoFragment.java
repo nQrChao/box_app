@@ -53,12 +53,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewpager.widget.ViewPager;
 
-import com.chaoji.im.utils.floattoast.XToast;
-import com.chaoji.other.blankj.utilcode.util.ActivityUtils;
-import com.chaoji.other.blankj.utilcode.util.AppUtils;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.blankj.utilcode.util.StringUtils;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.utils.floattoast.XToast;
+import com.box.other.blankj.utilcode.util.ActivityUtils;
+import com.box.other.blankj.utilcode.util.AppUtils;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.StringUtils;
+import com.box.other.hjq.toast.Toaster;
 import com.google.android.flexbox.FlexboxLayout;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -189,7 +189,7 @@ import com.zqhy.app.utils.LifeUtil;
 import com.zqhy.app.utils.RecyclerViewNoBugLinearLayoutManager;
 import com.zqhy.app.utils.sdcard.SdCardManager;
 import com.zqhy.app.utils.sp.SPUtils;
-import com.chaoji.mod.view.FloatViewHelper;
+import com.box.mod.view.FloatViewHelper;
 import com.zqhy.mod.game.GameLauncher;
 
 import org.greenrobot.eventbus.EventBus;

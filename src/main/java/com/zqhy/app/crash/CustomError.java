@@ -1,6 +1,6 @@
 package com.zqhy.app.crash;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

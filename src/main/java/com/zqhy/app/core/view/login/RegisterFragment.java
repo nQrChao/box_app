@@ -1,6 +1,6 @@
 package com.zqhy.app.core.view.login;
 
-import static com.chaoji.mod.game.ModManager.LOGIN_OK;
+import static com.box.mod.game.ModManager.LOGIN_OK;
 
 import android.Manifest;
 import android.content.Intent;
@@ -28,8 +28,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.config.Constants;
 import com.zqhy.app.core.data.model.user.UserInfoVo;

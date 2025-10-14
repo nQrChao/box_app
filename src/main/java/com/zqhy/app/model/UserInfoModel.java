@@ -6,7 +6,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.zqhy.app.App;
 import com.zqhy.app.config.EventConfig;
 import com.zqhy.app.config.InviteConfig;

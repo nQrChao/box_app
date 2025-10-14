@@ -5,7 +5,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -20,13 +19,11 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.SimpleTarget;
-import com.chaoji.im.glide.GlideApp;
+import com.box.common.glide.GlideApp;
 import com.zqhy.app.base.holder.AbsHolder;
 import com.zqhy.app.base.holder.BaseItemHolder;
 import com.zqhy.app.core.data.model.game.new0809.MainJingXuanDataVo;
-import com.zqhy.app.core.data.model.jump.AppJumpInfoBean;
 import com.zqhy.app.core.tool.ScreenUtil;
-import com.zqhy.app.glide.GlideRoundTransformNew;
 import com.zqhy.app.newproject.R;
 
 /**

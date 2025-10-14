@@ -6,10 +6,10 @@
     <data>
 
         <import type="android.view.View" />
-        <import type="com.chaoji.other.blankj.utilcode.util.StringUtils" />
+        <import type="com.box.other.blankj.utilcode.util.StringUtils" />
         <variable
             name="xiaoGameBean"
-            type="com.chaoji.im.data.model.AppletsXiaoGameBean" />
+            type="com.box.common.data.model.AppletsXiaoGameBean" />
 
     </data>
 

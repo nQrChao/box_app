@@ -1,14 +1,14 @@
 package com.zqhy.app.core.view.login.gamelogin;
 
-import static com.chaoji.im.sdk.ImSDKKt.getAppViewModel;
+import static com.box.common.sdk.ImSDKKt.getAppViewModel;
 
 import android.app.Activity;
 import android.graphics.Color;
 import android.text.TextUtils;
 
-import com.chaoji.im.data.model.AppletsData;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.blankj.utilcode.util.StringUtils;
+import com.box.common.data.model.AppletsData;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.StringUtils;
 import com.mobile.auth.gatewayauth.AuthUIConfig;
 import com.mobile.auth.gatewayauth.PhoneNumberAuthHelper;
 import com.mobile.auth.gatewayauth.ResultCode;

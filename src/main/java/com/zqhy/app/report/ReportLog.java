@@ -2,9 +2,8 @@ package com.zqhy.app.report;
 
 import androidx.annotation.NonNull;
 import android.text.TextUtils;
-import android.util.Log;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.zqhy.app.App;
 import com.zqhy.app.utils.cache.ACache;
 

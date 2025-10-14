@@ -6,9 +6,9 @@ import android.text.TextUtils;
 
 
 import com.blankj.utilcode.util.NetworkUtils;
-import com.chaoji.im.sdk.ImSDK;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.cnoaid.oaid.DeviceIdentifier;
+import com.box.common.sdk.ImSDK;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.cnoaid.oaid.DeviceIdentifier;
 import com.lzy.okgo.OkGo;
 import com.zqhy.app.App;
 import com.zqhy.app.DeviceBean;
@@ -26,8 +26,6 @@ import com.zqhy.app.network.utils.AppUtils;
 import com.zqhy.app.network.utils.Des;
 import com.zqhy.app.newproject.BuildConfig;
 import com.zqhy.app.push.PushIntentService;
-import com.zqhy.app.utils.JiuYaoDeviceUtils;
-import com.zqhy.app.utils.TsDeviceUtils;
 import com.zqhy.app.utils.sp.SPUtils;
 
 import org.greenrobot.eventbus.EventBus;
@@ -35,7 +33,6 @@ import org.greenrobot.eventbus.EventBus;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
@@ -178,7 +175,7 @@ public class OkGoApiBuilder {
          */
         params.put("appid", BuildConfig.APP_UPDATE_ID);
 
-        params.put("android_infos", DeviceUtils.getModel()+"|"+Build.BRAND+"|"+Build.VERSION.RELEASE+"|"+Build.VERSION.SDK_INT+"|"+com.chaoji.other.blankj.utilcode.util.AppUtils.getAppName()+"|"+Build.SUPPORTED_ABIS[0]+"|"+com.chaoji.other.blankj.utilcode.util.AppUtils.getAppSignaturesSHA1().get(0));
+        params.put("android_infos", DeviceUtils.getModel()+"|"+Build.BRAND+"|"+Build.VERSION.RELEASE+"|"+Build.VERSION.SDK_INT+"|"+com.box.other.blankj.utilcode.util.AppUtils.getAppName()+"|"+Build.SUPPORTED_ABIS[0]+"|"+com.box.other.blankj.utilcode.util.AppUtils.getAppSignaturesSHA1().get(0));
 
         //sign签名
         params.put("sign", AppUtils.getSignKey(params));

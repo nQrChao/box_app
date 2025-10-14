@@ -20,7 +20,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.adapter.abs.AbsChooseAdapter;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.core.data.model.rebate.RebateCommitVo;

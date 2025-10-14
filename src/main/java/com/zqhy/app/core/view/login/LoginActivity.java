@@ -1,7 +1,7 @@
 package com.zqhy.app.core.view.login;
 
-import static com.chaoji.mod.game.ModManager.LOGIN_CANCEL;
-import static com.chaoji.mod.game.ModManager.LOGIN_OK;
+import static com.box.mod.game.ModManager.LOGIN_CANCEL;
+import static com.box.mod.game.ModManager.LOGIN_OK;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,9 +20,9 @@ import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 
-import com.chaoji.im.IMUtilsKt;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.IMUtilsKt;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.mobile.auth.gatewayauth.ResultCode;
 import com.mobile.auth.gatewayauth.model.TokenRet;
 import com.zqhy.app.App;

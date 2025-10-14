@@ -10,7 +10,7 @@ if (project.hasProperty('MOD_SRC_DIR') && MOD_SRC_DIR.toLowerCase().contains("hu
     println "\n\033[40;36;4m--- 检测到华为渠道，应用 AppGallery Connect 插件 ---\033[0m"
     apply plugin: 'com.huawei.agconnect'
 }
-def keyPropertiesFile = file("../xdyx_common/keystore.properties")
+def keyPropertiesFile = file("../mod_common/keystore.properties")
 def keyProperties = new Properties()
 keyProperties.load(new FileInputStream(keyPropertiesFile))
 
@@ -19,7 +19,7 @@ def static buildTime() {
 }
 
 ext.moduleType = 'app'
-apply from: '../xdyx_common/base.gradle'
+apply from: '../mod_common/base.gradle'
 
 
 android {
@@ -222,8 +222,6 @@ android {
     repositories {
         maven {
             url = uri("libs")
-            url = uri("../library/core/libs")
-            url = uri("../library/mmvm/libs")
         }
     }
 
@@ -250,103 +248,26 @@ tasks.register('buildRelease') {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation project(':xdyx_app_lib:core')
-    implementation project(':xdyx_app_lib:basiccomponent:library')
-    implementation project(':xdyx_app_lib:basiccomponent:xrecyclerview')
-    implementation project(':xdyx_app_lib:mvvm')
-    implementation project(':xdyx_app_lib:banner')
-    implementation project(':xdyx_app_lib:imageselector')
-    implementation project(':xdyx_app_lib:dynamicpagerindicatorlibrary')
-    implementation project(':xdyx_app_lib:ViewPagerIndicator')
-    implementation files('libs/libammsdk.jar')
-    implementation files('libs/open_sdk_r5990_lite.jar')
-    implementation files('libs/SaaS_AdTracking_Android_SDK_V4.0.27.jar')
-    implementation files('libs/SaaS_AppAnalytics_Android_SDK_V4.0.27.jar')
-    implementation files('libs/tbs_sdk_thirdapp_v4.3.0.151_44051_sharewithdownloadwithfile_withoutGame_obfs_20210524_174029.jar')
-    //JZ播放器
-    implementation libs.jzvd.jiaozivideoplayer
     if (MOD_HAS_VIDEO == false) {
-        implementation libs.danmaku.ijkplayer.java
-        implementation libs.danmaku.ijkplayer.armv7a
-        implementation project(':xdyx_app_lib:androidvideocache')
-    }
 
+    }
+    implementation libs.google.gson
     implementation libs.google.material
+    implementation libs.google.exoplayer
+
+    implementation libs.blankj.utilcode
+
     implementation libs.flycotablayout.lib
-    //implementation 'com.kcrason:dynamicpagerindicator:1.0.6'
-    kapt libs.github.raizlabs.dbflow.processor
-    implementation libs.github.raizlabs.dbflow.core
-    implementation libs.github.raizlabs.dbflow
-    implementation libs.github.dongjunkun.couponview
-    implementation libs.lygttpod.supertextview
-    //implementation 'net.robinx:lib.blurview:1.0.2'
-    implementation libs.getui.gtsdk  //个推SDK
-    implementation libs.getui.gtc  //个推核心组件
-    // 友盟统计SDK
     implementation libs.umeng.common// 必选
     implementation libs.umeng.asms// 必选
-    //implementation libs.github.tbruyelle.rxpermissions
-    implementation libs.shaohui.advancedluban.library
-    implementation libs.github.iwgang.countdownview
 
-    implementation libs.google.exoplayer
-    implementation libs.blankj.utilcode
     implementation libs.youth.banner
-    implementation libs.google.gson
-    //文件压缩/解压
-    implementation libs.zt.zip
-    implementation libs.jetbrains.kotlin.stdlib
-    implementation libs.tencent.crashreport
-    //数据库
-    implementation libs.litepal.guolindev.core
     implementation libs.androidx.fragment
-    //xui
-    implementation libs.github.xuexiangjys.xui
-    //2022.05.20 悬浮窗
-    implementation libs.github.princekin.f.easyfloat
-    //2020.01.17 热云SDK start
-    implementation files('libs/GDTActionSDK.min.1.9.1.aar')
-    implementation files('libs/bcprov-jdk16-139.jar')
-    implementation files('libs/humesdk-1.0.0.aar')
-    //implementation(name: 'humesdk-1.0.0', ext: 'aar')
-    //2020.03.03
-    //debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
-    //releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
-//    implementation 'com.qiyukf.unicorn:unicorn:5.7.7'
-    //2021.08.25
-    implementation files('libs/monitorsdk-1.0.9.aar')
-    //2021.12.20 神马数据回传
-    implementation files('libs/sdk_gism-1.3.2.aar')
-    //implementation(name: 'sdk_gism-1.3.2', ext: 'aar') { transitive false }
-    //2022.10.28 腾讯分包sdk
-    //implementation 'com.tencent.vasdolly:helper:3.0.4'
-    //2023.05.26 快手分包sdk
-    implementation files('libs/channelsdk-0.2.2.aar')
     //2024.03.15 一键登录 阿里云新版
     implementation files('libs/main-2.2.3-release.aar')
     implementation files('libs/logger-2.2.2-release.aar')
     implementation files('libs/auth_number_product-2.14.14-log-online-standard-cuum-release.aar')
 
-    //2024.07.04 火山云游
-    //implementation 'com.volcengine.vegame:vegame:1.32.3'
-    //长链接
-    //implementation "org.java-websocket:Java-WebSocket:1.5.7"
-    //implementation 'com.sample.app:sdk:1.0.0'
-    //implementation("com.squareup.okhttp3:okhttp:4.10.0")
-    //implementation 'com.iqiyi.xcrash:xcrash-android-lib:3.0.0'
-    //implementation("com.vmos:vmos-lite-sdk:1.1.3")
-    //compileOnly 'com.vmos:hiddenapi-stub:1.1.5'
-    /*implementation(name: 'gmspace-base-sdk-1.1.4', ext: 'aar')
-    implementation(name: 'hiddenapibypass-4.3', ext: 'aar')
-    compileOnly 'com.vmos:hiddenapi-stub:1.1.5'
-    implementation(name: 'sdk-1.1.0', ext: 'aar')
-    implementation 'top.canyie.pine:core:0.3.0'*/
-
-    /*implementation project(':contactkit-ui')
-    implementation project(':conversationkit-ui')
-    implementation project(':teamkit-ui')
-    implementation project(':chatkit-ui')*/
 }
 
 

@@ -1,9 +1,8 @@
 package com.zqhy.app.report;
 
 import android.content.Context;
-import android.util.Log;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.gism.sdk.GismConfig;
 import com.gism.sdk.GismEventBuilder;
 import com.gism.sdk.GismSDK;

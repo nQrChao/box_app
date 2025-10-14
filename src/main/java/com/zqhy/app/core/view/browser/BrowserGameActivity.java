@@ -7,8 +7,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
@@ -25,15 +23,15 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 
-import com.chaoji.common.BuildConfig;
-import com.chaoji.im.sdk.ImSDK;
-import com.chaoji.im.utils.floattoast.XToast;
-import com.chaoji.mod.view.FloatViewHelper;
-import com.chaoji.other.blankj.utilcode.util.DeviceUtils;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.blankj.utilcode.util.ResourceUtils;
-import com.chaoji.other.hjq.toast.Toaster;
-import com.chaoji.other.immersionbar.ImmersionBar;
+import com.box.common.BuildConfig;
+import com.box.common.sdk.ImSDK;
+import com.box.common.utils.floattoast.XToast;
+import com.box.mod.view.FloatViewHelper;
+import com.box.other.blankj.utilcode.util.DeviceUtils;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.ResourceUtils;
+import com.box.other.hjq.toast.Toaster;
+import com.box.other.immersionbar.ImmersionBar;
 import com.tencent.smtt.export.external.interfaces.SslError;
 import com.tencent.smtt.export.external.interfaces.SslErrorHandler;
 import com.tencent.smtt.sdk.DownloadListener;
@@ -46,13 +44,11 @@ import com.zqhy.app.base.BaseActivity;
 import com.zqhy.app.config.Constants;
 import com.zqhy.app.core.ui.eventbus.EventCenter;
 import com.zqhy.app.core.ui.eventbus.WxPayCallBack;
-import com.zqhy.app.core.view.main.MainActivity;
 import com.zqhy.app.model.UserInfoModel;
 import com.zqhy.app.newproject.R;
 import com.zqhy.app.receiver.WxPayReceiver;
 import com.zqhy.app.utils.AndroidBug5497Workaround;
 import com.zqhy.app.utils.CommonUtils;
-import com.zqhy.mod.game.GameLauncher;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
@@ -622,7 +618,7 @@ public class BrowserGameActivity extends BaseActivity {
 
     private void showDownLoadFloat(String downUrl) {
         if (mDownLoadFloat == null)
-            mDownLoadFloat = FloatViewHelper.INSTANCE.createDownFloatView(this, ResourceUtils.getDrawable(com.chaoji.common.R.drawable.xd_icon), downUrl,new Function0<Unit>() {
+            mDownLoadFloat = FloatViewHelper.INSTANCE.createDownFloatView(this, ResourceUtils.getDrawable(com.box.common.R.drawable.xd_icon), downUrl,new Function0<Unit>() {
                 @Override
                 public Unit invoke() {
 

@@ -14,8 +14,8 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.donkingliang.imageselector.event.PhotoEvent;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.base.BaseRecyclerAdapter;

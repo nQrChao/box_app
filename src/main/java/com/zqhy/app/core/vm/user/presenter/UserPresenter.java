@@ -1,14 +1,13 @@
 package com.zqhy.app.core.vm.user.presenter;
 
 
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.google.gson.Gson;
 import com.mvvm.event.LiveBus;
 import com.zqhy.app.base.BaseFragment;

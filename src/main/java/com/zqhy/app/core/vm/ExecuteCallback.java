@@ -1,6 +1,6 @@
 package com.zqhy.app.core.vm;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.google.gson.JsonParseException;
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.Response;

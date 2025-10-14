@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSmoothScroller;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.chaoji.im.sdk.ImSDK;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.sdk.ImSDK;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.Setting;
 import com.zqhy.app.base.BaseRecyclerAdapter;
 import com.zqhy.app.core.data.model.banner.BannerListVo;

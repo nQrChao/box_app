@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.annotation.DrawableRes
-import com.chaoji.common.R
 
 /**
  * 引导视图（显示组件） - Kotlin 版本

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.BaseListFragment;
 import com.zqhy.app.base.BaseRecyclerAdapter;
 import com.zqhy.app.core.data.model.game.GameInfoVo;

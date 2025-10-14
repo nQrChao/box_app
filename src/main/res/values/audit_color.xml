@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="audit_main_color">#FF6C00</color>
-    <color name="audit_dark_color">#26FF6C00</color>
-    <color name="audit_small_text_color">#1b8f08</color>
-</resources>

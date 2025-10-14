@@ -21,10 +21,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
-import com.chaoji.other.hjq.titlebar.OnTitleBarListener;
-import com.chaoji.other.hjq.titlebar.TitleBar;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.common.glide.GlideApp;
+import com.box.other.hjq.titlebar.OnTitleBarListener;
+import com.box.other.hjq.titlebar.TitleBar;
+import com.box.other.hjq.toast.Toaster;
 import com.donkingliang.imageselector.PreviewActivity;
 import com.donkingliang.imageselector.entry.Image;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;

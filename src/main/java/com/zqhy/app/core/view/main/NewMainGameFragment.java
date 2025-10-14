@@ -7,7 +7,7 @@ import android.widget.RelativeLayout;
 
 import androidx.fragment.app.FragmentTransaction;
 
-import com.chaoji.other.immersionbar.ImmersionBar;
+import com.box.other.immersionbar.ImmersionBar;
 import com.mvvm.base.BaseMvvmFragment;
 import com.zqhy.app.base.BaseFragment;
 import com.zqhy.app.core.view.game.GameDownloadManagerFragment;

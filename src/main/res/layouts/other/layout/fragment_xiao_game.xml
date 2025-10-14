@@ -8,7 +8,7 @@
 
         <import type="android.text.Html" />
 
-        <import type="com.chaoji.other.blankj.utilcode.util.StringUtils" />
+        <import type="com.box.other.blankj.utilcode.util.StringUtils" />
 
         <variable
             name="vm"
@@ -24,14 +24,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.chaoji.other.scwang.smartrefresh.layout.SmartRefreshLayout
+        <com.box.other.scwang.smartrefresh.layout.SmartRefreshLayout
             android:id="@+id/refresh_Layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:srlEnableLoadMore="true"
             app:srlEnableRefresh="true">
 
-            <com.chaoji.other.scwang.smart.refresh.header.MaterialHeader
+            <com.box.other.scwang.smart.refresh.header.MaterialHeader
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -41,7 +41,7 @@
                 android:layout_height="match_parent"
                 android:paddingVertical="@dimen/idp_10">
 
-                <com.chaoji.im.ui.layout.StatusLayout
+                <com.box.common.ui.layout.StatusLayout
                     android:id="@+id/hl_hint"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -129,7 +129,7 @@
                                     android:orientation="horizontal"
                                     android:paddingVertical="@dimen/idp_15">
 
-                                    <com.chaoji.im.ui.view.DrawableTextView
+                                    <com.box.common.ui.view.DrawableTextView
                                         android:id="@+id/fuLiCount"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
@@ -286,7 +286,7 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="1" />
 
-                            <com.chaoji.im.ui.view.DrawableTextView
+                            <com.box.common.ui.view.DrawableTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:drawableEnd="@drawable/fragment_h5_game_wenhao2"
@@ -427,16 +427,16 @@
 
                     </LinearLayout>
 
-                </com.chaoji.im.ui.layout.StatusLayout>
+                </com.box.common.ui.layout.StatusLayout>
 
             </androidx.core.widget.NestedScrollView>
 
-            <com.chaoji.other.scwang.smart.refresh.footer.ClassicsFooter
+            <com.box.other.scwang.smart.refresh.footer.ClassicsFooter
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        </com.chaoji.other.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </com.box.other.scwang.smartrefresh.layout.SmartRefreshLayout>
 
-        <com.chaoji.im.ui.view.VerticalDrawableTextView
+        <com.box.common.ui.view.VerticalDrawableTextView
             android:id="@+id/textRight"
             android:layout_width="@dimen/idp_22"
             android:layout_height="@dimen/idp_300"

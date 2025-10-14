@@ -3,8 +3,8 @@ package com.zqhy.app.network.request;
 import android.content.Intent;
 import android.text.TextUtils;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
 import com.zqhy.app.base.BaseActivity;
 import com.zqhy.app.core.data.model.user.UserInfoVo;
 import com.zqhy.app.core.view.login.LoginActivity;

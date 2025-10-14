@@ -20,7 +20,7 @@ import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.util.Log;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 
 import java.io.File;
 import java.nio.ByteBuffer;

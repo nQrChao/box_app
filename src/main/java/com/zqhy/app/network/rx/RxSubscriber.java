@@ -3,7 +3,7 @@ package com.zqhy.app.network.rx;
 
 import android.content.Intent;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.google.gson.Gson;
 import com.google.gson.JsonParseException;
 import com.google.gson.reflect.TypeToken;
@@ -15,7 +15,6 @@ import com.zqhy.app.config.EventConfig;
 import com.zqhy.app.config.URL;
 import com.zqhy.app.core.data.BaseRepository;
 import com.zqhy.app.core.data.model.BaseResponseVo;
-import com.zqhy.app.core.data.model.user.CurrencyListVo;
 import com.zqhy.app.core.inner.OnNetWorkListener;
 import com.zqhy.app.core.ui.eventbus.EventCenter;
 import com.zqhy.app.core.ui.receiver.NetStateReceiver;

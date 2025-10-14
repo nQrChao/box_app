@@ -1,9 +1,8 @@
 package com.zqhy.app.report;
 
 import android.content.Context;
-import android.util.Log;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.umeng.analytics.MobclickAgent;
 import com.zqhy.app.App;
 import com.zqhy.app.core.pay.PayResultVo;

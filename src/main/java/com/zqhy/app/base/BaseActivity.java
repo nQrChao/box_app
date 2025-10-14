@@ -34,10 +34,10 @@ import androidx.annotation.NonNull;
 import androidx.core.view.ViewCompat;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
-import com.chaoji.other.blankj.utilcode.util.Logs;
-import com.chaoji.other.hjq.toast.Toaster;
-import com.chaoji.other.immersionbar.ImmersionBar;
+import com.box.common.glide.GlideApp;
+import com.box.other.blankj.utilcode.util.Logs;
+import com.box.other.hjq.toast.Toaster;
+import com.box.other.immersionbar.ImmersionBar;
 import com.lzf.easyfloat.EasyFloat;
 import com.lzf.easyfloat.enums.SidePattern;
 import com.mvvm.base.AbsLifecycleActivity;

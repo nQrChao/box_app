@@ -16,8 +16,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.chaoji.im.glide.GlideApp;
-import com.chaoji.im.sdk.ImSDK;
+import com.box.common.glide.GlideApp;
+import com.box.common.sdk.ImSDK;
 import com.zqhy.app.adapter.abs.AbsAdapter;
 import com.zqhy.app.base.holder.AbsHolder;
 import com.zqhy.app.base.holder.BaseItemHolder;

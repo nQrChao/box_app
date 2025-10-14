@@ -7,7 +7,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.bytedance.hume.readapk.HumeSDK;
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.kwai.monitor.payload.TurboHelper;
 import com.zqhy.app.App;
 import com.zqhy.app.core.tool.AppUtil;

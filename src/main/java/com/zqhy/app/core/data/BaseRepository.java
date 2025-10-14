@@ -14,7 +14,7 @@ import android.widget.ImageView;
 
 import androidx.core.content.ContextCompat;
 
-import com.chaoji.other.blankj.utilcode.util.Logs;
+import com.box.other.blankj.utilcode.util.Logs;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.lzy.okgo.OkGo;
@@ -42,7 +42,6 @@ import com.zqhy.app.core.data.model.user.CancellationVo;
 import com.zqhy.app.core.data.model.user.RefundGamesVo;
 import com.zqhy.app.core.data.model.user.UserInfoVo;
 import com.zqhy.app.core.data.model.user.VerificationCodeVo;
-import com.zqhy.app.core.data.model.user.newvip.AppFloatIconVo;
 import com.zqhy.app.core.data.model.user.newvip.BirthdayRewardVo;
 import com.zqhy.app.core.data.model.user.newvip.SuperBirthdayRewardVo;
 import com.zqhy.app.core.data.model.version.VersionVo;
