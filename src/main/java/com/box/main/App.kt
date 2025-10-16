@@ -1,13 +1,27 @@
 package com.box.main
 
-import android.app.Application
-import com.box.im.glide.GlideApp
-import com.box.im.sdk.ImSDK
+import androidx.multidex.MultiDexApplication
+import com.box.com.glide.GlideApp
+import com.box.common.AppInit // 确保这里的包名正确
+import com.box.main.mod.ModProviderImpl
+import com.box.mod.game.ModComService
 
-class App : Application() {
+
+/**
+ * 应用的 Application 类
+ */
+class App : MultiDexApplication() {
+
+    companion object {
+        lateinit var instance: App
+            private set
+    }
+
     override fun onCreate() {
         super.onCreate()
-        ImSDK.instance.init(this)
+        instance = this
+        AppInit.init(this)
+        ModComService.init(ModProviderImpl())
     }
 
     override fun onLowMemory() {
