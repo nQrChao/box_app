@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@drawable/ts_shape_gradient_big_radius_55a8fe_4e77fe" android:state_selected="true" />
-    <item android:drawable="@drawable/ts_shape_big_radius_c1c1c1" android:state_selected="false"/>
-</selector>

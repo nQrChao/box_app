@@ -1,4 +1,0 @@
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/bg_e2f3ff_50_radius" android:state_selected="true"/>
-    <item android:drawable="@drawable/bg_ffffff_50_radius"/>
-</selector>

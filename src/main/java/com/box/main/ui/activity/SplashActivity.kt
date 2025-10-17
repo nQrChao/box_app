@@ -4,9 +4,10 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.activity.viewModels
+import com.angcyo.dsladapter.L.it
 import com.box.base.base.activity.BaseModVmDbActivity
 import com.box.base.network.NetState
-import com.box.common.sdk.eventViewModel
+import com.box.common.eventViewModel
 import com.box.common.utils.loge
 
 import com.zqhy.app.newproject.R
