@@ -7,8 +7,10 @@ import androidx.activity.viewModels
 import com.angcyo.dsladapter.L.it
 import com.box.base.base.activity.BaseModVmDbActivity
 import com.box.base.network.NetState
+import com.box.common.appContext
 import com.box.common.eventViewModel
 import com.box.common.utils.loge
+import com.box.mod.ui.activity.ModActivityMain
 
 import com.zqhy.app.newproject.R
 import com.zqhy.app.newproject.databinding.ActivitySplashBinding
@@ -34,11 +36,13 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
                 NavigationTarget.GO_TO_LOGIN -> {
                     // 跳转到登录页
                     // startActivity(Intent(applicationContext, ActivityLogin::class.java))
+                    startModMain()
                     finish() // 跳转后结束当前页
                 }
                 NavigationTarget.GO_TO_MAIN -> {
                     // 跳转到主页
                     // startActivity(Intent(applicationContext, MainActivity::class.java))
+                    startModMain()
                     finish() // 跳转后结束当前页
                 }
                 null -> {
@@ -54,6 +58,10 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
                 finish()
             }
         }
+    }
+
+    fun startModMain(){
+        ModActivityMain.start(appContext)
     }
 
 

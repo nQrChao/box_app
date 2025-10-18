@@ -1,8 +1,8 @@
 package com.box.main
 
 import androidx.multidex.MultiDexApplication
-import com.box.com.glide.GlideApp
 import com.box.common.AppInit // 确保这里的包名正确
+import com.box.common.glide.GlideApp
 import com.box.main.mod.ModProviderImpl
 import com.box.mod.game.ModComService
 

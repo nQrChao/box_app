@@ -267,7 +267,7 @@ dependencies {
     implementation files('libs/main-2.2.3-release.aar')
     implementation files('libs/logger-2.2.2-release.aar')
     implementation files('libs/auth_number_product-2.14.14-log-online-standard-cuum-release.aar')
-    implementation project(':mod_common')
+    //implementation project(':mod_common')
 
 }
 
