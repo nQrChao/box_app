@@ -251,18 +251,13 @@ dependencies {
     if (MOD_HAS_VIDEO == false) {
 
     }
-    implementation libs.google.gson
+
     implementation libs.google.material
     implementation libs.google.exoplayer
 
-    implementation libs.blankj.utilcode
-
+    //implementation libs.blankj.utilcode
     implementation libs.flycotablayout.lib
-    implementation libs.umeng.common// 必选
-    implementation libs.umeng.asms// 必选
 
-    implementation libs.youth.banner
-    implementation libs.androidx.fragment
     //2024.03.15 一键登录 阿里云新版
     implementation files('libs/main-2.2.3-release.aar')
     implementation files('libs/logger-2.2.2-release.aar')
