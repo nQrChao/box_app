@@ -1,11 +1,7 @@
 package com.box.main.mod
 
 import android.content.Context
-import android.content.Intent
-import com.blankj.utilcode.util.ActivityUtils
-import com.box.common.parseWithSplitToList
 import com.box.mod.game.ModManager
-import kotlin.jvm.java
 
 object GameLauncher {
     const val GAME_URL = ModManager.GAME_URL

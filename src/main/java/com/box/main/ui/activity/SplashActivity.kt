@@ -11,9 +11,9 @@ import com.box.common.appContext
 import com.box.common.eventViewModel
 import com.box.common.utils.loge
 import com.box.mod.ui.activity.ModActivityMain
+import com.boxapp.project.R
+import com.boxapp.project.databinding.ActivitySplashBinding
 
-import com.zqhy.app.newproject.R
-import com.zqhy.app.newproject.databinding.ActivitySplashBinding
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBinding>() {
