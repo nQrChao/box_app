@@ -4,7 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import androidx.activity.result.ActivityResultLauncher
-import com.box.common.utils.MMKVUtil
+import com.box.common.MMKVConfig
 import com.box.main.App
 import com.box.mod.game.ModProvider
 
@@ -90,7 +90,7 @@ class ModProviderImpl : ModProvider {
     }
 
     override fun getMarketInitJson(): String {
-        return MMKVUtil.getMarketInit() ?: ""
+        return MMKVConfig.modInit.toString()
     }
 
     override fun hasOneKeyLogin(): Boolean {
@@ -102,6 +102,13 @@ class ModProviderImpl : ModProvider {
     }
 
     override fun startCurrencyFragment() {
+
     }
+
+    override fun getDeviceInfo() {
+
+    }
+
+
 
 }

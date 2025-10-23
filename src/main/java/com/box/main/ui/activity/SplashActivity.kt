@@ -4,12 +4,11 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.activity.viewModels
-import com.angcyo.dsladapter.L.it
 import com.box.base.base.activity.BaseModVmDbActivity
 import com.box.base.network.NetState
 import com.box.common.appContext
 import com.box.common.eventViewModel
-import com.box.common.utils.loge
+import com.box.common.utils.logsE
 import com.box.mod.ui.activity.ModActivityMain
 import com.boxapp.project.R
 import com.boxapp.project.databinding.ActivitySplashBinding
@@ -46,7 +45,7 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
                     finish() // 跳转后结束当前页
                 }
                 null -> {
-                    loge("GO_TO_NULL")
+                    logsE("GO_TO_NULL")
                 }
             }
         }

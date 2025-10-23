@@ -95,17 +95,15 @@ android {
     }
 
     buildFeatures {
+        buildConfig = true
         dataBinding = true
         viewBinding = true
     }
 
-    kotlinOptions {
-        jvmTarget = '1.8'
-    }
 
     compileOptions {
-        targetCompatibility JavaVersion.VERSION_1_8
-        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_17
     }
 
     signingConfigs {
@@ -258,10 +256,6 @@ dependencies {
     //implementation libs.blankj.utilcode
     implementation libs.flycotablayout.lib
 
-    //2024.03.15 一键登录 阿里云新版
-    implementation files('libs/main-2.2.3-release.aar')
-    implementation files('libs/logger-2.2.2-release.aar')
-    implementation files('libs/auth_number_product-2.14.14-log-online-standard-cuum-release.aar')
     //implementation project(':mod_common')
 
 }
