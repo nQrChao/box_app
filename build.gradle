@@ -23,7 +23,7 @@ apply from: '../mod_common/base.gradle'
 
 
 android {
-    namespace "com.zqhy.app.newproject"
+    namespace "com.boxapp.project"
     compileSdk 34
     flavorDimensions += ['version']
     defaultConfig {
