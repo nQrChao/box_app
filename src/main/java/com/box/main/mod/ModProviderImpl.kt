@@ -107,10 +107,5 @@ class ModProviderImpl : ModProvider {
 
     }
 
-    override fun getModInfos() : ModInfoBean{
-        return AppInit.getModInfos()
-    }
-
-
 
 }
