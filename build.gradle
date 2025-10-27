@@ -42,12 +42,11 @@ android {
         buildConfigField "String", "GAME_O_CHANNEL_NAME", MOD_GAME_O_CHANNEL_NAME
         buildConfigField "String", "APP_FILING", MOD_APP_FILING
         buildConfigField "String", "API_VERSION", MOD_APP_API_VERSION
-        buildConfigField "String", "APP_UPDATE_ID", MOD_APP_UPDATA_ID
-        buildConfigField "String", "DEFAULE_CHANNEL_TGID", MOD_APP_DEFAULT_TGID
+        buildConfigField "String", "MOD_ID", MOD_ID
+        buildConfigField "String", "DEFAULE_CHANNEL_VASID", MOD_APP_DEFAULT_VASID
         buildConfigField "String", "AUTH_LOGIN_SIGN_INFO", MOD_APP_AUTH_LOGIN_SIGN
         buildConfigField "String", "TENCENT_APP_ID", MOD_APP_TENCENT_ID
         buildConfigField "String", "TENCENT_APP_KEY", MOD_APP_TENCENT_KEY
-        buildConfigField "String", "CHANNEL_TGID", MOD_APP_DEFAULT_TGID
 
         buildConfigField "int", "BAIDU_APP_ID", "0"
         buildConfigField "int", "APP_DISPLAY_TYPE", "1"
@@ -151,9 +150,9 @@ android {
         // apk 输出文件名配置
         variant.outputs.configureEach { output ->
             outputFileName = variant.buildType.name + '_'
-            outputFileName += MOD_APP_DEFAULT_TGID.replace("\"", "") + "_"
+            outputFileName += MOD_APP_DEFAULT_VASID.replace("\"", "") + "_"
             outputFileName += applicationId + '_'
-            outputFileName += MOD_APP_UPDATA_ID.replace("\"", "") + "_v"
+            outputFileName += MOD_ID.replace("\"", "") + "_v"
             outputFileName += VERSION_CODE + "_"
             outputFileName += versionName.concat(buildTime())
             outputFileName += '.apk'
