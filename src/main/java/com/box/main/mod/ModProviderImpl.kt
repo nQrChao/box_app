@@ -6,7 +6,7 @@ import android.content.Intent
 import androidx.activity.result.ActivityResultLauncher
 import com.box.common.AppInit
 import com.box.common.MMKVConfig
-import com.box.common.data.model.ModInfosBean
+import com.box.common.data.model.ModInfoBean
 import com.box.main.App
 import com.box.mod.game.ModProvider
 
@@ -107,7 +107,7 @@ class ModProviderImpl : ModProvider {
 
     }
 
-    override fun getModInfos() : ModInfosBean{
+    override fun getModInfos() : ModInfoBean{
         return AppInit.getModInfos()
     }
 
