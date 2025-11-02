@@ -1,5 +1,7 @@
 package com.box.main.ui.activity
 
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.WindowManager
@@ -25,7 +27,15 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
 
     override fun initView(savedInstanceState: Bundle?) {
         window.addFlags(WindowManager.LayoutParams.FLAG_SECURE)
-        mViewModel.start()
+        mDataBinding.vm = mViewModel
+        mDataBinding.click = ProxyClick()
+        mDataBinding.splashLottie.addAnimatorListener(object : AnimatorListenerAdapter() {
+            override fun onAnimationEnd(animation: Animator) {
+                mDataBinding.splashLottie.removeAnimatorListener(this)
+                mViewModel.start()
+            }
+        })
+
         //throw IllegalArgumentException("are you ok?")
     }
 

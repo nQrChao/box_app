@@ -5,8 +5,8 @@ import androidx.lifecycle.viewModelScope
 import com.box.base.base.viewmodel.BaseViewModel
 import com.box.common.MMKVConfig
 import com.box.other.immersionbar.BarHide
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+
 enum class NavigationTarget {
     GO_TO_MAIN,  // 去主页
     GO_TO_LOGIN  // 去登录页
@@ -22,7 +22,7 @@ class SplashActivityModel : BaseViewModel(barHid = BarHide.FLAG_HIDE_BAR, isStat
         viewModelScope.launch {
             // 在这里模拟一些初始化工作，例如网络请求、数据库读取等
             // 我用 delay(2000) 来模拟一个2秒的耗时任务
-            delay(2000)
+            //delay(2000)
             // 根据业务逻辑判断跳转目标
             if (MMKVConfig.userInfo == null) {
                 // 如果用户信息为空，通知 Activity 跳转到登录页
