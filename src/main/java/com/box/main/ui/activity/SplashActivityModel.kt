@@ -3,7 +3,13 @@ package com.box.main.ui.activity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.box.base.base.viewmodel.BaseViewModel
+import com.box.base.ext.modRequestWithMsg
+import com.box.base.state.ModResultStateWithMsg
+import com.box.com.BuildConfig
 import com.box.common.MMKVConfig
+import com.box.common.data.AndroidStatusRequest
+import com.box.common.data.model.ModInitBean
+import com.box.common.network.apiService
 import com.box.other.immersionbar.BarHide
 import kotlinx.coroutines.launch
 
@@ -14,6 +20,7 @@ enum class NavigationTarget {
 
 class SplashActivityModel : BaseViewModel(barHid = BarHide.FLAG_HIDE_BAR, isStatusBarEnabled = true) {
     val navigationEvent = MutableLiveData<NavigationTarget>()
+    var initializationInfoResult = MutableLiveData<ModResultStateWithMsg<ModInitBean>>()
     /**
      * 启动闪屏页的业务逻辑
      */
@@ -34,4 +41,17 @@ class SplashActivityModel : BaseViewModel(barHid = BarHide.FLAG_HIDE_BAR, isStat
             }
         }
     }
+
+    fun postInitializationInfoDate() {
+        val requestBody = AndroidStatusRequest(
+            appId = BuildConfig.MOD_ID,
+        )
+        modRequestWithMsg(
+            { apiService.postInitializationInfo(requestBody) },
+            initializationInfoResult,
+            isShowDialog = true,
+        )
+    }
+
+
 }
