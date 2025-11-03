@@ -6,9 +6,6 @@ import com.box.common.glide.GlideApp
 import com.box.main.mod.ModProviderImpl
 import com.box.mod.game.ModComService
 
-/**
- * 应用的 Application 类
- */
 class App : MultiDexApplication() {
 
     companion object {
