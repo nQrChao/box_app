@@ -3,13 +3,17 @@ package com.box.main.ui.activity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.box.base.base.viewmodel.BaseViewModel
+import com.box.base.callback.databind.StringObservableField
 import com.box.base.ext.modRequestWithMsg
+import com.box.base.ext.requestFlow
 import com.box.base.state.ModResultStateWithMsg
 import com.box.com.BuildConfig
 import com.box.common.MMKVConfig
 import com.box.common.data.AndroidStatusRequest
 import com.box.common.data.model.ModInitBean
+import com.box.common.data.model.ModStatusBean
 import com.box.common.network.apiService
+import com.box.other.blankj.utilcode.util.AppUtils
 import com.box.other.immersionbar.BarHide
 import kotlinx.coroutines.launch
 
@@ -19,8 +23,11 @@ enum class NavigationTarget {
 }
 
 class SplashActivityModel : BaseViewModel(barHid = BarHide.FLAG_HIDE_BAR, isStatusBarEnabled = true) {
+    var pName = StringObservableField(AppUtils.getAppName())
     val navigationEvent = MutableLiveData<NavigationTarget>()
+    var androidStatusResult = MutableLiveData<ModResultStateWithMsg<ModStatusBean>>()
     var initializationInfoResult = MutableLiveData<ModResultStateWithMsg<ModInitBean>>()
+
     /**
      * 启动闪屏页的业务逻辑
      */
@@ -49,8 +56,43 @@ class SplashActivityModel : BaseViewModel(barHid = BarHide.FLAG_HIDE_BAR, isStat
         modRequestWithMsg(
             { apiService.postInitializationInfo(requestBody) },
             initializationInfoResult,
-            isShowDialog = true,
         )
+    }
+
+
+    fun postAndroidStatusDate() {
+        val requestBody = AndroidStatusRequest(
+            appId = BuildConfig.MOD_ID,
+        )
+        modRequestWithMsg(
+            { apiService.postAndroidStatus(requestBody) },
+            androidStatusResult,
+        )
+    }
+
+
+    fun postInitAndStatus() {
+        requestFlow {
+            val initializationInfo = step(
+                block = {
+                    val requestBody = AndroidStatusRequest(appId = BuildConfig.MOD_ID)
+                    apiService.postInitializationInfo(requestBody)
+                },
+                resultState = initializationInfoResult,
+            )
+            val androidStatus = step(
+                block = {
+                    val requestBody = AndroidStatusRequest(
+                        appId = BuildConfig.MOD_ID,
+                    )
+                    apiService.postAndroidStatus(requestBody)
+                },
+                resultState = androidStatusResult
+            )
+
+        }
+
+
     }
 
 
