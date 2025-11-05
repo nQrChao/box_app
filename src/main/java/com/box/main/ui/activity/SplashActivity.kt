@@ -10,11 +10,12 @@ import com.box.base.base.activity.BaseModVmDbActivity
 import com.box.base.ext.parseModStateWithMsg
 import com.box.base.network.NetState
 import com.box.common.AppInit
-import com.box.common.utils.mmkv.MMKVConfig
 import com.box.common.appContext
+import com.box.common.appViewModel
 import com.box.common.data.model.ModStatusBean
 import com.box.common.eventViewModel
 import com.box.common.utils.ext.logsE
+import com.box.common.utils.mmkv.MMKVConfig
 import com.box.mod.ui.activity.ModActivityMain
 import com.box.mod.ui.xpop.ModXPopupCenterProtocol
 import com.box.other.blankj.utilcode.util.ColorUtils
@@ -30,8 +31,10 @@ import com.box.com.R as RC
 class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBinding>() {
     /** 动画是否播放完毕 */
     private var isAnimationFinished = false
+
     /** 网络请求链（包含 status）是否执行完毕 */
     private var isNetworkChainFinished = false
+
     /** 临时存储网络请求2的结果 */
     private var tempModStatusData: ModStatusBean? = null
     override val mViewModel: SplashActivityModel by viewModels()
@@ -65,6 +68,7 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
                 resultState,
                 onSuccess = { data, msg ->
                     logsE(GsonUtils.toJson(data))
+                    appViewModel.modInfoBean.value = data
                     if (MMKVConfig.permissionsUser) {
                         agreeInit()
                     } else {
@@ -120,12 +124,14 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
                     startModMain()
                     finish() // 跳转后结束当前页
                 }
+
                 NavigationTarget.GO_TO_MAIN -> {
                     // 跳转到主页
                     // startActivity(Intent(applicationContext, MainActivity::class.java))
                     startModMain()
                     finish() // 跳转后结束当前页
                 }
+
                 null -> {
                     logsE("GO_TO_NULL")
                 }
