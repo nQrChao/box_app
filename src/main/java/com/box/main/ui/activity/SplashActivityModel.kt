@@ -8,7 +8,7 @@ import com.box.base.ext.modRequestWithMsg
 import com.box.base.ext.requestFlow
 import com.box.base.state.ModResultStateWithMsg
 import com.box.com.BuildConfig
-import com.box.common.MMKVConfig
+import com.box.common.utils.mmkv.MMKVConfig
 import com.box.common.data.AndroidStatusRequest
 import com.box.common.data.model.ModInitBean
 import com.box.common.data.model.ModStatusBean
