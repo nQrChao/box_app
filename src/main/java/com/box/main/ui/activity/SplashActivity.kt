@@ -68,7 +68,7 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
                 resultState,
                 onSuccess = { data, msg ->
                     logsE(GsonUtils.toJson(data))
-                    appViewModel.modInfoBean.value = data
+                    appViewModel.modInitBean.value = data
                     if (MMKVConfig.permissionsUser) {
                         agreeInit()
                     } else {
