@@ -4,11 +4,14 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import androidx.activity.result.ActivityResultLauncher
-import com.box.common.AppInit
+import com.box.common.appContext
+import com.box.common.appViewModel
+import com.box.common.eventViewModel
 import com.box.common.utils.mmkv.MMKVConfig
-import com.box.common.data.model.ModInfoBean
 import com.box.main.App
 import com.box.mod.game.ModProvider
+import com.box.mod.ui.activity.ModActivityLogin
+import com.box.other.hjq.toast.Toaster
 
 class ModProviderImpl : ModProvider {
 
@@ -41,7 +44,9 @@ class ModProviderImpl : ModProvider {
     }
 
     override fun logout() {
-
+        MMKVConfig.userInfo = null
+        appViewModel.modUserInfo.postValue(null)
+        eventViewModel.isLogin.value = false
     }
 
     override fun getUserToken(): String {
@@ -66,6 +71,14 @@ class ModProviderImpl : ModProvider {
 
     override fun startModLoginActivity(activity: Activity, loginLauncher: ActivityResultLauncher<Intent>) {
 
+    }
+
+    override fun startLoginInvalid() {
+        Toaster.show("登录信息已失效，请重新登录")
+        MMKVConfig.userInfo = null
+        appViewModel.modUserInfo.postValue(null)
+        eventViewModel.isLogin.value = false
+        ModActivityLogin.start(appContext)
     }
 
     override fun startMainActivity(context: Context) {

@@ -151,7 +151,6 @@ android {
         // apk 输出文件名配置
         variant.outputs.configureEach { output ->
             outputFileName = variant.buildType.name + '_'
-            outputFileName += MOD_VASID.replace("\"", "") + "_"
             outputFileName += applicationId + '_'
             outputFileName += MOD_ID.replace("\"", "") + "_v"
             outputFileName += VERSION_CODE + "_"
