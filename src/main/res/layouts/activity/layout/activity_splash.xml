@@ -15,6 +15,7 @@
     </data>
 
     <RelativeLayout
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -22,13 +23,16 @@
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/splash_lottie"
             android:layout_width="wrap_content"
+            android:paddingHorizontal="@dimen/idp_20"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:layout_gravity="center"
             app:lottie_autoPlay="true"
             app:lottie_loop="false"
-            app:lottie_rawRes="@raw/hi_black" />
+            app:lottie_rawRes="@raw/taoyoubao_flash2" />
 
         <TextView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
