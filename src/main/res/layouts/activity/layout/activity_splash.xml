@@ -29,7 +29,7 @@
             android:layout_gravity="center"
             app:lottie_autoPlay="true"
             app:lottie_loop="false"
-            app:lottie_rawRes="@raw/taoyoubao_flash2" />
+            app:lottie_rawRes="@raw/splash" />
 
         <TextView
             android:visibility="gone"
