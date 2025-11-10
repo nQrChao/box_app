@@ -18,12 +18,15 @@ import com.box.common.utils.ext.logsE
 import com.box.common.utils.mmkv.MMKVConfig
 import com.box.mod.ui.activity.ModActivityMain
 import com.box.mod.ui.xpop.ModXPopupCenterProtocol
+import com.box.other.blankj.utilcode.util.ActivityUtils
+import com.box.other.blankj.utilcode.util.AppUtils
 import com.box.other.blankj.utilcode.util.ColorUtils
 import com.box.other.blankj.utilcode.util.GsonUtils
 import com.box.other.hjq.toast.Toaster
 import com.box.other.xpopup.XPopup
 import com.boxapp.project.R
 import com.boxapp.project.databinding.ActivitySplashBinding
+import kotlin.system.exitProcess
 import com.box.com.R as RC
 
 
@@ -84,6 +87,8 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
                             .asCustom(
                                 ModXPopupCenterProtocol(this@SplashActivity, data, {
                                     //取消
+                                    AppUtils.exitApp()
+                                    exitProcess(0)
                                 }) {
                                     //同意
                                     agreeInit()
