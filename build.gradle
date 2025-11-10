@@ -29,7 +29,7 @@ android {
     compileSdk 34
     flavorDimensions "channel"
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 31
         ndk {
             abiFilters "armeabi", "armeabi-v7a", "x86", "x86_64", "arm64-v8a"
@@ -228,14 +228,13 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation files('../mod_common/ModAAR/cloud/asr-realtime-release.aar')
 
-    implementation libs.google.material
-    implementation libs.google.exoplayer
+    //implementation libs.google.material
+    //implementation libs.google.exoplayer
+    //implementation libs.flycotablayout.lib
 
     //implementation libs.blankj.utilcode
-    implementation libs.flycotablayout.lib
 
     //implementation project(':mod_common')
-
     channelConfigsData.each { flavorName, channelConfig ->
         def finalConfig = defaultConfigData + channelConfig
         if (finalConfig.hasVideo) { // Groovy 会自动处理 '== true'
