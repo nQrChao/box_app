@@ -107,7 +107,6 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
             parseModStateWithMsg(
                 resultState,
                 onSuccess = { data, msg ->
-                    logsE("网络请求链(androidStatus)执行完毕")
                     logsE(GsonUtils.toJson(data))
                     //不在这里直接执行，先存储数据和设置标志位
                     tempModStatusData = data
@@ -115,6 +114,8 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
                     proceedToNextStepIfReady()
                 },
                 onError = {
+                    isNetworkChainFinished = true
+                    proceedToNextStepIfReady()
                     Toaster.show(it.msg)
                 }
             )
