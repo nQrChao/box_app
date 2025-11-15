@@ -74,6 +74,10 @@ class ModProviderImpl : ModProvider {
     }
 
     override fun startLoginInvalid() {
+        if(appViewModel.modUserInfo.value == null){
+            ModActivityLogin.start(appContext)
+            return
+        }
         Toaster.show("登录信息已失效，请重新登录")
         MMKVConfig.userInfo = null
         appViewModel.modUserInfo.postValue(null)
