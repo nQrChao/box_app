@@ -6,6 +6,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.activity.viewModels
+import androidx.lifecycle.viewModelScope
 import com.box.base.base.activity.BaseModVmDbActivity
 import com.box.base.ext.parseModStateWithMsg
 import com.box.base.network.NetState
@@ -26,6 +27,7 @@ import com.box.other.hjq.toast.Toaster
 import com.box.other.xpopup.XPopup
 import com.boxapp.project.R
 import com.boxapp.project.databinding.ActivitySplashBinding
+import kotlinx.coroutines.launch
 import kotlin.system.exitProcess
 import com.box.com.R as RC
 
@@ -159,8 +161,17 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
 
     private fun agreeInit() {
         MMKVConfig.permissionsUser = true
-        AppInit.initCNOAID()
-        mViewModel.postAndroidStatusDate()
+        // 启动一个协程来执行异步初始化和后续的网络请求
+        mViewModel.viewModelScope.launch {
+            try {
+                AppInit.initCNOAID().join()
+                logsE("OAID 初始化完成，开始请求 AndroidStatusDate")
+                mViewModel.postAndroidStatusDate()
+            } catch (e: Exception) {
+                logsE("agreeInit 协程失败: $e")
+                Toaster.show("初始化失败，请重试")
+            }
+        }
     }
 
     /**
