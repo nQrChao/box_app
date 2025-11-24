@@ -36,10 +36,8 @@ import com.box.com.R as RC
 class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBinding>() {
     /** 动画是否播放完毕 */
     private var isAnimationFinished = false
-
     /** 网络请求链（包含 status）是否执行完毕 */
     private var isNetworkChainFinished = false
-
     /** 临时存储网络请求2的结果 */
     private var tempModStatusData: ModStatusBean? = null
     override val mViewModel: SplashActivityModel by viewModels()
@@ -65,6 +63,8 @@ class SplashActivity : BaseModVmDbActivity<SplashActivityModel, ActivitySplashBi
         mViewModel.postInitializationInfoDate()
 
         //throw IllegalArgumentException("are you ok?")
+        
+
     }
 
     override fun createObserver() {
