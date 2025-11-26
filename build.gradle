@@ -31,6 +31,10 @@ android {
     defaultConfig {
         minSdkVersion 23
         targetSdkVersion 31
+        def finalConfig = defaultConfigData
+        manifestPlaceholders = [
+                appIcon: finalConfig.appIcon
+        ]
         ndk {
             abiFilters "armeabi", "armeabi-v7a", "x86", "x86_64", "arm64-v8a"
         }
@@ -196,6 +200,7 @@ android {
                 manifestPlaceholders = [
                         'app_name'    : finalConfig.appName,
                         'app_icon'    : finalConfig.appIcon,
+                        'appIcon'    : finalConfig.appIcon,
                         "O_APP_ID"    : finalConfig.oAppId,
                         "O_APP_KEY"   : finalConfig.oAppKey,
                         "O_APP_SECRET": finalConfig.oAppSecret,
